@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);NETSDK1137;NETSDK1138</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Single source of truth lives under ModManagerPrototype/*.cs -->
+    <Compile Remove="Backend\Ports\PortContract.cs" />
+
+    <!-- Avoid ambiguous PortHandlers: UI calls UIEventDispatcher -> PortDispatcher -> Backend/Ports/PortHandlers.cs -->
+    <Compile Remove="Backend\PortHandlers.cs" />
+  </ItemGroup>
+
+</Project>

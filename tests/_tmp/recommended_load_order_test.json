@@ -1,0 +1,5388 @@
+[
+  {
+    "name": "000_0_UIFramework_Fast Travel Plus-6540-2-5-0-1767531197",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\000_0_UIFramework_Fast Travel Plus-6540-2-5-0-1767531197",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Items & Loot",
+      "UI"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 0,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/items.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml",
+        "Config/XUi/windows.xml",
+        "Config/XUi_Common/styles.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "ui"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "001_0_UIFramework_Gears-4017-v6-0-1-1767826259",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\001_0_UIFramework_Gears-4017-v6-0-1-1767826259",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "UI"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 1,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/XUi/windows.xml",
+        "Config/XUi/xui.xml",
+        "Config/XUi_Common/controls.xml",
+        "Config/XUi_Common/styles.xml",
+        "Config/XUi_Menu/windows.xml",
+        "Config/XUi_Menu/xui.xml"
+      ],
+      "domains": [
+        "ui"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "002_0_UIFramework_Quartz-2409-v7-1-1-1769809054",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\002_0_UIFramework_Quartz-2409-v7-1-1-1769809054",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Prefabs / POIs",
+      "UI"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 2,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/XUi/windows.xml",
+        "Config/XUi_Common/controls.xml",
+        "Config/XUi_Common/styles.xml",
+        "Config/XUi_Menu/windows.xml",
+        "Config/XUi_Menu/xui.xml",
+        "ModSettings.xml"
+      ],
+      "domains": [
+        "ui",
+        "world"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "003_TFP_Harmony",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\003_TFP_Harmony",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "Core Frameworks",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 3,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "005_KFCommonUtilityLib (v2.0 - v2.5)-4880-23-260204-155453-1770193304",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\005_KFCommonUtilityLib (v2.0 - v2.5)-4880-23-260204-155453-1770193304",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay"
+    ],
+    "priority": "Core Frameworks",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 5,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/loadingscreen.xml",
+        "Config/ui_display.xml",
+        "DOTween.XML",
+        "ModSettings.xml"
+      ],
+      "domains": [
+        "gameplay"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "006_OcbDensityHoe-0.6.0-V2.0.zip-2806-0-6-0-1752113412",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\006_OcbDensityHoe-0.6.0-V2.0.zip-2806-0-6-0-1752113412",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Items & Loot"
+    ],
+    "priority": "Core Frameworks",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 6,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/items.a20.ulm.xml",
+        "Config/items.a20.xml",
+        "Config/items.a21.df.xml",
+        "Config/items.a21.xml",
+        "Config/items.v1.al.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.a20.xml",
+        "Config/progression.a21.df.xml",
+        "Config/progression.a21.xml",
+        "Config/progression.v1.al.xml",
+        "Config/progression.xml",
+        "Config/recipes.a20.ulm.xml",
+        "Config/recipes.a20.xml",
+        "Config/recipes.a21.df.xml",
+        "Config/recipes.a21.xml",
+        "Config/recipes.v1.al.xml",
+        "Config/recipes.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "004_CustomParticleLoader-2036-1-6-0-1750564313",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\004_CustomParticleLoader-2036-1-6-0-1750564313",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "Core Frameworks",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 4,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "007_OcbStopFuelWaste-1.1.0-V1.0-exp.zip-1884-1-1-0-1720205875",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\007_OcbStopFuelWaste-1.1.0-V1.0-exp.zip-1884-1-1-0-1720205875",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "Core Frameworks",
+    "is_overhaul": false,
+    "scopes": [
+      "progression"
+    ],
+    "user_disabled": false,
+    "load_order": 7,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "008_AllowComboKeys (v2.0)-8555-1-0-0-1757129528",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\008_AllowComboKeys (v2.0)-8555-1-0-0-1757129528",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 8,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "009_BetterModCompatibility (v2.4 - v2.5)-6097-1-2-1-1765723863",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\009_BetterModCompatibility (v2.4 - v2.5)-6097-1-2-1-1765723863",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 9,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "010_ClaimDoorMod-9184-v1-1-1765322755",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\010_ClaimDoorMod-9184-v1-1-1765322755",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 10,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "011_Craft From Containers-2196-1-7-2-1768137839",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\011_Craft From Containers-2196-1-7-2-1768137839",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [
+      "crafting"
+    ],
+    "user_disabled": false,
+    "load_order": 11,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "012_CustomMuzzleFlash (v1.0 - v2.0)-2063-1-1-4-1755571758",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\012_CustomMuzzleFlash (v1.0 - v2.0)-2063-1-1-4-1755571758",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 12,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "014_FullautoLauncher (v2.0)-2062-1-4-0-1750564965",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\014_FullautoLauncher (v2.0)-2062-1-4-0-1750564965",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 14,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "017_Izy_v5_1_No_Kick-5458-5-1-2-1766475779",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\017_Izy_v5_1_No_Kick-5458-5-1-2-1766475779",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 17,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "019_More Sleepers (x2)-7021-1-0-1740393390",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\019_More Sleepers (x2)-7021-1-0-1740393390",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 19,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "020_Nano Repair Mod-9159-1-0-1765046051",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\020_Nano Repair Mod-9159-1-0-1765046051",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 20,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/recipes.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "023_RandomMainmenuBackground (v2.0 - v2.5)-2120-1-3-0-1765723775",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\023_RandomMainmenuBackground (v2.0 - v2.5)-2120-1-3-0-1765723775",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 23,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "024_RuntimeOCD-6920-0-15-0-1-1755787106",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\024_RuntimeOCD-6920-0-15-0-1-1755787106",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 24,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "025_Singularity-8361-1-5-0-1771823421",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\025_Singularity-8361-1-5-0-1771823421",
+    "category": "Prefabs / POIs",
+    "categories": [
+      "Prefabs / POIs"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 25,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/sounds.xml"
+      ],
+      "domains": [
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "026_Snack and Drive 2.5b23-9255-1-2-1769090576",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\026_Snack and Drive 2.5b23-9255-1-2-1769090576",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 26,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "027_TraderAreaVolume 2.5b23-8105-10-0-1767730123",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\027_TraderAreaVolume 2.5b23-8105-10-0-1767730123",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 27,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "028_Trail effect 2.5b23-9310-1-1-1768084278",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\028_Trail effect 2.5b23-9310-1-1-1768084278",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 28,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "031_WMMLootRespawnTweak-4177-2-5-23-1-1766428128",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\031_WMMLootRespawnTweak-4177-2-5-23-1-1766428128",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [
+      "loot_quality"
+    ],
+    "user_disabled": false,
+    "load_order": 2040,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "032_WMMShowSkillLevelInDescription-6499-2-5-23-1-1766432184",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\032_WMMShowSkillLevelInDescription-6499-2-5-23-1-1766432184",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [
+      "progression"
+    ],
+    "user_disabled": false,
+    "load_order": 32,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "033_WMMSkipNewsScreen-5520-2-5-23-1-1766432339",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\033_WMMSkipNewsScreen-5520-2-5-23-1-1766432339",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 33,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "034_WMMSleepUntilDawn-6500-2-5-23-1-1766432391",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\034_WMMSleepUntilDawn-6500-2-5-23-1-1766432391",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Prefabs / POIs"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 34,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml"
+      ],
+      "domains": [
+        "world"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "035_WMMStopBikesFallingOver-9312-2-5-23-2-1767375448",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\035_WMMStopBikesFallingOver-9312-2-5-23-2-1767375448",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 35,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "036_z_7D2.5_Izayo_WeaponFixes-5458-2-5-1-3-1767278538",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\036_z_7D2.5_Izayo_WeaponFixes-5458-2-5-1-3-1767278538",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 36,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "037_ZombieFallDamageFix-1.0.0.4-7818-1-0-0-4-1755304484",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\037_ZombieFallDamageFix-1.0.0.4-7818-1-0-0-4-1755304484",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 37,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        ".git/ms-persist.xml",
+        "Config.xml"
+      ],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "015_Fusion thermal vision mod-9330-0-0-2-1767575598",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\015_Fusion thermal vision mod-9330-0-0-2-1767575598",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Items & Loot"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 15,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/recipes.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "018_Kill Feed 2.5b23-9416-1-1-1768998571",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\018_Kill Feed 2.5b23-9416-1-1-1768998571",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 18,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "016_HorrorNights-8798-1-1-4-1767425569",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\016_HorrorNights-8798-1-1-4-1767425569",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "UI"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 1680,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/XUi/windows.xml",
+        "Config/XUi/xui.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "ui"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "022_QuickStack 1.7.3-1357-1-7-3-1757169528",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\022_QuickStack 1.7.3-1357-1-7-3-1757169528",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "UI"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 1970,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/XUi/windows.xml",
+        "QuickStackConfig.xml"
+      ],
+      "domains": [
+        "ui"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "029_VoidGags-v2.6.zip-2747-2-6-1766275353",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\029_VoidGags-v2.6.zip-2747-2-6-1766275353",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Items & Loot",
+      "Prefabs / POIs",
+      "UI"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 29,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Features/AutoSpreadLoot/Config/XUi/windows.xml",
+        "Features/CurtainsSmartCut/Config/blocks.xml",
+        "Features/GrenadesDistraction/Config/items.xml",
+        "Features/HighlightLockedSlots/Config/XUi/controls.xml",
+        "Features/PreventDestroyOnClose/Config/XUi/windows.xml",
+        "Features/SpeedIndicator/Config/XUi/windows.xml",
+        "Features/TradersPlayerReputation/Config/npc.xml"
+      ],
+      "domains": [
+        "items",
+        "ui",
+        "world"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "030_WMMIncreaseDewCollectorStackSize-4176-2-5-23-1-1766427882",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\030_WMMIncreaseDewCollectorStackSize-4176-2-5-23-1-1766427882",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "UI"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [
+      "loot_quantity"
+    ],
+    "user_disabled": false,
+    "load_order": 2050,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/XUi/windows.xml"
+      ],
+      "domains": [
+        "ui"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "131_2_HUD_CustomPlayerActionManager (v2.0-v2.5)-2252-1-3-3-1766152391",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\131_2_HUD_CustomPlayerActionManager (v2.0-v2.5)-2252-1-3-3-1766152391",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "UI"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [
+      "ui_hud"
+    ],
+    "user_disabled": false,
+    "load_order": 131,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/XUi_Menu/controls.xml",
+        "Config/XUi_Menu/windows.xml"
+      ],
+      "domains": [
+        "ui"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "134_2_HUD_LittleRedSonja CAS-7591-1-6-1-1772281869",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\134_2_HUD_LittleRedSonja CAS-7591-1-6-1-1772281869",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "UI"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [
+      "ui_hud"
+    ],
+    "user_disabled": false,
+    "load_order": 134,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/XUi/windows.xml",
+        "Config/XUi_Menu/controls.xml",
+        "Config/XUi_Menu/windows.xml"
+      ],
+      "domains": [
+        "ui"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "040_7D1.0_Izayo_Visible_Mods_mod",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\040_7D1.0_Izayo_Visible_Mods_mod",
+    "category": "Overhauls",
+    "categories": [
+      "Overhauls",
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot",
+      "Prefabs / POIs"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 2000,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/backup/buffs.xml",
+        "Config/blocks.xml",
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "045_Better Perk Progression - Main Version-8977-v1-6-1773098484.1",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\045_Better Perk Progression - Main Version-8977-v1-6-1773098484.1",
+    "category": "Overhauls",
+    "categories": [
+      "Overhauls",
+      "Gameplay",
+      "Crafting",
+      "Items & Loot",
+      "Prefabs / POIs"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [
+      "progression"
+    ],
+    "user_disabled": false,
+    "load_order": 45,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/ui_display.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "048_Drone Weapons-4360-1-3-3-1757457489",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\048_Drone Weapons-4360-1-3-3-1757457489",
+    "category": "Overhauls",
+    "categories": [
+      "Overhauls",
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot",
+      "Zombies / Creatures"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 48,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/entityclasses.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "entities",
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "entityclasses.xml": {
+          "zombies": false
+        },
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "051_Just Cook It-9239-1-2-1767758534",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\051_Just Cook It-9239-1-2-1767758534",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Crafting"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 51,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/progression.xml",
+        "Config/recipes.xml"
+      ],
+      "domains": [
+        "recipes"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "056_Progressive Resource Boost-8127-1-0-1753254120",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\056_Progressive Resource Boost-8127-1-0-1753254120",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 56,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/progression.xml"
+      ],
+      "domains": [],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "058_RXEL Weapons for 2.4-2023-2-4-0-0-1765644439",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\058_RXEL Weapons for 2.4-2023-2-4-0-0-1765644439",
+    "category": "Overhauls",
+    "categories": [
+      "Overhauls",
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot",
+      "Zombies / Creatures"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 58,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/entityclasses.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot - Copie.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/traders.xml",
+        "Config/ui_display.xml"
+      ],
+      "domains": [
+        "entities",
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "entityclasses.xml": {
+          "zombies": false
+        },
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "060_Support Weapons-8958-v0-3-1768154909",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\060_Support Weapons-8958-v0-3-1768154909",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 60,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loadingscreen.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/traders.xml",
+        "Config/ui_display.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "062_Upgradeable Armor Weapons and Tools 2_0_1-7044-2-0-1-1752621850",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\062_Upgradeable Armor Weapons and Tools 2_0_1-7044-2-0-1-1752621850",
+    "category": "Crafting",
+    "categories": [
+      "Crafting"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 2010,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/progression.xml",
+        "Config/recipes.xml"
+      ],
+      "domains": [
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "063_V2-OakravenMonoBikes-5341-2-5-0-0-1766339145",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\063_V2-OakravenMonoBikes-5341-2-5-0-0-1766339145",
+    "category": "Overhauls",
+    "categories": [
+      "Overhauls",
+      "Crafting",
+      "Weapons",
+      "Items & Loot",
+      "Zombies / Creatures",
+      "Vehicles"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 63,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/entityclasses.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/vehicles.xml"
+      ],
+      "domains": [
+        "entities",
+        "items",
+        "recipes",
+        "vehicles"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "entityclasses.xml": {
+          "zombies": false
+        },
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "064_V2-OakravenWarPig-5517-2-5-0-0-1766339010",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\064_V2-OakravenWarPig-5517-2-5-0-0-1766339010",
+    "category": "Overhauls",
+    "categories": [
+      "Overhauls",
+      "Crafting",
+      "Weapons",
+      "Items & Loot",
+      "Zombies / Creatures",
+      "Vehicles",
+      "Quests"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 64,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/entityclasses.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/nav_objects.xml",
+        "Config/progression.xml",
+        "Config/quests.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml",
+        "Config/vehicles.xml"
+      ],
+      "domains": [
+        "entities",
+        "items",
+        "quests",
+        "recipes",
+        "vehicles"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "entityclasses.xml": {
+          "zombies": false
+        },
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "038_(2.5) - N.V.A weapons expansion (Server side)-7014-2-5-1-1767669807",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\038_(2.5) - N.V.A weapons expansion (Server side)-7014-2-5-1-1767669807",
+    "category": "Overhauls",
+    "categories": [
+      "Overhauls",
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot",
+      "Zombies / Creatures",
+      "Prefabs / POIs",
+      "UI"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [
+      "progression",
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 38,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/buffs.xml",
+        "Config/entityclasses.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/traders.xml",
+        "Config/ui_display.xml",
+        "Config/XUi/windows.xml",
+        "Config/XUi/xui.xml"
+      ],
+      "domains": [
+        "entities",
+        "gameplay",
+        "items",
+        "recipes",
+        "ui",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "entityclasses.xml": {
+          "zombies": true
+        },
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "041_ALL IN ONE N.V.A EXPANSION-7014-2-3-0-1753292881",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\041_ALL IN ONE N.V.A EXPANSION-7014-2-3-0-1753292881",
+    "category": "Overhauls",
+    "categories": [
+      "Overhauls",
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot",
+      "Zombies / Creatures",
+      "Prefabs / POIs",
+      "UI"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [
+      "progression"
+    ],
+    "user_disabled": false,
+    "load_order": 1980,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/buffs.xml",
+        "Config/entityclasses.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/traders.xml",
+        "Config/ui_display.xml",
+        "Config/XUi/windows.xml",
+        "Config/XUi/xui.xml"
+      ],
+      "domains": [
+        "entities",
+        "gameplay",
+        "items",
+        "recipes",
+        "ui",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "entityclasses.xml": {
+          "zombies": true
+        },
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "046_Bigger Backpack Larger Storage and QoL Improvement-7741-1-6-1766190046",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\046_Bigger Backpack Larger Storage and QoL Improvement-7741-1-6-1766190046",
+    "category": "Overhauls",
+    "categories": [
+      "Overhauls",
+      "XML Edits",
+      "Gameplay",
+      "Items & Loot",
+      "Zombies / Creatures",
+      "Vehicles",
+      "UI"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 46,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/entityclasses.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml",
+        "Config/vehicles.xml",
+        "Config/XUi/styles.xml",
+        "Config/XUi/windows.xml",
+        "Config/XUi/xui.xml"
+      ],
+      "domains": [
+        "entities",
+        "gameplay",
+        "items",
+        "ui",
+        "vehicles"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {
+        "entityclasses.xml": {
+          "zombies": true
+        },
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "050_Halicopter-1.11-8220-1-11-1769181609",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\050_Halicopter-1.11-8220-1-11-1769181609",
+    "category": "Overhauls",
+    "categories": [
+      "Overhauls",
+      "Crafting",
+      "Items & Loot",
+      "Zombies / Creatures",
+      "Quests",
+      "Prefabs / POIs",
+      "UI"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 50,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/dialogs.xml",
+        "Config/entityclasses.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/npc.xml",
+        "Config/progression.xml",
+        "Config/quests.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/XUi/windows.xml",
+        "Config/XUi/xui.xml"
+      ],
+      "domains": [
+        "entities",
+        "items",
+        "quests",
+        "recipes",
+        "ui",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "entityclasses.xml": {
+          "zombies": true
+        },
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "052_KeyMapHitAndKillEffects-8805-1-4-1770810293",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\052_KeyMapHitAndKillEffects-8805-1-4-1770810293",
+    "category": "Overhauls",
+    "categories": [
+      "Overhauls",
+      "Gameplay",
+      "Items & Loot",
+      "Zombies / Creatures",
+      "UI"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 52,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/entityclasses.xml",
+        "Config/items.xml",
+        "Config/XUI/windows.xml",
+        "Config/XUI/xui.xml"
+      ],
+      "domains": [
+        "entities",
+        "gameplay",
+        "items",
+        "ui"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "entityclasses.xml": {
+          "zombies": false
+        },
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "133_2_HUD_gupFireMod.zip-4776-2-0-1715549427",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\133_2_HUD_gupFireMod.zip-4776-2-0-1715549427",
+    "category": "Overhauls",
+    "categories": [
+      "Overhauls",
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot",
+      "Zombies / Creatures",
+      "Prefabs / POIs",
+      "Visuals & Graphics",
+      "UI"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [
+      "ui_hud"
+    ],
+    "user_disabled": false,
+    "load_order": 133,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blockplaceholders.xml",
+        "Config/blocks.xml",
+        "Config/buffs.xml",
+        "Config/entityclasses.xml",
+        "Config/entitygroups.xml",
+        "Config/gameevents.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/materials.xml",
+        "Config/physicsbodies.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/XUi/windows.xml",
+        "Config/XUi/xui.xml",
+        "Config/XUi_Menu/windows.xml",
+        "Config/XUi_Menu/xui.xml"
+      ],
+      "domains": [
+        "entities",
+        "gameplay",
+        "items",
+        "recipes",
+        "ui",
+        "visuals",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "entityclasses.xml": {
+          "zombies": true
+        },
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "039_1-Better Quest Rewards-8976-v1-3-1765489005",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\039_1-Better Quest Rewards-8976-v1-3-1765489005",
+    "category": "Quests",
+    "categories": [
+      "Quests"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 2030,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/loot.xml",
+        "Config/quests.xml"
+      ],
+      "domains": [
+        "quests"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "042_Armor Rebalance 2.6-8615-v2-6-1773372348.1",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\042_Armor Rebalance 2.6-8615-v2-6-1773372348.1",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Gameplay",
+      "Items & Loot"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 42,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/items.xml",
+        "Config/ui_display.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "043_Better loot (Update 1.0)-3872-4-6-1761985047",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\043_Better loot (Update 1.0)-3872-4-6-1761985047",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [
+      "loot_quality"
+    ],
+    "user_disabled": false,
+    "load_order": 1990,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/loot.xml"
+      ],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "044_Better loot - Izayo's weapon pack enhance-3872-4-6-1761985071",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\044_Better loot - Izayo's weapon pack enhance-3872-4-6-1761985071",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [
+      "loot_quality",
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 2020,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/loot.xml"
+      ],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "047_DestroyedWorkstationUpgradeSet-9091-v2-5-0-1766664194.1",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\047_DestroyedWorkstationUpgradeSet-9091-v2-5-0-1766664194.1",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Prefabs / POIs"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 47,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/loot.xml",
+        "Config/recipes.xml"
+      ],
+      "domains": [
+        "recipes",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "049_gupSelfConsumer.zip-4891-1-0-1718375196",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\049_gupSelfConsumer.zip-4891-1-0-1718375196",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Items & Loot"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 49,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/gameevents.xml",
+        "Config/items.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "053_Lootable Biome Gear - Loot Stage Dependent-9587-1-1-1770563981",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\053_Lootable Biome Gear - Loot Stage Dependent-9587-1-1-1770563981",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [
+      "loot_quality"
+    ],
+    "user_disabled": false,
+    "load_order": 53,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/loot.xml"
+      ],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "055_Not Enough Attachments-8996-v0-21-1768221276",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\055_Not Enough Attachments-8996-v0-21-1768221276",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 55,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "057_Rolling Thunder-8481-v0-31-1767708633",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\057_Rolling Thunder-8481-v0-31-1767708633",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting",
+      "Items & Loot"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 57,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/recipes.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "059_Sensible Lootz (2.0 Compatible)-6774-2-0-0-1750524768",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\059_Sensible Lootz (2.0 Compatible)-6774-2-0-0-1750524768",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [
+      "loot_quality"
+    ],
+    "user_disabled": false,
+    "load_order": 59,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/loot.xml"
+      ],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "061_Unlimited Bleed Stacks-3837-1-0-1697697662",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\061_Unlimited Bleed Stacks-3837-1-0-1697697662",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Gameplay"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 61,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml"
+      ],
+      "domains": [
+        "gameplay"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "066_ZZZ_FNS_Loot_All_the_Things-5100-2-5-2-2-1767279508",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\066_ZZZ_FNS_Loot_All_the_Things-5100-2-5-2-2-1767279508",
+    "category": "Prefabs / POIs",
+    "categories": [
+      "Prefabs / POIs"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [
+      "loot_quality"
+    ],
+    "user_disabled": false,
+    "load_order": 66,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/loot.xml"
+      ],
+      "domains": [
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "065_XFX-8362-1-1-3-1772941252.1",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\065_XFX-8362-1-1-3-1772941252.1",
+    "category": "Overhauls",
+    "categories": [
+      "Overhauls",
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot",
+      "Prefabs / POIs"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 65,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/recipes.xml",
+        "Config/traders.xml",
+        "Config/ui_display.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "054_Medical conditions-7322-1-3-4-1771503969",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\054_Medical conditions-7322-1-3-4-1771503969",
+    "category": "Overhauls",
+    "categories": [
+      "Overhauls",
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot",
+      "Zombies / Creatures",
+      "Prefabs / POIs"
+    ],
+    "priority": "Gameplay Overhauls",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 54,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/biomes.xml",
+        "Config/blocks.xml",
+        "Config/buffs.xml",
+        "Config/entityclasses.xml",
+        "Config/gameevents.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/ui_display.xml"
+      ],
+      "domains": [
+        "entities",
+        "gameplay",
+        "items",
+        "recipes",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "entityclasses.xml": {
+          "zombies": false
+        },
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "021_Quest POI Preview-8631-1-0-5-1757804311",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\021_Quest POI Preview-8631-1-0-5-1757804311",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "UI"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 21,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/XUi/windows.xml"
+      ],
+      "domains": [
+        "ui"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "013_EfficientBaseRepair-release-0e88d545-4861-2-1-2-1768393694",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\013_EfficientBaseRepair-release-0e88d545-4861-2-1-2-1768393694",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Prefabs / POIs",
+      "UI"
+    ],
+    "priority": "API / Backend Systems",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 1690,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/XUi/controls.xml",
+        "Config/XUi/windows.xml",
+        "Config/XUi/xui.xml",
+        "ModConfig.xml",
+        "Prefabs/efficientbaserepair_testing_01.xml"
+      ],
+      "domains": [
+        "recipes",
+        "ui",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "067_AMG5TAG-QualityEqualsMods-6419-2-3-1767666155",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\067_AMG5TAG-QualityEqualsMods-6419-2-3-1767666155",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Items & Loot"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [
+      "loot_quality"
+    ],
+    "user_disabled": false,
+    "load_order": 67,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/items.xml"
+      ],
+      "domains": [
+        "items"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "068_BulletConversion_recipes.zip-5669-1-2-1767333833",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\068_BulletConversion_recipes.zip-5669-1-2-1767333833",
+    "category": "Crafting",
+    "categories": [
+      "Crafting"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [
+      "crafting"
+    ],
+    "user_disabled": false,
+    "load_order": 68,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/recipes.xml"
+      ],
+      "domains": [
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "069_Crunchy's Gun Sound Pack-9352-1-1767753948",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\069_Crunchy's Gun Sound Pack-9352-1-1767753948",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [
+      "sounds",
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 69,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/sounds.xml"
+      ],
+      "domains": [],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "070_JRB_TZ_MoreZombies_x2-225-v10-1752809927",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\070_JRB_TZ_MoreZombies_x2-225-v10-1752809927",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 70,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/Spawning.xml"
+      ],
+      "domains": [],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "071_KF_SFX_Lib-8879-1-9-2-1770193390",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\071_KF_SFX_Lib-8879-1-9-2-1770193390",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 71,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/sounds.xml"
+      ],
+      "domains": [],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "072_KHV1 Zombie Reach Adjustment-5109-2-5-1-1-1766618766",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\072_KHV1 Zombie Reach Adjustment-5109-2-5-1-1-1766618766",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Items & Loot"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 72,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/items.xml"
+      ],
+      "domains": [
+        "items"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "073_Mehr_Messing mit Mining-9305-2-5-1767463803",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\073_Mehr_Messing mit Mining-9305-2-5-1767463803",
+    "category": "Prefabs / POIs",
+    "categories": [
+      "Prefabs / POIs"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 73,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml"
+      ],
+      "domains": [
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "074_SaviorUltimateBrightColorDye-8001-1-1-1752459663",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\074_SaviorUltimateBrightColorDye-8001-1-1-1752459663",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 74,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/item_modifiers.xml"
+      ],
+      "domains": [],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "075_SaviorUltimateMercyTrader-7802-1-1751288905",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\075_SaviorUltimateMercyTrader-7802-1-1751288905",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 75,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/traders.xml"
+      ],
+      "domains": [],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "076_SaviorUltimateSweetSentinelInfiniteShooting-8032-1-1752565840",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\076_SaviorUltimateSweetSentinelInfiniteShooting-8032-1-1752565840",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Items & Loot"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 76,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/items.xml"
+      ],
+      "domains": [
+        "items"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "077_Sensible Seeds-3014-2-5-0-1770365781",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\077_Sensible Seeds-3014-2-5-0-1770365781",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Crafting"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 77,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/recipes.xml"
+      ],
+      "domains": [
+        "recipes"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "078_TechFreqsFasterReloadingV1.0(V2.4)-9051-1-0-1763798404",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\078_TechFreqsFasterReloadingV1.0(V2.4)-9051-1-0-1763798404",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Items & Loot"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 78,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/items.xml"
+      ],
+      "domains": [
+        "items"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "079_TechFreqsFasterSmeltingV1.1(V2.5)-9093-1-1-1771274979",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\079_TechFreqsFasterSmeltingV1.1(V2.5)-9093-1-1-1771274979",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Items & Loot"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 79,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/items.xml"
+      ],
+      "domains": [
+        "items"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "080_TokimekisuMod_Stacknumber.zip-1623-1-0-1766244066",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\080_TokimekisuMod_Stacknumber.zip-1623-1-0-1766244066",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Items & Loot",
+      "Prefabs / POIs"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 80,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/items.xml"
+      ],
+      "domains": [
+        "items",
+        "world"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "081_WMMIncreaseAmmoStackSize-4175-2-5-23-1-1766427785",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\081_WMMIncreaseAmmoStackSize-4175-2-5-23-1-1766427785",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Items & Loot"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [
+      "loot_quantity"
+    ],
+    "user_disabled": false,
+    "load_order": 81,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/items.xml"
+      ],
+      "domains": [
+        "items"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "082_zzz_Ammo_Press_Add-On_Compatibility_Patch-6993-2-5-2-1769500035",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\082_zzz_Ammo_Press_Add-On_Compatibility_Patch-6993-2-5-2-1769500035",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 82,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/items.xml",
+        "Config/recipes.xml"
+      ],
+      "domains": [
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "083_zzzzzzzzzzzz Stallionsdens Stack Size Increaser-5976-2-4-2-1-1760828358",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\083_zzzzzzzzzzzz Stallionsdens Stack Size Increaser-5976-2-4-2-1-1760828358",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Items & Loot"
+    ],
+    "priority": "Content Additions",
+    "is_overhaul": false,
+    "scopes": [
+      "loot_quantity"
+    ],
+    "user_disabled": false,
+    "load_order": 83,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/items.xml"
+      ],
+      "domains": [
+        "items"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "084_7D1.0_Izayo_Visible_FPV_Gloves_mod",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\084_7D1.0_Izayo_Visible_FPV_Gloves_mod",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Items & Loot"
+    ],
+    "priority": "Weapon Frameworks & Animation",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 84,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/items.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "085_B- LOTF's Better Bullet Range Vanilla - Izy's V2.0-7416-2-2-1750548354",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\085_B- LOTF's Better Bullet Range Vanilla - Izy's V2.0-7416-2-2-1750548354",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Items & Loot"
+    ],
+    "priority": "Weapon Packs",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 85,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/items.xml",
+        "Config/ui_display.xml"
+      ],
+      "domains": [
+        "items"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "086_IZY_Bleed_Patch-8450-2-2-4-1756039934",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\086_IZY_Bleed_Patch-8450-2-2-4-1756039934",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Items & Loot"
+    ],
+    "priority": "Weapon Packs",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 86,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/items.xml"
+      ],
+      "domains": [
+        "items"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "087_Z-IZYAmmoStackSize-8511-2-2-1-1756558975",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\087_Z-IZYAmmoStackSize-8511-2-2-1-1756558975",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Items & Loot"
+    ],
+    "priority": "Weapon Packs",
+    "is_overhaul": false,
+    "scopes": [
+      "loot_quantity"
+    ],
+    "user_disabled": false,
+    "load_order": 87,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/items.xml"
+      ],
+      "domains": [
+        "items"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "088_7D1.0_Izayo_WeaponpackMisc_pack",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\088_7D1.0_Izayo_WeaponpackMisc_pack",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 88,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "089_7D1.0_Izayo_WeaponpackRemastered_44mag",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\089_7D1.0_Izayo_WeaponpackRemastered_44mag",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 89,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "090_7D1.0_Izayo_WeaponpackRemastered_45ACP",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\090_7D1.0_Izayo_WeaponpackRemastered_45ACP",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 90,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "091_7D1.0_Izayo_WeaponpackRemastered_556pack",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\091_7D1.0_Izayo_WeaponpackRemastered_556pack",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 91,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "092_7D1.0_Izayo_WeaponpackRemastered_762pack",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\092_7D1.0_Izayo_WeaponpackRemastered_762pack",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 92,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "093_7D1.0_Izayo_WeaponpackRemastered_9mmVAL",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\093_7D1.0_Izayo_WeaponpackRemastered_9mmVAL",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 93,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/Backup/item_modifiers.xml",
+        "Config/Backup/items.xml",
+        "Config/Backup/sounds.xml",
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "094_7D1.0_Izayo_WeaponpackRemastered_DemolitionPack",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\094_7D1.0_Izayo_WeaponpackRemastered_DemolitionPack",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 94,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "096_7D1.0_Izayo_WeaponpackRemastered_SHOTGUNpackVAL",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\096_7D1.0_Izayo_WeaponpackRemastered_SHOTGUNpackVAL",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 96,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "097_7D1.0_Izayo_WeaponpackRemastered_Technicalpack",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\097_7D1.0_Izayo_WeaponpackRemastered_Technicalpack",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 97,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "098_7D1.0_Izayo_WeaponpackSpecial_Melee",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\098_7D1.0_Izayo_WeaponpackSpecial_Melee",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 98,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/backup/itemsXX.xml",
+        "Config/buffs.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "100_CLSWeaponBoneCrusher (v2.0 - v2.5)-8880-1-0-6-1769077501",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\100_CLSWeaponBoneCrusher (v2.0 - v2.5)-8880-1-0-6-1769077501",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 100,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "101_CLSWeaponPackEXP (v2.0 - v2.5)-5798-1-8-11-1769077489",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\101_CLSWeaponPackEXP (v2.0 - v2.5)-5798-1-8-11-1769077489",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "progression",
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 101,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/af2011/buffs.xml",
+        "Config/af2011/item_modifiers.xml",
+        "Config/af2011/items.xml",
+        "Config/af2011/loot.xml",
+        "Config/af2011/progression.xml",
+        "Config/af2011/recipes.xml",
+        "Config/af2011/sounds.xml",
+        "Config/af2011/traders.xml",
+        "Config/buffs.xml",
+        "Config/common/sounds.xml",
+        "Config/eviscerator/buffs.xml",
+        "Config/eviscerator/items.xml",
+        "Config/eviscerator/loot.xml",
+        "Config/eviscerator/progression.xml",
+        "Config/eviscerator/recipes.xml",
+        "Config/eviscerator/sounds.xml",
+        "Config/eviscerator/traders.xml",
+        "Config/gshg762/items.xml",
+        "Config/hrgblastbrawler/buffs.xml",
+        "Config/hrgblastbrawler/items.xml",
+        "Config/hrgblastbrawler/loot.xml",
+        "Config/hrgblastbrawler/progression.xml",
+        "Config/hrgblastbrawler/recipes.xml",
+        "Config/hrgblastbrawler/sounds.xml",
+        "Config/hrgblastbrawler/traders.xml",
+        "Config/hz12/buffs.xml",
+        "Config/hz12/item_modifiers.xml",
+        "Config/hz12/items.xml",
+        "Config/hz12/loot.xml",
+        "Config/hz12/progression.xml",
+        "Config/hz12/recipes.xml",
+        "Config/hz12/sounds.xml",
+        "Config/hz12/traders.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/kaboomstick/buffs.xml",
+        "Config/kaboomstick/items.xml",
+        "Config/kaboomstick/loot.xml",
+        "Config/kaboomstick/progression.xml",
+        "Config/kaboomstick/recipes.xml",
+        "Config/kaboomstick/sounds.xml",
+        "Config/kaboomstick/traders.xml",
+        "Config/katana/buffs.xml",
+        "Config/katana/items.xml",
+        "Config/katana/loot.xml",
+        "Config/katana/progression.xml",
+        "Config/katana/recipes.xml",
+        "Config/katana/sounds.xml",
+        "Config/katana/traders.xml",
+        "Config/loot.xml",
+        "Config/m4benelli/buffs.xml",
+        "Config/m4benelli/item_modifiers.xml",
+        "Config/m4benelli/items.xml",
+        "Config/m4benelli/loot.xml",
+        "Config/m4benelli/progression.xml",
+        "Config/m4benelli/recipes.xml",
+        "Config/m4benelli/sounds.xml",
+        "Config/m4benelli/traders.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "113_gupA21-Zombies-4412-2-4-1763816613",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\113_gupA21-Zombies-4412-2-4-1763816613",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Weapons",
+      "Items & Loot",
+      "Zombies / Creatures"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 113,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/entityclasses.xml",
+        "Config/entitygroups.xml",
+        "Config/items.xml",
+        "Config/physicsbodies.xml",
+        "Config/sounds.xml"
+      ],
+      "domains": [
+        "entities",
+        "gameplay",
+        "items"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "entityclasses.xml": {
+          "zombies": true
+        },
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "114_LittleRedSonja Big Bad Bat (ADD-ON)-5370-1-0-1-1727745354",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\114_LittleRedSonja Big Bad Bat (ADD-ON)-5370-1-0-1-1727745354",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 114,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml"
+      ],
+      "domains": [
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "115_LittleRedSonja T2 into T3 weapons-5370-2-1-0-1766484641",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\115_LittleRedSonja T2 into T3 weapons-5370-2-1-0-1766484641",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 115,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/items_Standard_v1.xml",
+        "Config/items_Standard_v2.xml",
+        "Config/progression.xml",
+        "Config/progression_Standard_v1.xml",
+        "Config/progression_Standard_v2.xml",
+        "Config/recipes.xml",
+        "Config/recipes_Standard_v1.xml",
+        "Config/recipes_Standard_v2.xml",
+        "Config/ui_display.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "116_LittleRedSonja ZombiePack-7573-2-2-3-1768330200",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\116_LittleRedSonja ZombiePack-7573-2-2-3-1768330200",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Weapons",
+      "Items & Loot",
+      "Zombies / Creatures"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 116,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/entityclasses.xml",
+        "Config/entitygroups.xml",
+        "Config/items.xml",
+        "Config/physicsbodies.xml",
+        "Config/sounds.xml",
+        "Config/sounds_Standard_v1.xml",
+        "Config/sounds_Standard_v2.xml"
+      ],
+      "domains": [
+        "entities",
+        "gameplay",
+        "items"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "entityclasses.xml": {
+          "zombies": true
+        },
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "117_LittleRedSonja_Mumpfy_ArmorPack07_TWD-8662-1-1-1-1768986282",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\117_LittleRedSonja_Mumpfy_ArmorPack07_TWD-8662-1-1-1-1768986282",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 117,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/items.xml",
+        "Config/items_Rebirth_v1.xml",
+        "Config/items_Rebirth_v2.xml",
+        "Config/items_Standard_v1.xml",
+        "Config/items_Standard_v2.xml",
+        "Config/items_Tarkov_v1.xml",
+        "Config/items_Tarkov_v2.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/progression_Rebirth.xml",
+        "Config/progression_Rebirth_v2.xml",
+        "Config/progression_Standard.xml",
+        "Config/recipes.xml",
+        "Config/recipes_Rebirth.xml",
+        "Config/recipes_Standard.xml",
+        "Config/traders.xml",
+        "Config/ui_display.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "118_Medic Perk (v2.0 - v2.5)-4325-1-4-9-1768831471",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\118_Medic Perk (v2.0 - v2.5)-4325-1-4-9-1768831471",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "progression"
+    ],
+    "user_disabled": false,
+    "load_order": 118,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml",
+        "Config/ui_display.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "121_Script's Melee Arsenal - Scrap Tools and Weapons-5516-1-3-1725417614",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\121_Script's Melee Arsenal - Scrap Tools and Weapons-5516-1-3-1725417614",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 121,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "122_V2-OakravenRockDrill-5053-2-5-0-0-1772213823",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\122_V2-OakravenRockDrill-5053-2-5-0-0-1772213823",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Items & Loot",
+      "Prefabs / POIs"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 122,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml"
+      ],
+      "domains": [
+        "items",
+        "recipes",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "095_7D1.0_Izayo_WeaponpackRemastered_Heavy_WeaponPack",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\095_7D1.0_Izayo_WeaponpackRemastered_Heavy_WeaponPack",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 95,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/recipes.xml",
+        "Config/sounds.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "099_7D1.0_Izayo_WeaponpackVanillaReplacer",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\099_7D1.0_Izayo_WeaponpackVanillaReplacer",
+    "category": "Weapons",
+    "categories": [
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 99,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/sounds.xml"
+      ],
+      "domains": [
+        "items"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "102_Cre_More Weapon Mods 1.2-9373-1-2-1771173772",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\102_Cre_More Weapon Mods 1.2-9373-1-2-1771173772",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Weapons",
+      "Items & Loot",
+      "Quests"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 102,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/quests.xml",
+        "Config/recipes.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "items",
+        "quests",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "103_Evolved Gun and Turret Mods-6195-1-1726808659",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\103_Evolved Gun and Turret Mods-6195-1-1726808659",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 103,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/recipes.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "104_Fnz Super Guns Extend Pack-8693-1-00-1758416674",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\104_Fnz Super Guns Extend Pack-8693-1-00-1758416674",
+    "category": "Weapons",
+    "categories": [
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 104,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/traders.xml"
+      ],
+      "domains": [
+        "items"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "105_Funukemaguro's Armor Mod Icon Replacer-7781-1-0-1751185656",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\105_Funukemaguro's Armor Mod Icon Replacer-7781-1-0-1751185656",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "ui_icons"
+    ],
+    "user_disabled": false,
+    "load_order": 105,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "106_Funukemaguro's Foods And Crops Icon Replacer-8163-1-1-1756551064",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\106_Funukemaguro's Foods And Crops Icon Replacer-8163-1-1-1756551064",
+    "category": "Items & Loot",
+    "categories": [
+      "Items & Loot",
+      "Food",
+      "Prefabs / POIs"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "ui_icons"
+    ],
+    "user_disabled": false,
+    "load_order": 106,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/items.xml"
+      ],
+      "domains": [
+        "items",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": true
+        }
+      }
+    }
+  },
+  {
+    "name": "107_Funukemaguro's Medical And Drugs Icon Replacer-8200-1-0-1753967134",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\107_Funukemaguro's Medical And Drugs Icon Replacer-8200-1-0-1753967134",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "ui_icons"
+    ],
+    "user_disabled": false,
+    "load_order": 107,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "108_Funukemaguro's Melee and Tool Mod Icon Replacer-7790-1-0-1751208114",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\108_Funukemaguro's Melee and Tool Mod Icon Replacer-7790-1-0-1751208114",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "ui_icons"
+    ],
+    "user_disabled": false,
+    "load_order": 108,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "109_Funukemaguro's Resource And Parts Icon Replacer-8187-1-2-1762135902",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\109_Funukemaguro's Resource And Parts Icon Replacer-8187-1-2-1762135902",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "ui_icons"
+    ],
+    "user_disabled": false,
+    "load_order": 109,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "110_Funukemaguro's Vanilla Ammo Icon Replacer-8125-1-1-1759737097",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\110_Funukemaguro's Vanilla Ammo Icon Replacer-8125-1-1-1759737097",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "ui_icons"
+    ],
+    "user_disabled": false,
+    "load_order": 110,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "111_Funukemaguro's Vanilla Guns Detail Up-8934-2-6-1770509407",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\111_Funukemaguro's Vanilla Guns Detail Up-8934-2-6-1770509407",
+    "category": "Weapons",
+    "categories": [
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 111,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/44Magnum/item_modifiers.xml",
+        "Config/44Magnum/items.xml",
+        "Config/AKM/item_modifiers.xml",
+        "Config/AKM/items.xml",
+        "Config/AutoShotgun/item_modifiers.xml",
+        "Config/AutoShotgun/items.xml",
+        "Config/Deagle/item_modifiers.xml",
+        "Config/Deagle/items.xml",
+        "Config/DoubleBarrel/item_modifiers.xml",
+        "Config/DoubleBarrel/items.xml",
+        "Config/HuntingRifle/item_modifiers.xml",
+        "Config/HuntingRifle/items.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/LeverAction/item_modifiers.xml",
+        "Config/LeverAction/items.xml",
+        "Config/M60/item_modifiers.xml",
+        "Config/M60/items.xml",
+        "Config/Pistol/item_modifiers.xml",
+        "Config/Pistol/items.xml",
+        "Config/PumpAction/item_modifiers.xml",
+        "Config/PumpAction/items.xml",
+        "Config/SMG5/item_modifiers.xml",
+        "Config/SMG5/items.xml",
+        "Config/SniperRifle/item_modifiers.xml",
+        "Config/SniperRifle/items.xml",
+        "Config/sounds.xml",
+        "Config/TacticalAssault/item_modifiers.xml",
+        "Config/TacticalAssault/items.xml"
+      ],
+      "domains": [
+        "items"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "112_Funukemaguro's Weapon Mod Icon Replacer Ver 1.3-7733-1-3-1751184438",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\112_Funukemaguro's Weapon Mod Icon Replacer Ver 1.3-7733-1-3-1751184438",
+    "category": "Miscellaneous",
+    "categories": [
+      "Miscellaneous"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "ui_icons",
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 112,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [],
+      "domains": [],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "119_Script's Melee Arsenal - Legendary Tools-5495-1-5-4-1726285642",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\119_Script's Melee Arsenal - Legendary Tools-5495-1-5-4-1726285642",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Weapons",
+      "Items & Loot",
+      "Prefabs / POIs"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 119,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/recipes.xml"
+      ],
+      "domains": [
+        "items",
+        "recipes",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "120_Script's Melee Arsenal - Miscellaneous Weapons-5480-1-0-1-1724322435",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\120_Script's Melee Arsenal - Miscellaneous Weapons-5480-1-0-1-1724322435",
+    "category": "Weapons",
+    "categories": [
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 120,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/items.xml",
+        "Config/loot.xml"
+      ],
+      "domains": [
+        "items"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "123_Weapon Active Skill Mods-8247-1-3-1759223613",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\123_Weapon Active Skill Mods-8247-1-3-1759223613",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "Crafting",
+      "Weapons",
+      "Items & Loot"
+    ],
+    "priority": "Visual / Audio Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "progression",
+      "weapons"
+    ],
+    "user_disabled": false,
+    "load_order": 123,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/gameevents.xml",
+        "Config/item_modifiers.xml",
+        "Config/items.xml",
+        "Config/loot.xml",
+        "Config/recipes.xml",
+        "Config/traders.xml",
+        "Config/ui_display.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "items",
+        "recipes"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": true,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "128_V2-OakravenAmmoPress (2.5.0.0)-5105-2-5-0-0-1772858845",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\128_V2-OakravenAmmoPress (2.5.0.0)-5105-2-5-0-0-1772858845",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Items & Loot",
+      "Prefabs / POIs"
+    ],
+    "priority": "Utility / QoL Mods",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 128,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/items.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/ui_display.xml",
+        "Config/XUi/xui.xml"
+      ],
+      "domains": [
+        "items",
+        "recipes",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "129_V2-OakravenForges-6557-2-5-0-0-1769801444",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\129_V2-OakravenForges-6557-2-5-0-0-1769801444",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Prefabs / POIs"
+    ],
+    "priority": "Utility / QoL Mods",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 129,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/progression.xml",
+        "Config/recipes.xml",
+        "Config/ui_display.xml",
+        "Config/XUi/xui.xml"
+      ],
+      "domains": [
+        "recipes",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "125_Cloud's Working Ovens-4671-1-3-1770568046",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\125_Cloud's Working Ovens-4671-1-3-1770568046",
+    "category": "Crafting",
+    "categories": [
+      "Crafting",
+      "Prefabs / POIs"
+    ],
+    "priority": "Utility / QoL Mods",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 125,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/blocks.xml",
+        "Config/recipes.xml",
+        "Config/ui_display.xml",
+        "Config/XUI/xui.xml"
+      ],
+      "domains": [
+        "recipes",
+        "world"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "126_FNS_Make_Quest_Rewards_Great_Again-6779-2-5-1-1-1771367164",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\126_FNS_Make_Quest_Rewards_Great_Again-6779-2-5-1-1-1771367164",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Quests",
+      "UI"
+    ],
+    "priority": "Utility / QoL Mods",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 126,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/quests.xml",
+        "Config/XUi/windows.xml"
+      ],
+      "domains": [
+        "quests",
+        "ui"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "127_Scomar82_Health-Bar-5434-2-5-1767351232",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\127_Scomar82_Health-Bar-5434-2-5-1767351232",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "UI"
+    ],
+    "priority": "Utility / QoL Mods",
+    "is_overhaul": false,
+    "scopes": [],
+    "user_disabled": false,
+    "load_order": 127,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/XUi/windows.xml"
+      ],
+      "domains": [
+        "ui"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "130_2_HUD_AGF - HUDPlus-870-5-3-0-1767573176",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\130_2_HUD_AGF - HUDPlus-870-5-3-0-1767573176",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "Items & Loot",
+      "UI"
+    ],
+    "priority": "Utility / QoL Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "ui_hud"
+    ],
+    "user_disabled": false,
+    "load_order": 130,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/items.xml",
+        "Config/XUi/controls.xml",
+        "Config/XUi/windows.xml",
+        "Config/XUi/xui.xml",
+        "Config/XUi_Common/styles.xml"
+      ],
+      "domains": [
+        "items",
+        "ui"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {
+        "items.xml": {
+          "weapons": false,
+          "food": false
+        }
+      }
+    }
+  },
+  {
+    "name": "132_2_HUD_D6 - Extended Game Options v2.0-1876-2-0-1751148257",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\132_2_HUD_D6 - Extended Game Options v2.0-1876-2-0-1751148257",
+    "category": "XML Edits",
+    "categories": [
+      "XML Edits",
+      "UI"
+    ],
+    "priority": "Utility / QoL Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "ui_hud"
+    ],
+    "user_disabled": false,
+    "load_order": 132,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/XUi_Menu/windows.xml"
+      ],
+      "domains": [
+        "ui"
+      ],
+      "patch_only": true,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  },
+  {
+    "name": "124_AGF - HUDPlus - Purple Book-870-1-1-0-1765835695",
+    "path": "D:/steam/steamapps/common/7 Days To Die/Mods\\124_AGF - HUDPlus - Purple Book-870-1-1-0-1765835695",
+    "category": "Gameplay",
+    "categories": [
+      "Gameplay",
+      "UI"
+    ],
+    "priority": "Utility / QoL Mods",
+    "is_overhaul": false,
+    "scopes": [
+      "ui_hud"
+    ],
+    "user_disabled": false,
+    "load_order": 124,
+    "conflict": false,
+    "conflict_level": null,
+    "redundant": false,
+    "redundant_reason": null,
+    "has_modinfo": true,
+    "is_poi": false,
+    "severity": 0,
+    "category_evidence": {
+      "files": [
+        "Config/buffs.xml",
+        "Config/gameevents.xml",
+        "Config/XUi/windows.xml",
+        "Config/XUi/xui.xml"
+      ],
+      "domains": [
+        "gameplay",
+        "ui"
+      ],
+      "patch_only": false,
+      "invalid_xml": [],
+      "signals": {}
+    }
+  }
+]

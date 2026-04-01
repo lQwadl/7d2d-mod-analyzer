@@ -1,0 +1,72 @@
+# Project metadata
+[project]
+name = "7d2d-mod-analyzer"
+version = "1.1.0"
+description = "Mod analyzer and load-order optimizer for 7 Days to Die"
+authors = [{ name = "Anonymous", email = "contact@example.com" }]
+maintainers = [{ name = "Anonymous", email = "contact@example.com" }]
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["7days", "7dtd", "mods", "analyzer", "load-order"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Games/Entertainment",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: Microsoft :: Windows",
+    "Environment :: Win32 (MS Windows)",
+    "Natural Language :: English",
+]
+requires-python = ">=3.10"
+dependencies = []  # Uses only standard library
+
+[project.optional-dependencies]
+dev = ["black", "ruff", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/7d2d-mod-analyzer"
+Repository = "https://github.com/yourusername/7d2d-mod-analyzer"
+Issues = "https://github.com/yourusername/7d2d-mod-analyzer/issues"
+Documentation = "https://github.com/yourusername/7d2d-mod-analyzer/blob/main/README.md"
+
+[tool.black]
+line-length = 120
+# Keep formatting focused on core project code.
+exclude = '''
+/(
+    \.git
+  | __pycache__
+  | _backup_working_gui
+  | build
+  | dist
+  | venv
+  | \.venv
+  | tests
+  | mock_deploy
+  | gui/mock_.*
+)/
+'''
+
+[tool.ruff]
+# Keep Ruff consistent with the flake8/Black workflow in this repo.
+line-length = 140
+exclude = [
+  ".git",
+  "__pycache__",
+  "_backup_working_gui",
+  "build",
+  "dist",
+  "venv",
+  ".venv",
+  "tests",
+  "mock_deploy",
+  "gui/mock_.*",
+]
+
+[tool.ruff.lint]
+# Mirror our "silence noise first" flake8 ignores.
+ignore = ["E402", "F401", "F811"]

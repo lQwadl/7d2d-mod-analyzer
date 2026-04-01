@@ -1,0 +1,22 @@
+[flake8]
+max-line-length = 140
+ignore =
+    # E402: imports not at top (intentional)
+    E402
+    # E203/W503: Black-compatible formatting
+    E203
+    W503
+    # F401: unused imports (optional modules)
+    F401
+    # F811: intentional redefinitions
+    F811
+exclude =
+    .git,
+    __pycache__,
+    dist,
+    build,
+    venv,
+    .venv,
+    _backup_working_gui,
+    mock_deploy,
+    tests

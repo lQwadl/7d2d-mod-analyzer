@@ -1,0 +1,162 @@
+
+================================================================================
+2026-01-30 15:29:11  Tk callback
+Traceback (most recent call last):
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 488, in _str_normcase
+    return self._str_normcase_cached
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute '_str_normcase_cached'. Did you mean: '_parts_normcase_cached'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 441, in __str__
+    return self._str
+           ^^^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute '_str'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 555, in drive
+    return self._drv
+           ^^^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute '_drv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\gui\app.py", line 2065, in scan
+    meta = meta_store.get_or_compute(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\logic\mod_metadata_store.py", line 138, in get_or_compute
+    sig = xml_signature(p)
+          ^^^^^^^^^^^^^^^^
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\logic\mod_metadata_store.py", line 55, in xml_signature
+    _add(p)
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\logic\mod_metadata_store.py", line 39, in _add
+    rel = str(p.relative_to(mod_path)).replace("\\", "/").lower()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 679, in relative_to
+    if self.is_relative_to(path):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 700, in is_relative_to
+    return other == self or other in self.parents
+           ^^^^^^^^^^^^^
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 522, in __eq__
+    return self._str_normcase == other._str_normcase and self._flavour is other._flavour
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 493, in _str_normcase
+    self._str_normcase_cached = str(self).lower()
+                                ^^^^^^^^^
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 443, in __str__
+    self._str = self._format_parsed_parts(self.drive, self.root,
+                                          ^^^^^^^^^^
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 557, in drive
+    self._load_parts()
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 415, in _load_parts
+    drv, root, tail = self._parse_path(path)
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 404, in _parse_path
+    parsed = [sys.intern(str(x)) for x in rel.split(sep) if x and x != '.']
+              ^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+================================================================================
+2026-01-31 12:41:29  Tk callback
+Traceback (most recent call last):
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\gui\app.py", line 2096, in scan
+    m.semantic_impact = infer_semantic_impact(m)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\logic\load_order_engine.py", line 759, in infer_semantic_impact
+    files = _safe_list_files(path)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\logic\load_order_engine.py", line 350, in _safe_list_files
+    if not ent.is_file():
+           ^^^^^^^^^^^^^
+KeyboardInterrupt
+
+================================================================================
+2026-01-31 13:59:52  Tk callback
+Traceback (most recent call last):
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\gui\app.py", line 2235, in scan
+    self._compute_integrity()
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\gui\app.py", line 1671, in _compute_integrity
+    if not p.is_file():
+           ^^^^^^^^^^^
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 892, in is_file
+    return S_ISREG(self.stat().st_mode)
+                   ^^^^^^^^^^^
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 840, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+================================================================================
+2026-02-04 20:12:50  Tk callback
+Traceback (most recent call last):
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\gui\app.py", line 2345, in scan
+    self._compute_integrity()
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\gui\app.py", line 1719, in _compute_integrity
+    if not p.is_file():
+           ^^^^^^^^^^^
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 892, in is_file
+    return S_ISREG(self.stat().st_mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+================================================================================
+2026-02-04 22:54:31  Tk callback
+Traceback (most recent call last):
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\gui\app.py", line 2042, in scan
+    if os.path.isdir(full):
+       ^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+================================================================================
+2026-02-06 21:46:56  Tk callback
+Traceback (most recent call last):
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\gui\app.py", line 2217, in scan
+    m.tier = infer_tier(m)
+             ^^^^^^^^^^^^^
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\logic\load_order_engine.py", line 654, in infer_tier
+    files = _safe_list_files(path)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\logic\load_order_engine.py", line 395, in _safe_list_files
+    for ent in os.scandir(str(d)):
+               ^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+================================================================================
+2026-02-14 17:23:13  Tk callback
+Traceback (most recent call last):
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\gui\app.py", line 2278, in scan
+    meta = meta_store.get_or_compute(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\logic\mod_metadata_store.py", line 171, in get_or_compute
+    sig = xml_signature(p)
+          ^^^^^^^^^^^^^^^^
+  File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\logic\mod_metadata_store.py", line 55, in xml_signature
+    nm.endswith(".xml")
+KeyboardInterrupt

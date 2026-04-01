@@ -1,0 +1,354 @@
+{
+  "(2.5) - n.v.a weapons expansion (server side)-7014-2-5-1-1767669807": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "(tmo) better fov v2.4stable-7683-2-0-1759298043": {
+    "enabled": false,
+    "user_disabled": true
+  },
+  "(tmo) core v4_2.4stable-7682-4-0-1768975284": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "0-score-6176-2-5-10-2106-1766319483": {
+    "enabled": false,
+    "user_disabled": true
+  },
+  "0000_tfp_harmony": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "000_(tmo) core v4_2.4stable-7682-4-0-1768975284": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "0050_ocbcustomtextures-0.8.0-v2.0.zip-2788-0-8-0-1752114393": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "0080_(tmo) air drops plus v2_v2.4stable-8525-2-0-1759300601": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "0090_(tmo) better fov v2.4stable-7683-2-0-1759298043": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "0280_wmmlootrespawntweak-4177-2-5-23-1-1766428128": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "0500_(2.5) - n.v.a weapons expansion (server side)-7014-2-5-1-1767669807": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "0520_all in one n.v.a expansion-7014-2-3-0-1753292881": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "0680_better loot (update 1.0)-3872-4-6-1761985047": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "0690_better loot - izayo's weapon pack enhance-3872-4-6-1761985071": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "0740_sensible lootz (2.0 compatible)-6774-2-0-0-1750524768": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "0810_0-score-6176-2-5-10-2106-1766319483": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "0860_boot.cfg-4024-1-1701718218": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "0910_izayoutils": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1040_zzz_ammo_press_add-on_compatibility_patch-6993-2-5-1768216172": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1110_7d1.0_izayo_weaponpackmisc_pack": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1120_7d1.0_izayo_weaponpackremastered_44mag": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1130_7d1.0_izayo_weaponpackremastered_45acp": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1140_7d1.0_izayo_weaponpackremastered_556pack": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1150_7d1.0_izayo_weaponpackremastered_762pack": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1160_7d1.0_izayo_weaponpackremastered_9mmval": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1170_7d1.0_izayo_weaponpackremastered_demolitionpack": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1180_7d1.0_izayo_weaponpackremastered_shotgunpackval": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1190_7d1.0_izayo_weaponpackremastered_technicalpack": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1200_7d1.0_izayo_weaponpackspecial_melee": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1210_clsweaponbonecrusher (v2.0 - v2.5)-8880-1-0-6-1769077501": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1220_clsweaponpackexp (v2.0 - v2.5)-5798-1-8-11-1769077489": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1250_littleredsonja zombiepack-7573-2-2-3-1768330200": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1270_medic perk (v2.0 - v2.5)-4325-1-4-9-1768831471": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1280_script's melee arsenal - scrap tools and weapons-5516-1-3-1725417614": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1320_7d1.0_izayo_weaponpackremastered_heavy_weaponpack": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1330_7d1.0_izayo_weaponpackvanillareplacer": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1340_blackcurrant's clean icons-8771-1-2-1768937311": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1360_evolved gun and turret mods-6195-1-1726808659": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1370_fnz super guns extend pack-8693-1-00-1758416674": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1380_funukemaguro's armor mod icon replacer-7781-1-0-1751185656": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1400_funukemaguro's medical and drugs icon replacer-8200-1-0-1753967134": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1410_funukemaguro's melee and tool mod icon replacer-7790-1-0-1751208114": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1420_funukemaguro's resource and parts icon replacer-8187-1-2-1762135902": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1430_funukemaguro's vanilla ammo icon replacer-8125-1-1-1759737097": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1440_funukemaguro's vanilla guns detail up-8934-2-4-1767598874": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1450_funukemaguro's weapon mod icon replacer ver 1.3-7733-1-3-1751184438": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1490_script's melee arsenal - miscellaneous weapons-5480-1-0-1-1724322435": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "1500_weapon active skill mods-8247-1-3-1759223613": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "7d1.0_izayo_visible_fpv_gloves_mod": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "7d1.0_izayo_visible_mods_mod": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "7d1.0_izayo_weaponpackmisc_pack": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "7d1.0_izayo_weaponpackremastered_44mag": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "7d1.0_izayo_weaponpackremastered_45acp": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "7d1.0_izayo_weaponpackremastered_556pack": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "7d1.0_izayo_weaponpackremastered_762pack": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "7d1.0_izayo_weaponpackremastered_9mmval": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "7d1.0_izayo_weaponpackremastered_demolitionpack": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "7d1.0_izayo_weaponpackremastered_heavy_weaponpack": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "7d1.0_izayo_weaponpackremastered_shotgunpackval": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "7d1.0_izayo_weaponpackremastered_technicalpack": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "7d1.0_izayo_weaponpackspecial_melee": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "7d1.0_izayo_weaponpackvanillareplacer": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "all in one n.v.a expansion-7014-2-3-0-1753292881": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "backups": {
+    "enabled": false,
+    "user_disabled": true
+  },
+  "better loot - izayo's weapon pack enhance-3872-4-6-1761985071": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "better perk progression - main version-8977-v1-4-1-1768746017": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "boot.cfg-4024-1-1701718218": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "boot.cfg-4024-1-1701718218.1": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "bulletconversion_recipes.zip-5669-1-2-1767333833": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "conflictpatch_20260131_162835_stabilized": {
+    "enabled": false,
+    "user_disabled": true
+  },
+  "craft coal-6649-1-0-1-1742204242": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "customparticleloader-2036-1-6-0-1750564313": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "customplayeractionmanager (v2.0-v2.5)-2252-1-3-3-1766152391": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "disabled": {
+    "enabled": false,
+    "user_disabled": true
+  },
+  "drone weapons-4360-1-3-3-1757457489": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "funukemaguro's foods and crops icon replacer-8163-1-1-1756551064": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "halicopter-1.10-8220-1-10-1766402102": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "hemsoft qol v1.7.0-9332-1-7-0-1768341209": {
+    "enabled": false,
+    "user_disabled": true
+  },
+  "kfcommonutilitylib (v2.0 - v2.5)-4880-23-260121-190843-1768994293": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "ocbcustomtextures-0.8.0-v2.0.zip-2788-0-8-0-1752114393": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "profiles": {
+    "enabled": false,
+    "user_disabled": true
+  },
+  "quickstack 1.7.3-1357-1-7-3-1757169528": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "rxel weapons for 2.4-2023-2-4-0-0-1765644439": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "v 1.1 (b14) update 2-6395-2-1730118938": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "v25-test-dont-download-620927-1-1769111143": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "wmmincreasedewcollectorstacksize-4176-2-5-23-1-1766427882": {
+    "enabled": true,
+    "user_disabled": false
+  },
+  "xmrcore 2.2.9-8517-2-2-9-1768689948": {
+    "enabled": false,
+    "user_disabled": true
+  },
+  "z_7d2.5_izayo_weaponfixes-5458-2-5-1-3-1767278538": {
+    "enabled": true,
+    "user_disabled": false
+  }
+}

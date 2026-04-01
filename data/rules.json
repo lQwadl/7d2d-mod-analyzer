@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "active_profile": "default",
+  "rules": [
+    {
+      "id": "66fd7b43-6620-4ed9-8624-a18dde973386",
+      "type": "always_win",
+      "enabled": true,
+      "conflict_type": "log_only",
+      "file": "buffs.xml",
+      "target": "/buffs",
+      "mod_a": "002_0-SCore-6176-2-5-10-2106-1766319483",
+      "mod_b": "004_Better Perk Progression - Main Version-8977-v1-4-1-1768746017",
+      "winner": "002_0-SCore-6176-2-5-10-2106-1766319483",
+      "loser": null,
+      "note": "User chose winner (audit board)",
+      "origin": "user",
+      "created_at": 1769672651.1361299,
+      "updated_at": 1769672651.1361299
+    },
+    {
+      "id": "845b8e55-0a4e-4ae7-be09-e1fd6cfabd54",
+      "type": "always_win",
+      "enabled": true,
+      "conflict_type": "load_order_priority",
+      "file": "item_modifiers.xml",
+      "target": "/item_modifiers/item_modifier[@name='modArmorNightVision']",
+      "mod_a": "0420_0410_HorrorNights-8798-1-1-4-1767425569",
+      "mod_b": "0510_0510_7D1.0_Izayo_Visible_Mods_mod",
+      "winner": "0420_0410_HorrorNights-8798-1-1-4-1767425569",
+      "loser": null,
+      "note": "User chose winner",
+      "origin": "user",
+      "created_at": 1769891262.8206427,
+      "updated_at": 1769891262.8206427
+    },
+    {
+      "id": "c77eef94-fcaf-476e-ace6-6f7413e428a1",
+      "type": "always_win",
+      "enabled": true,
+      "conflict_type": "load_order_priority",
+      "file": "item_modifiers.xml",
+      "target": "/item_modifiers/item_modifier[@name='modArmorNightVision']",
+      "mod_a": "0420_0410_HorrorNights-8798-1-1-4-1767425569",
+      "mod_b": "0510_0510_7D1.0_Izayo_Visible_Mods_mod",
+      "winner": "0510_0510_7D1.0_Izayo_Visible_Mods_mod",
+      "loser": null,
+      "note": "User chose winner",
+      "origin": "user",
+      "created_at": 1769891276.1480882,
+      "updated_at": 1769891276.1480882
+    },
+    {
+      "id": "54961cb0-408f-498c-9242-ab920ae48d14",
+      "type": "always_win",
+      "enabled": true,
+      "conflict_type": "xml_override",
+      "file": "config.xml",
+      "target": "/config/debug-logs",
+      "mod_a": "031_(TMO) Core v4_2.4Stable-7682-4-0-1768975284",
+      "mod_b": "032_000_(TMO) Core v4_2.4Stable-7682-4-0-1768975284",
+      "winner": "031_(TMO) Core v4_2.4Stable-7682-4-0-1768975284",
+      "loser": null,
+      "note": "User chose winner",
+      "origin": "user",
+      "created_at": 1770839469.324476,
+      "updated_at": 1770839469.324476
+    }
+  ],
+  "profiles": {
+    "default": {
+      "rules": []
+    }
+  }
+}

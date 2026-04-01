@@ -1,0 +1,273 @@
+# 7DTD Load Order
+API / Backend Systems - Gameplay
+  000_0_UIFramework_Fast Travel Plus-6540-2-5-0-1767531197
+
+API / Backend Systems - XML Edits
+  001_0_UIFramework_Gears-4017-v6-0-1-1767826259
+  002_0_UIFramework_Quartz-2409-v7-1-1-1769809054
+
+Core Frameworks - Miscellaneous
+  003_TFP_Harmony
+
+Core Frameworks - Gameplay
+  005_KFCommonUtilityLib (v2.0 - v2.5)-4880-23-260204-155453-1770193304
+
+Core Frameworks - Crafting
+  006_OcbDensityHoe-0.6.0-V2.0.zip-2806-0-6-0-1752113412
+
+Core Frameworks - Miscellaneous
+  004_CustomParticleLoader-2036-1-6-0-1750564313
+  007_OcbStopFuelWaste-1.1.0-V1.0-exp.zip-1884-1-1-0-1720205875
+
+API / Backend Systems - Miscellaneous
+  008_AllowComboKeys (v2.0)-8555-1-0-0-1757129528
+  009_BetterModCompatibility (v2.4 - v2.5)-6097-1-2-1-1765723863
+  010_ClaimDoorMod-9184-v1-1-1765322755
+  011_Craft From Containers-2196-1-7-2-1768137839
+  012_CustomMuzzleFlash (v1.0 - v2.0)-2063-1-1-4-1755571758
+  014_FullautoLauncher (v2.0)-2062-1-4-0-1750564965
+  017_Izy_v5_1_No_Kick-5458-5-1-2-1766475779
+  019_More Sleepers (x2)-7021-1-0-1740393390
+
+API / Backend Systems - Gameplay
+  020_Nano Repair Mod-9159-1-0-1765046051
+
+API / Backend Systems - Miscellaneous
+  023_RandomMainmenuBackground (v2.0 - v2.5)-2120-1-3-0-1765723775
+  024_RuntimeOCD-6920-0-15-0-1-1755787106
+
+API / Backend Systems - Prefabs / POIs
+  025_Singularity-8361-1-5-0-1771823421
+
+API / Backend Systems - Miscellaneous
+  026_Snack and Drive 2.5b23-9255-1-2-1769090576
+  027_TraderAreaVolume 2.5b23-8105-10-0-1767730123
+  028_Trail effect 2.5b23-9310-1-1-1768084278
+  031_WMMLootRespawnTweak-4177-2-5-23-1-1766428128
+  032_WMMShowSkillLevelInDescription-6499-2-5-23-1-1766432184
+  033_WMMSkipNewsScreen-5520-2-5-23-1-1766432339
+
+API / Backend Systems - XML Edits
+  034_WMMSleepUntilDawn-6500-2-5-23-1-1766432391
+
+API / Backend Systems - Miscellaneous
+  035_WMMStopBikesFallingOver-9312-2-5-23-2-1767375448
+  036_z_7D2.5_Izayo_WeaponFixes-5458-2-5-1-3-1767278538
+  037_ZombieFallDamageFix-1.0.0.4-7818-1-0-0-4-1755304484
+
+API / Backend Systems - Crafting
+  015_Fusion thermal vision mod-9330-0-0-2-1767575598
+
+API / Backend Systems - Miscellaneous
+  018_Kill Feed 2.5b23-9416-1-1-1768998571
+
+API / Backend Systems - Gameplay
+  016_HorrorNights-8798-1-1-4-1767425569
+
+API / Backend Systems - XML Edits
+  022_QuickStack 1.7.3-1357-1-7-3-1757169528
+  029_VoidGags-v2.6.zip-2747-2-6-1766275353
+  030_WMMIncreaseDewCollectorStackSize-4176-2-5-23-1-1766427882
+  131_2_HUD_CustomPlayerActionManager (v2.0-v2.5)-2252-1-3-3-1766152391
+  134_2_HUD_LittleRedSonja CAS-7591-1-6-1-1772281869
+
+Gameplay Overhauls - Overhauls
+  040_7D1.0_Izayo_Visible_Mods_mod
+  045_Better Perk Progression - Main Version-8977-v1-6-1773098484.1
+  048_Drone Weapons-4360-1-3-3-1757457489
+
+Gameplay Overhauls - XML Edits
+  051_Just Cook It-9239-1-2-1767758534
+  056_Progressive Resource Boost-8127-1-0-1753254120
+
+Gameplay Overhauls - Overhauls
+  058_RXEL Weapons for 2.4-2023-2-4-0-0-1765644439
+
+Gameplay Overhauls - Gameplay
+  060_Support Weapons-8958-v0-3-1768154909
+
+Gameplay Overhauls - Crafting
+  062_Upgradeable Armor Weapons and Tools 2_0_1-7044-2-0-1-1752621850
+
+Gameplay Overhauls - Overhauls
+  063_V2-OakravenMonoBikes-5341-2-5-0-0-1766339145
+  064_V2-OakravenWarPig-5517-2-5-0-0-1766339010
+  038_(2.5) - N.V.A weapons expansion (Server side)-7014-2-5-1-1767669807
+  041_ALL IN ONE N.V.A EXPANSION-7014-2-3-0-1753292881
+  046_Bigger Backpack Larger Storage and QoL Improvement-7741-1-6-1766190046
+  050_Halicopter-1.11-8220-1-11-1769181609
+  052_KeyMapHitAndKillEffects-8805-1-4-1770810293
+  133_2_HUD_gupFireMod.zip-4776-2-0-1715549427
+
+Gameplay Overhauls - Quests
+  039_1-Better Quest Rewards-8976-v1-3-1765489005
+
+Gameplay Overhauls - XML Edits
+  042_Armor Rebalance 2.6-8615-v2-6-1773372348.1
+
+Gameplay Overhauls - Miscellaneous
+  043_Better loot (Update 1.0)-3872-4-6-1761985047
+  044_Better loot - Izayo's weapon pack enhance-3872-4-6-1761985071
+
+Gameplay Overhauls - Crafting
+  047_DestroyedWorkstationUpgradeSet-9091-v2-5-0-1766664194.1
+
+Gameplay Overhauls - Gameplay
+  049_gupSelfConsumer.zip-4891-1-0-1718375196
+
+Gameplay Overhauls - Miscellaneous
+  053_Lootable Biome Gear - Loot Stage Dependent-9587-1-1-1770563981
+
+Gameplay Overhauls - Gameplay
+  055_Not Enough Attachments-8996-v0-21-1768221276
+  057_Rolling Thunder-8481-v0-31-1767708633
+
+Gameplay Overhauls - Miscellaneous
+  059_Sensible Lootz (2.0 Compatible)-6774-2-0-0-1750524768
+
+Gameplay Overhauls - XML Edits
+  061_Unlimited Bleed Stacks-3837-1-0-1697697662
+
+Gameplay Overhauls - Prefabs / POIs
+  066_ZZZ_FNS_Loot_All_the_Things-5100-2-5-2-2-1767279508
+
+Gameplay Overhauls - Overhauls
+  065_XFX-8362-1-1-3-1772941252.1
+  054_Medical conditions-7322-1-3-4-1771503969
+
+API / Backend Systems - XML Edits
+  021_Quest POI Preview-8631-1-0-5-1757804311
+
+API / Backend Systems - Crafting
+  013_EfficientBaseRepair-release-0e88d545-4861-2-1-2-1768393694
+
+Content Additions - XML Edits
+  067_AMG5TAG-QualityEqualsMods-6419-2-3-1767666155
+
+Content Additions - Crafting
+  068_BulletConversion_recipes.zip-5669-1-2-1767333833
+
+Content Additions - XML Edits
+  069_Crunchy's Gun Sound Pack-9352-1-1767753948
+  070_JRB_TZ_MoreZombies_x2-225-v10-1752809927
+  071_KF_SFX_Lib-8879-1-9-2-1770193390
+  072_KHV1 Zombie Reach Adjustment-5109-2-5-1-1-1766618766
+
+Content Additions - Prefabs / POIs
+  073_Mehr_Messing mit Mining-9305-2-5-1767463803
+
+Content Additions - XML Edits
+  074_SaviorUltimateBrightColorDye-8001-1-1-1752459663
+  075_SaviorUltimateMercyTrader-7802-1-1751288905
+  076_SaviorUltimateSweetSentinelInfiniteShooting-8032-1-1752565840
+  077_Sensible Seeds-3014-2-5-0-1770365781
+  078_TechFreqsFasterReloadingV1.0(V2.4)-9051-1-0-1763798404
+  079_TechFreqsFasterSmeltingV1.1(V2.5)-9093-1-1-1771274979
+  080_TokimekisuMod_Stacknumber.zip-1623-1-0-1766244066
+  081_WMMIncreaseAmmoStackSize-4175-2-5-23-1-1766427785
+
+Content Additions - Crafting
+  082_zzz_Ammo_Press_Add-On_Compatibility_Patch-6993-2-5-2-1769500035
+
+Content Additions - XML Edits
+  083_zzzzzzzzzzzz Stallionsdens Stack Size Increaser-5976-2-4-2-1-1760828358
+
+Weapon Frameworks & Animation - Gameplay
+  084_7D1.0_Izayo_Visible_FPV_Gloves_mod
+
+Weapon Packs - XML Edits
+  085_B- LOTF's Better Bullet Range Vanilla - Izy's V2.0-7416-2-2-1750548354
+  086_IZY_Bleed_Patch-8450-2-2-4-1756039934
+  087_Z-IZYAmmoStackSize-8511-2-2-1-1756558975
+
+Visual / Audio Mods - Crafting
+  088_7D1.0_Izayo_WeaponpackMisc_pack
+  089_7D1.0_Izayo_WeaponpackRemastered_44mag
+  090_7D1.0_Izayo_WeaponpackRemastered_45ACP
+
+Visual / Audio Mods - Gameplay
+  091_7D1.0_Izayo_WeaponpackRemastered_556pack
+  092_7D1.0_Izayo_WeaponpackRemastered_762pack
+  093_7D1.0_Izayo_WeaponpackRemastered_9mmVAL
+
+Visual / Audio Mods - Crafting
+  094_7D1.0_Izayo_WeaponpackRemastered_DemolitionPack
+
+Visual / Audio Mods - Gameplay
+  096_7D1.0_Izayo_WeaponpackRemastered_SHOTGUNpackVAL
+
+Visual / Audio Mods - Crafting
+  097_7D1.0_Izayo_WeaponpackRemastered_Technicalpack
+
+Visual / Audio Mods - Gameplay
+  098_7D1.0_Izayo_WeaponpackSpecial_Melee
+  100_CLSWeaponBoneCrusher (v2.0 - v2.5)-8880-1-0-6-1769077501
+  101_CLSWeaponPackEXP (v2.0 - v2.5)-5798-1-8-11-1769077489
+  113_gupA21-Zombies-4412-2-4-1763816613
+
+Visual / Audio Mods - Crafting
+  114_LittleRedSonja Big Bad Bat (ADD-ON)-5370-1-0-1-1727745354
+
+Visual / Audio Mods - Gameplay
+  115_LittleRedSonja T2 into T3 weapons-5370-2-1-0-1766484641
+  116_LittleRedSonja ZombiePack-7573-2-2-3-1768330200
+  117_LittleRedSonja_Mumpfy_ArmorPack07_TWD-8662-1-1-1-1768986282
+  118_Medic Perk (v2.0 - v2.5)-4325-1-4-9-1768831471
+
+Visual / Audio Mods - Crafting
+  121_Script's Melee Arsenal - Scrap Tools and Weapons-5516-1-3-1725417614
+  122_V2-OakravenRockDrill-5053-2-5-0-0-1772213823
+
+Visual / Audio Mods - Gameplay
+  095_7D1.0_Izayo_WeaponpackRemastered_Heavy_WeaponPack
+
+Visual / Audio Mods - Weapons
+  099_7D1.0_Izayo_WeaponpackVanillaReplacer
+
+Visual / Audio Mods - Crafting
+  102_Cre_More Weapon Mods 1.2-9373-1-2-1771173772
+  103_Evolved Gun and Turret Mods-6195-1-1726808659
+
+Visual / Audio Mods - Weapons
+  104_Fnz Super Guns Extend Pack-8693-1-00-1758416674
+
+Visual / Audio Mods - Miscellaneous
+  105_Funukemaguro's Armor Mod Icon Replacer-7781-1-0-1751185656
+
+Visual / Audio Mods - Items & Loot
+  106_Funukemaguro's Foods And Crops Icon Replacer-8163-1-1-1756551064
+
+Visual / Audio Mods - Miscellaneous
+  107_Funukemaguro's Medical And Drugs Icon Replacer-8200-1-0-1753967134
+  108_Funukemaguro's Melee and Tool Mod Icon Replacer-7790-1-0-1751208114
+  109_Funukemaguro's Resource And Parts Icon Replacer-8187-1-2-1762135902
+  110_Funukemaguro's Vanilla Ammo Icon Replacer-8125-1-1-1759737097
+
+Visual / Audio Mods - Weapons
+  111_Funukemaguro's Vanilla Guns Detail Up-8934-2-6-1770509407
+
+Visual / Audio Mods - Miscellaneous
+  112_Funukemaguro's Weapon Mod Icon Replacer Ver 1.3-7733-1-3-1751184438
+
+Visual / Audio Mods - Crafting
+  119_Script's Melee Arsenal - Legendary Tools-5495-1-5-4-1726285642
+
+Visual / Audio Mods - Weapons
+  120_Script's Melee Arsenal - Miscellaneous Weapons-5480-1-0-1-1724322435
+
+Visual / Audio Mods - Gameplay
+  123_Weapon Active Skill Mods-8247-1-3-1759223613
+
+Utility / QoL Mods - Crafting
+  128_V2-OakravenAmmoPress (2.5.0.0)-5105-2-5-0-0-1772858845
+  129_V2-OakravenForges-6557-2-5-0-0-1769801444
+  125_Cloud's Working Ovens-4671-1-3-1770568046
+
+Utility / QoL Mods - XML Edits
+  126_FNS_Make_Quest_Rewards_Great_Again-6779-2-5-1-1-1771367164
+  127_Scomar82_Health-Bar-5434-2-5-1767351232
+  130_2_HUD_AGF - HUDPlus-870-5-3-0-1767573176
+  132_2_HUD_D6 - Extended Game Options v2.0-1876-2-0-1751148257
+
+Utility / QoL Mods - Gameplay
+  124_AGF - HUDPlus - Purple Book-870-1-1-0-1765835695

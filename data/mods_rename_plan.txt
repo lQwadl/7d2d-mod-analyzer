@@ -1,0 +1,212 @@
+=== WARNINGS ===
+- Missing dependency: '(TMO) Better FOV v2.4Stable-7683-2-0-1759298043' depends on 'TMO-Core', but it was not found.
+- Worldgen/POI risk: 'OcbWaterShader-0.5.0-V2.0.zip-2880-0-5-0-1752116751' likely requires a new world.
+- Worldgen/POI risk: 'BetterGeneration (2.5)-9202-1-0-1765797330' likely requires a new world.
+- Worldgen/POI risk: 'Better_Biomes_v2_0_1-5366-2-0-1-1751658087' likely requires a new world.
+- Worldgen/POI risk: 'Medical conditions-7322-1-3-0-1766605962' likely requires a new world.
+- Worldgen/POI risk: 'spawn all POIs-9408-1-0-5-1769102748' likely requires a new world.
+- Worldgen/POI risk: 'Towers_Minipack_by_Mahem3000_2_5_2-9315-2-5-2-1768413879' likely requires a new world.
+- Worldgen/POI risk: 'Voltralux Vanilla POI Pack (2.0)-4916-1-2-3-1752488834' likely requires a new world.
+- Worldgen/POI risk: 'WinterDawn_Fortress_Mahem3000_2_5-9420-2-5-1768509853' likely requires a new world.
+- Worldgen/POI risk: 'ZZTong-Prefabs-1434-V2-5-ZZ031-1765728993' likely requires a new world.
+- Worldgen/POI risk: '0-SCore-6176-2-5-10-2106-1766319483' likely requires a new world.
+- Worldgen/POI risk: 'EfficientBaseRepair-release-0e88d545-4861-2-1-2-1768393694' likely requires a new world.
+- Worldgen/POI risk: 'Army POIs Expanded - Bunker Delta 1.1-9336-1-1-1767686706' likely requires a new world.
+- Worldgen/POI risk: 'Deluxe Block POI Pack by FNS-5869-2-1-2-1754586173' likely requires a new world.
+- Worldgen/POI risk: 'Deluxe Block POI Pack by FNS-5869-2-5-1-1-1769210297' likely requires a new world.
+- Worldgen/POI risk: 'Lazy Poi Pack-5531-1-0-0-9-5-1756559907' likely requires a new world.
+- Worldgen/POI risk: 'mxmrmxs poi pack v1.15-8409-V1-15-1767201952' likely requires a new world.
+- Worldgen/POI risk: 'Zeebark POI Pack.-6577-V2-5-2-1768305515' likely requires a new world.
+- Worldgen/POI risk: 'Custom Blocks Pack V2-6481-2-5-51-3-1769036744' likely requires a new world.
+- POIs not spawning — common causes:
+  1) New world required: POI packs inject during RWG world generation. If you added/reordered worldgen or POI mods, delete the generated world folder and regenerate.
+  2) rwgmixer overwrite: If a mod that ships rwgmixer.xml loads after your injector/POI packs, it can remove them from spawn lists.
+  3) Missing injection: Some POI packs only add prefabs (no rwgmixer.xml). They won’t spawn unless another mod injects them (e.g., spawn_all_POIs/CompoPack) or you place them manually.
+Recommended order (for RWG/POIs): Core frameworks → Worldgen (Better Generation/Biomes) → spawn_all_POIs → POI packs → everything else; then regenerate the world.
+- Worldgen/POI order risk: multiple mods include rwgmixer.xml. Only the last effective rwgmixer edits win, so load order is critical. Found: BetterGeneration (2.5)-9202-1-0-1765797330, spawn all POIs-9408-1-0-5-1769102748, Towers_Minipack_by_Mahem3000_2_5_2-9315-2-5-2-1768413879, Voltralux Vanilla POI Pack (2.0)-4916-1-2-3-1752488834, WinterDawn_Fortress_Mahem3000_2_5-9420-2-5-1768509853, ZZTong-Prefabs-1434-V2-5-ZZ031-1765728993.
+- POI spawn issue likely: a worldgen mod (e.g., Better Generation) appears to load AFTER one or more POI packs in your current order, which can overwrite rwgmixer.xml and prevent POIs from spawning. Worldgen mod: BetterGeneration (2.5)-9202-1-0-1765797330; earlier POI packs include: 0-SCore-6176-2-5-10-2106-1766319483, POI Scourge-9329-1-2-1768017500, Quest POI Preview-8631-1-0-5-1757804311, EfficientBaseRepair-release-0e88d545-4861-2-1-2-1768393694, Medieval POI FORTIN Tier 5-9403-V1-1768289851.
+- POI spawn issue likely: spawn_all_POIs appears to load BEFORE another mod that also edits rwgmixer.xml, so its injection may be overwritten. spawn_all_POIs: spawn all POIs-9408-1-0-5-1769102748; later rwgmixer mods include: Towers_Minipack_by_Mahem3000_2_5_2-9315-2-5-2-1768413879, Voltralux Vanilla POI Pack (2.0)-4916-1-2-3-1752488834, WinterDawn_Fortress_Mahem3000_2_5-9420-2-5-1768509853, ZZTong-Prefabs-1434-V2-5-ZZ031-1765728993.
+- Prefab-only POI packs detected (no rwgmixer.xml found). These typically won’t spawn naturally unless another mod injects them (spawn_all_POIs/CompoPack) or you place them manually. Examples: Better_Biomes_v2_0_1-5366-2-0-1-1751658087, 0-SCore-6176-2-5-10-2106-1766319483, EfficientBaseRepair-release-0e88d545-4861-2-1-2-1768393694, Army POIs Expanded - Bunker Delta 1.1-9336-1-1-1767686706, Deluxe Block POI Pack by FNS-5869-2-1-2-1754586173, Deluxe Block POI Pack by FNS-5869-2-5-1-1-1769210297, Lazy Poi Pack-5531-1-0-0-9-5-1756559907, mxmrmxs poi pack v1.15-8409-V1-15-1767201952 (+2 more).
+- Possible prefab name collisions: multiple mods contain a prefab with the same name, and later-loading packs can silently overwrite earlier ones. Examples: fns_playground → Deluxe Block POI Pack by FNS-5869-2-1-2-1754586173, Deluxe Block POI Pack by FNS-5869-2-5-1-1-1769210297.
+- POI density caution: you have many POI packs enabled. 7DTD RWG has limited city/hub slots per tag/tier, so some POIs may be excluded even with correct injection.
+
+=== RENAME PLAN (OLD -> NEW) ===
+000_TFP_Harmony  ->  000_TFP_Harmony
+071_XMRCore 2.2.9-8517-2-2-9-1768689948  ->  010_XMRCore 2.2.9-8517-2-2-9-1768689948
+001_(TMO) Core v4_2.4Stable-7682-4-0-1768975284  ->  020_(TMO) Core v4_2.4Stable-7682-4-0-1768975284
+002_02_000_(TMO) Core v4_2.4Stable-7682-4-0-1768975284  ->  030_(TMO) Core v4_2.4Stable-7682-4-0-1768975284
+003_KFCommonUtilityLib (v2.0 - v2.5)-4880-23-260121-190843-1768994293  ->  040_KFCommonUtilityLib (v2.0 - v2.5)-4880-23-260121-190843-1768994293
+004_KFCommonUtilityLib (v2.0 - v2.5)-4880-23-260124-205510-1769259470  ->  050_KFCommonUtilityLib (v2.0 - v2.5)-4880-23-260124-205510-1769259470
+005_OcbDensityHoe-0.6.0-V2.0.zip-2806-0-6-0-1752113412  ->  060_OcbDensityHoe-0.6.0-V2.0.zip-2806-0-6-0-1752113412
+006_0-CustomParticleLoader  ->  070_0-CustomParticleLoader
+007_CustomParticleLoader-2036-1-6-0-1750564313  ->  080_CustomParticleLoader-2036-1-6-0-1750564313
+008_OcbCustomTextures-0.8.0-V2.0.zip-2788-0-8-0-1752114393  ->  090_OcbCustomTextures-0.8.0-V2.0.zip-2788-0-8-0-1752114393
+009_OcbStopFuelWaste-1.1.0-V1.0-exp.zip-1884-1-1-0-1720205875  ->  100_OcbStopFuelWaste-1.1.0-V1.0-exp.zip-1884-1-1-0-1720205875
+010_OcbWaterShader-0.5.0-V2.0.zip-2880-0-5-0-1752116751  ->  110_OcbWaterShader-0.5.0-V2.0.zip-2880-0-5-0-1752116751
+061_Drone Weapons-4360-1-3-3-1757457489  ->  120_Drone Weapons-4360-1-3-3-1757457489
+063_Halicopter-1.10-8220-1-10-1766402102  ->  130_Halicopter-1.10-8220-1-10-1766402102
+064_Halicopter-1.11-8220-1-11-1769181609  ->  140_Halicopter-1.11-8220-1-11-1769181609
+011_(TMO) Air Drops PLUS v2_v2.4Stable-8525-2-0-1759300601  ->  150_(TMO) Air Drops PLUS v2_v2.4Stable-8525-2-0-1759300601
+012_(TMO) Better FOV v2.4Stable-7683-2-0-1759298043  ->  160_(TMO) Better FOV v2.4Stable-7683-2-0-1759298043
+013_(TMO) Zombies Cant Dig v2.5_Stable-7472-4-0-1767843604  ->  170_(TMO) Zombies Cant Dig v2.5_Stable-7472-4-0-1767843604
+014_0-Alter_OverrideSounds  ->  180_0-Alter_OverrideSounds
+015_AllowComboKeys (v2.0)-8555-1-0-0-1757129528  ->  190_AllowComboKeys (v2.0)-8555-1-0-0-1757129528
+016_BetterModCompatibility (v2.4 - v2.5)-6097-1-2-1-1765723863  ->  200_BetterModCompatibility (v2.4 - v2.5)-6097-1-2-1-1765723863
+017_ClaimDoorMod-9184-v1-1-1765322755  ->  210_ClaimDoorMod-9184-v1-1-1765322755
+018_Craft From Containers-2196-1-7-2-1768137839  ->  220_Craft From Containers-2196-1-7-2-1768137839
+019_CustomMuzzleFlash (v1.0 - v2.0)-2063-1-1-4-1755571758  ->  230_CustomMuzzleFlash (v1.0 - v2.0)-2063-1-1-4-1755571758
+020_Engine Optimization Pack-9316-0-0-5-1769105420  ->  240_Engine Optimization Pack-9316-0-0-5-1769105420
+021_Firemod-9169-2-66-1768004711  ->  250_Firemod-9169-2-66-1768004711
+022_FullautoLauncher (v2.0)-2062-1-4-0-1750564965  ->  260_FullautoLauncher (v2.0)-2062-1-4-0-1750564965
+023_KeepReloading-7727-1-0-0-1750859754  ->  270_KeepReloading-7727-1-0-0-1750859754
+024_More Sleepers (x2)-7021-1-0-1740393390  ->  280_More Sleepers (x2)-7021-1-0-1740393390
+025_Nano Repair Mod-9159-1-0-1765046051  ->  290_Nano Repair Mod-9159-1-0-1765046051
+026_RandomMainmenuBackground (v2.0 - v2.5)-2120-1-3-0-1765723775  ->  300_RandomMainmenuBackground (v2.0 - v2.5)-2120-1-3-0-1765723775
+027_RuntimeOCD-6920-0-15-0-1-1755787106  ->  310_RuntimeOCD-6920-0-15-0-1-1755787106
+028_Singularity-8361-1-4-0-1-1768821792  ->  320_Singularity-8361-1-4-0-1-1768821792
+029_Singularity-8361-1-4-0-2-1769260688  ->  330_Singularity-8361-1-4-0-2-1769260688
+030_Snack and Drive 2.5b23-9255-1-2-1769090576  ->  340_Snack and Drive 2.5b23-9255-1-2-1769090576
+031_TraderAreaVolume 2.5b23-8105-10-0-1767730123  ->  350_TraderAreaVolume 2.5b23-8105-10-0-1767730123
+032_Trail effect 2.5b23-9310-1-1-1768084278  ->  360_Trail effect 2.5b23-9310-1-1-1768084278
+032_V 1.1 (b14) Update 2-6395-2-1730118938  ->  370_V 1.1 (b14) Update 2-6395-2-1730118938
+033_WMMLootRespawnTweak-4177-2-5-23-1-1766428128  ->  380_WMMLootRespawnTweak-4177-2-5-23-1-1766428128
+034_WMMShowSkillLevelInDescription-6499-2-5-23-1-1766432184  ->  390_WMMShowSkillLevelInDescription-6499-2-5-23-1-1766432184
+035_WMMSkipNewsScreen-5520-2-5-23-1-1766432339  ->  400_WMMSkipNewsScreen-5520-2-5-23-1-1766432339
+036_WMMSleepUntilDawn-6500-2-5-23-1-1766432391  ->  410_WMMSleepUntilDawn-6500-2-5-23-1-1766432391
+037_WMMStopBikesFallingOver-9312-2-5-23-2-1767375448  ->  420_WMMStopBikesFallingOver-9312-2-5-23-2-1767375448
+038_z_7D2.5_Izayo_WeaponFixes-5458-2-5-1-3-1767278538  ->  430_z_7D2.5_Izayo_WeaponFixes-5458-2-5-1-3-1767278538
+039_ZombieFallDamageFix-1.0.0.4-7818-1-0-0-4-1755304484  ->  440_ZombieFallDamageFix-1.0.0.4-7818-1-0-0-4-1755304484
+040_(TMO) Crosshairs PLUS v3_v2.5Stable-8557-3-0-1767849573  ->  450_(TMO) Crosshairs PLUS v3_v2.5Stable-8557-3-0-1767849573
+041_CustomPlayerActionManager (v2.0-v2.5)-2252-1-3-3-1766152391  ->  460_CustomPlayerActionManager (v2.0-v2.5)-2252-1-3-3-1766152391
+042_Fast Travel Plus-6540-2-5-0-1767531197  ->  470_Fast Travel Plus-6540-2-5-0-1767531197
+043_Fusion thermal vision mod-9330-0-0-2-1767575598  ->  480_Fusion thermal vision mod-9330-0-0-2-1767575598
+044_Gears-4017-v6-0-1-1767826259  ->  490_Gears-4017-v6-0-1-1767826259
+045_HemSoft QoL v1.7.0-9332-1-7-0-1768341209  ->  500_HemSoft QoL v1.7.0-9332-1-7-0-1768341209
+046_HorrorNights-8798-1-1-4-1767425569  ->  510_HorrorNights-8798-1-1-4-1767425569
+047_Kill Feed 2.5b23-9416-1-1-1768998571  ->  520_Kill Feed 2.5b23-9416-1-1-1768998571
+048_LittleRedSonja CAS-7591-1-4-1-1765740559  ->  530_LittleRedSonja CAS-7591-1-4-1-1765740559
+049_Quartz-2409-v7-0-0-1766100208  ->  540_Quartz-2409-v7-0-0-1766100208
+050_Quartz-2409-v7-1-0-1769235377  ->  550_Quartz-2409-v7-1-0-1769235377
+052_QuickStack 1.7.3-1357-1-7-3-1757169528  ->  560_QuickStack 1.7.3-1357-1-7-3-1757169528
+053_VoidGags-v2.6.zip-2747-2-6-1766275353  ->  570_VoidGags-v2.6.zip-2747-2-6-1766275353
+054_WMMIncreaseDewCollectorStackSize-4176-2-5-23-1-1766427882  ->  580_WMMIncreaseDewCollectorStackSize-4176-2-5-23-1-1766427882
+059_Better Perk Progression - Main Version-8977-v1-4-1-1768746017  ->  590_Better Perk Progression - Main Version-8977-v1-4-1-1768746017
+065_Just Cook It-9239-1-2-1767758534  ->  600_Just Cook It-9239-1-2-1767758534
+066_Progressive Resource Boost-8127-1-0-1753254120  ->  610_Progressive Resource Boost-8127-1-0-1753254120
+067_Support Weapons-8958-v0-3-1768154909  ->  620_Support Weapons-8958-v0-3-1768154909
+068_Upgradeable Armor Weapons and Tools 2_0_1-7044-2-0-1-1752621850  ->  630_Upgradeable Armor Weapons and Tools 2_0_1-7044-2-0-1-1752621850
+072_1-Better Quest Rewards-8976-v1-3-1765489005  ->  640_1-Better Quest Rewards-8976-v1-3-1765489005
+073_Armor Rebalance 2.5-8615-v1-2-1766508272  ->  650_Armor Rebalance 2.5-8615-v1-2-1766508272
+074_Better loot (Update 1.0)-3872-4-6-1761985047  ->  660_Better loot (Update 1.0)-3872-4-6-1761985047
+075_Better loot - Izayo's weapon pack enhance-3872-4-6-1761985071  ->  670_Better loot - Izayo's weapon pack enhance-3872-4-6-1761985071
+076_DestroyedWorkstationUpgradeSet-9091-v2-5-0-1766664194  ->  680_DestroyedWorkstationUpgradeSet-9091-v2-5-0-1766664194
+077_gupSelfConsumer.zip-4891-1-0-1718375196  ->  690_gupSelfConsumer.zip-4891-1-0-1718375196
+078_Not Enough Attachments-8996-v0-21-1768221276  ->  700_Not Enough Attachments-8996-v0-21-1768221276
+079_Rolling Thunder-8481-v0-31-1767708633  ->  710_Rolling Thunder-8481-v0-31-1767708633
+080_Sensible Lootz (2.0 Compatible)-6774-2-0-0-1750524768  ->  720_Sensible Lootz (2.0 Compatible)-6774-2-0-0-1750524768
+081_Unlimited Bleed Stacks-3837-1-0-1697697662  ->  730_Unlimited Bleed Stacks-3837-1-0-1697697662
+082_ZZZ_FNS_Loot_All_the_Things-5100-2-5-2-2-1767279508  ->  740_ZZZ_FNS_Loot_All_the_Things-5100-2-5-2-2-1767279508
+089_(TMO) Pickup Crates N Workstations v3_V2.5Stable-6618-3-0-1767928975  ->  750_(TMO) Pickup Crates N Workstations v3_V2.5Stable-6618-3-0-1767928975
+090_(TMO) Super Vanilla Forge v2.1-6157-2-1-1750564704  ->  760_(TMO) Super Vanilla Forge v2.1-6157-2-1-1750564704
+091_AMG5TAG-QualityEqualsMods-6419-2-3-1767666155  ->  770_AMG5TAG-QualityEqualsMods-6419-2-3-1767666155
+092_Boot.cfg-4024-1-1701718218  ->  780_Boot.cfg-4024-1-1701718218
+093_BulletConversion_recipes.zip-5669-1-2-1767333833  ->  790_BulletConversion_recipes.zip-5669-1-2-1767333833
+094_Craft Coal-6649-1-0-1-1742204242  ->  800_Craft Coal-6649-1-0-1-1742204242
+095_Crunchy's Gun Sound Pack-9352-1-1767753948  ->  810_Crunchy's Gun Sound Pack-9352-1-1767753948
+096_Doors_Without_Barricades_by_GR.zip-6379-1-0-1729526931  ->  820_Doors_Without_Barricades_by_GR.zip-6379-1-0-1729526931
+097_JRB_TZ_MoreZombies_x2-225-v10-1752809927  ->  830_JRB_TZ_MoreZombies_x2-225-v10-1752809927
+098_KF_SFX_Lib-8879-1-9-1-1768994443  ->  840_KF_SFX_Lib-8879-1-9-1-1768994443
+099_KHV1 Zombie Reach Adjustment-5109-2-5-1-1-1766618766  ->  850_KHV1 Zombie Reach Adjustment-5109-2-5-1-1-1766618766
+100_Mehr_Messing mit Mining-9305-2-5-1767463803  ->  860_Mehr_Messing mit Mining-9305-2-5-1767463803
+101_PyroPaints-5836-1-0-1-1724230893  ->  870_PyroPaints-5836-1-0-1-1724230893
+102_SaviorUltimateBrightColorDye-8001-1-1-1752459663  ->  880_SaviorUltimateBrightColorDye-8001-1-1-1752459663
+103_SaviorUltimateMercyTrader-7802-1-1751288905  ->  890_SaviorUltimateMercyTrader-7802-1-1751288905
+104_SaviorUltimateSweetSentinelInfiniteShooting-8032-1-1752565840  ->  900_SaviorUltimateSweetSentinelInfiniteShooting-8032-1-1752565840
+105_TechFreqsFasterReloadingV1.0(V2.4)-9051-1-0-1763798404  ->  910_TechFreqsFasterReloadingV1.0(V2.4)-9051-1-0-1763798404
+106_TechFreqsFasterSmeltingV1.0(V2.4)-9093-1-0-1764274872  ->  920_TechFreqsFasterSmeltingV1.0(V2.4)-9093-1-0-1764274872
+107_TokimekisuMod_Stacknumber.zip-1623-1-0-1766244066  ->  930_TokimekisuMod_Stacknumber.zip-1623-1-0-1766244066
+112_V25-Test-DONT-DOWNLOAD-620927-1-1769111143  ->  940_V25-Test-DONT-DOWNLOAD-620927-1-1769111143
+108_WMMIncreaseAmmoStackSize-4175-2-5-23-1-1766427785  ->  950_WMMIncreaseAmmoStackSize-4175-2-5-23-1-1766427785
+109_zzz_Ammo_Press_Add-On_Compatibility_Patch-6993-2-5-1768216172  ->  960_zzz_Ammo_Press_Add-On_Compatibility_Patch-6993-2-5-1768216172
+110_zzzzzzzzzzzz Stallionsdens Stack Size Increaser-5976-2-4-2-1-1760828358  ->  970_zzzzzzzzzzzz Stallionsdens Stack Size Increaser-5976-2-4-2-1-1760828358
+111_B- LOTF's Better Bullet Range Vanilla - Izy's V2.0-7416-2-2-1750548354  ->  980_B- LOTF's Better Bullet Range Vanilla - Izy's V2.0-7416-2-2-1750548354
+112_IZY_Bleed_Patch-8450-2-2-4-1756039934  ->  990_IZY_Bleed_Patch-8450-2-2-4-1756039934
+113_Z-IZYAmmoStackSize-8511-2-2-1-1756558975  ->  1000_Z-IZYAmmoStackSize-8511-2-2-1-1756558975
+057_7D1.0_Izayo_Visible_Mods_mod  ->  1010_7D1.0_Izayo_Visible_Mods_mod
+114_7D1.0_Izayo_WeaponpackMisc_pack  ->  1020_7D1.0_Izayo_WeaponpackMisc_pack
+115_7D1.0_Izayo_WeaponpackRemastered_44mag  ->  1030_7D1.0_Izayo_WeaponpackRemastered_44mag
+116_7D1.0_Izayo_WeaponpackRemastered_45ACP  ->  1040_7D1.0_Izayo_WeaponpackRemastered_45ACP
+117_7D1.0_Izayo_WeaponpackRemastered_556pack  ->  1050_7D1.0_Izayo_WeaponpackRemastered_556pack
+118_7D1.0_Izayo_WeaponpackRemastered_762pack  ->  1060_7D1.0_Izayo_WeaponpackRemastered_762pack
+119_7D1.0_Izayo_WeaponpackRemastered_9mmVAL  ->  1070_7D1.0_Izayo_WeaponpackRemastered_9mmVAL
+120_7D1.0_Izayo_WeaponpackRemastered_DemolitionPack  ->  1080_7D1.0_Izayo_WeaponpackRemastered_DemolitionPack
+121_7D1.0_Izayo_WeaponpackRemastered_SHOTGUNpackVAL  ->  1090_7D1.0_Izayo_WeaponpackRemastered_SHOTGUNpackVAL
+122_7D1.0_Izayo_WeaponpackRemastered_Technicalpack  ->  1100_7D1.0_Izayo_WeaponpackRemastered_Technicalpack
+123_7D1.0_Izayo_WeaponpackSpecial_Melee  ->  1110_7D1.0_Izayo_WeaponpackSpecial_Melee
+124_CLSWeaponBoneCrusher (v2.0 - v2.5)-8880-1-0-6-1769077501  ->  1120_CLSWeaponBoneCrusher (v2.0 - v2.5)-8880-1-0-6-1769077501
+125_CLSWeaponPackEXP (v2.0 - v2.5)-5798-1-8-11-1769077489  ->  1130_CLSWeaponPackEXP (v2.0 - v2.5)-5798-1-8-11-1769077489
+126_gupA21-Zombies-4412-2-4-1763816613  ->  1140_gupA21-Zombies-4412-2-4-1763816613
+127_LittleRedSonja Big Bad Bat (ADD-ON)-5370-1-0-1-1727745354  ->  1150_LittleRedSonja Big Bad Bat (ADD-ON)-5370-1-0-1-1727745354
+128_LittleRedSonja T2 into T3 weapons-5370-2-1-0-1766484641  ->  1160_LittleRedSonja T2 into T3 weapons-5370-2-1-0-1766484641
+129_LittleRedSonja ZombiePack-7573-2-2-3-1768330200  ->  1170_LittleRedSonja ZombiePack-7573-2-2-3-1768330200
+130_LittleRedSonja_Mumpfy_ArmorPack07_TWD-8662-1-1-1-1768986282  ->  1180_LittleRedSonja_Mumpfy_ArmorPack07_TWD-8662-1-1-1-1768986282
+131_Medic Perk (v2.0 - v2.5)-4325-1-4-9-1768831471  ->  1190_Medic Perk (v2.0 - v2.5)-4325-1-4-9-1768831471
+066_RXEL Weapons for 2.4-2023-2-4-0-0-1765644439  ->  1200_RXEL Weapons for 2.4-2023-2-4-0-0-1765644439
+132_Script's Melee Arsenal - Scrap Tools and Weapons-5516-1-3-1725417614  ->  1210_Script's Melee Arsenal - Scrap Tools and Weapons-5516-1-3-1725417614
+069_V2-OakravenMonoBikes-5341-2-5-0-0-1766339145  ->  1220_V2-OakravenMonoBikes-5341-2-5-0-0-1766339145
+133_V2-OakravenRockDrill-5053-2-5-0-0-1766340702  ->  1230_V2-OakravenRockDrill-5053-2-5-0-0-1766340702
+070_V2-OakravenWarPig-5517-2-5-0-0-1766339010  ->  1240_V2-OakravenWarPig-5517-2-5-0-0-1766339010
+134_(TMO) Botanist Network v2.1-6739-2-1-1750120758  ->  1250_(TMO) Botanist Network v2.1-6739-2-1-1750120758
+135_(TMO) Paintings and Portraits v2.1-6753-2-1-1750120501  ->  1260_(TMO) Paintings and Portraits v2.1-6753-2-1-1750120501
+136_7D1.0_Izayo_WeaponpackRemastered_Heavy_WeaponPack  ->  1270_7D1.0_Izayo_WeaponpackRemastered_Heavy_WeaponPack
+137_7D1.0_Izayo_WeaponpackVanillaReplacer  ->  1280_7D1.0_Izayo_WeaponpackVanillaReplacer
+138_Blackcurrant's Clean Icons-8771-1-2-1768937311  ->  1290_Blackcurrant's Clean Icons-8771-1-2-1768937311
+139_Cre_More Mods-9373-1-0-1768029559  ->  1300_Cre_More Mods-9373-1-0-1768029559
+140_Evolved Gun and Turret Mods-6195-1-1726808659  ->  1310_Evolved Gun and Turret Mods-6195-1-1726808659
+141_Fnz Super Guns Extend Pack-8693-1-00-1758416674  ->  1320_Fnz Super Guns Extend Pack-8693-1-00-1758416674
+142_Funukemaguro's Armor Mod Icon Replacer-7781-1-0-1751185656  ->  1330_Funukemaguro's Armor Mod Icon Replacer-7781-1-0-1751185656
+143_Funukemaguro's Foods And Crops Icon Replacer-8163-1-1-1756551064  ->  1340_Funukemaguro's Foods And Crops Icon Replacer-8163-1-1-1756551064
+144_Funukemaguro's Medical And Drugs Icon Replacer-8200-1-0-1753967134  ->  1350_Funukemaguro's Medical And Drugs Icon Replacer-8200-1-0-1753967134
+145_Funukemaguro's Melee and Tool Mod Icon Replacer-7790-1-0-1751208114  ->  1360_Funukemaguro's Melee and Tool Mod Icon Replacer-7790-1-0-1751208114
+146_Funukemaguro's Resource And Parts Icon Replacer-8187-1-2-1762135902  ->  1370_Funukemaguro's Resource And Parts Icon Replacer-8187-1-2-1762135902
+147_Funukemaguro's Vanilla Ammo Icon Replacer-8125-1-1-1759737097  ->  1380_Funukemaguro's Vanilla Ammo Icon Replacer-8125-1-1-1759737097
+148_Funukemaguro's Vanilla Guns Detail Up-8934-2-4-1767598874  ->  1390_Funukemaguro's Vanilla Guns Detail Up-8934-2-4-1767598874
+149_Funukemaguro's Weapon Mod Icon Replacer Ver 1.3-7733-1-3-1751184438  ->  1400_Funukemaguro's Weapon Mod Icon Replacer Ver 1.3-7733-1-3-1751184438
+150_GrassBlocks-598-2-0-0-1-1751092308  ->  1410_GrassBlocks-598-2-0-0-1-1751092308
+152_MuseumArtifacts_1.3.0-1866-1-3-0-1751613593  ->  1420_MuseumArtifacts_1.3.0-1866-1-3-0-1751613593
+153_Script's Melee Arsenal - Legendary Tools-5495-1-5-4-1726285642  ->  1430_Script's Melee Arsenal - Legendary Tools-5495-1-5-4-1726285642
+154_Script's Melee Arsenal - Miscellaneous Weapons-5480-1-0-1-1724322435  ->  1440_Script's Melee Arsenal - Miscellaneous Weapons-5480-1-0-1-1724322435
+155_Weapon Active Skill Mods-8247-1-3-1759223613  ->  1450_Weapon Active Skill Mods-8247-1-3-1759223613
+084_XFX-8362-1-1-2-0-1766884353  ->  1460_XFX-8362-1-1-2-0-1766884353
+157_BetterGeneration (2.5)-9202-1-0-1765797330  ->  1470_BetterGeneration (2.5)-9202-1-0-1765797330
+086_Better_Biomes_v2_0_1-5366-2-0-1-1751658087  ->  1480_Better_Biomes_v2_0_1-5366-2-0-1-1751658087
+088_Medical conditions-7322-1-3-0-1766605962  ->  1490_Medical conditions-7322-1-3-0-1766605962
+162_spawn all POIs-9408-1-0-5-1769102748  ->  1500_spawn all POIs-9408-1-0-5-1769102748
+163_Towers_Minipack_by_Mahem3000_2_5_2-9315-2-5-2-1768413879  ->  1510_Towers_Minipack_by_Mahem3000_2_5_2-9315-2-5-2-1768413879
+164_Voltralux Vanilla POI Pack (2.0)-4916-1-2-3-1752488834  ->  1520_Voltralux Vanilla POI Pack (2.0)-4916-1-2-3-1752488834
+165_WinterDawn_Fortress_Mahem3000_2_5-9420-2-5-1768509853  ->  1530_WinterDawn_Fortress_Mahem3000_2_5-9420-2-5-1768509853
+167_ZZTong-Prefabs-1434-V2-5-ZZ031-1765728993  ->  1540_ZZTong-Prefabs-1434-V2-5-ZZ031-1765728993
+085_0-SCore-6176-2-5-10-2106-1766319483  ->  1550_0-SCore-6176-2-5-10-2106-1766319483
+083_POI Scourge-9329-1-2-1768017500  ->  1560_POI Scourge-9329-1-2-1768017500
+051_Quest POI Preview-8631-1-0-5-1757804311  ->  1570_Quest POI Preview-8631-1-0-5-1757804311
+055_EfficientBaseRepair-release-0e88d545-4861-2-1-2-1768393694  ->  1580_EfficientBaseRepair-release-0e88d545-4861-2-1-2-1768393694
+151_Medieval POI FORTIN Tier 5-9403-V1-1768289851  ->  1590_Medieval POI FORTIN Tier 5-9403-V1-1768289851
+156_Army POIs Expanded - Bunker Delta 1.1-9336-1-1-1767686706  ->  1600_Army POIs Expanded - Bunker Delta 1.1-9336-1-1-1767686706
+158_Deluxe Block POI Pack by FNS-5869-2-1-2-1754586173  ->  1610_Deluxe Block POI Pack by FNS-5869-2-1-2-1754586173
+159_Deluxe Block POI Pack by FNS-5869-2-5-1-1-1769210297  ->  1620_Deluxe Block POI Pack by FNS-5869-2-5-1-1-1769210297
+160_Lazy Poi Pack-5531-1-0-0-9-5-1756559907  ->  1630_Lazy Poi Pack-5531-1-0-0-9-5-1756559907
+161_mxmrmxs poi pack v1.15-8409-V1-15-1767201952  ->  1640_mxmrmxs poi pack v1.15-8409-V1-15-1767201952
+166_Zeebark POI Pack.-6577-V2-5-2-1768305515  ->  1650_Zeebark POI Pack.-6577-V2-5-2-1768305515
+056_(2.5) - N.V.A weapons expansion (Server side)-7014-2-5-1-1767669807  ->  1660_(2.5) - N.V.A weapons expansion (Server side)-7014-2-5-1-1767669807
+058_ALL IN ONE N.V.A EXPANSION-7014-2-3-0-1753292881  ->  1670_ALL IN ONE N.V.A EXPANSION-7014-2-3-0-1753292881
+060_Bigger Backpack Larger Storage and QoL Improvement-7741-1-6-1766190046  ->  1680_Bigger Backpack Larger Storage and QoL Improvement-7741-1-6-1766190046
+062_gupFireMod.zip-4776-2-0-1715549427  ->  1690_gupFireMod.zip-4776-2-0-1715549427
+168_V2-OakravenAmmoPress (2.5.0.0)-5105-2-5-0-0-1766327049  ->  1700_V2-OakravenAmmoPress (2.5.0.0)-5105-2-5-0-0-1766327049
+169_V2-OakravenForges-6557-2-5-0-0-1766337977  ->  1710_V2-OakravenForges-6557-2-5-0-0-1766337977
+170_AGF - HUDPlus - Purple Book-870-1-1-0-1765835695  ->  1720_AGF - HUDPlus - Purple Book-870-1-1-0-1765835695
+171_AGF - HUDPlus-870-5-3-0-1767573176  ->  1730_AGF - HUDPlus-870-5-3-0-1767573176
+172_D6 - Extended Game Options v2.0-1876-2-0-1751148257  ->  1740_D6 - Extended Game Options v2.0-1876-2-0-1751148257
+173_FNS_Make_Quest_Rewards_Great_Again.zip-6779-1-03-1740185371  ->  1750_FNS_Make_Quest_Rewards_Great_Again.zip-6779-1-03-1740185371
+174_Scomar82_Health-Bar-5434-2-5-1767351232  ->  1760_Scomar82_Health-Bar-5434-2-5-1767351232
+175_Working barrel-1554-v1-1630352278  ->  1770_Working barrel-1554-v1-1630352278
+087_Custom Blocks Pack V2-6481-2-5-51-3-1769036744  ->  1780_Custom Blocks Pack V2-6481-2-5-51-3-1769036744

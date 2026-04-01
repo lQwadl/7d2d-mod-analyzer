@@ -1,0 +1,9 @@
+﻿{
+  "name": "7d2d Mod Analyzer",
+  "version": "1.1",
+  "author": "G",
+  "description": "Standalone utility to analyze and fix 7 Days to Die mod load order. Only reads user-selected folders. No Vortex required.",
+  "game": "7 Days to Die",
+  "category": "Utility",
+  "contact": "example@example.com"
+}

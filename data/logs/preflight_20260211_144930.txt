@@ -1,0 +1,99 @@
+=== 7DTD Mod Preflight Report ===
+Timestamp: 2026-02-11 14:49:30
+Result: BLOCKED
+
+Mods directories:
+- Game Mods: D:\steam\steamapps\common\7 Days To Die\Mods (HAS MODS)
+- Documents Mods: C:\Users\gingt\Documents\7DaysToDie\Mods (empty)
+
+Errors (14):
+- dependency_load_order [088_ConflictPatch_20260211_140205_stabilized] (ModInfo.xml): Dependency loads after dependent: 'MuseumArtifacts_1.3.0-1866-1-3-0-1751613593' must load before '088_ConflictPatch_20260211_140205_stabilized'.
+- dependency_load_order [088_ConflictPatch_20260211_140205_stabilized] (ModInfo.xml): Dependency loads after dependent: 'Better loot (Update 1.0)-3872-4-6-1761985047' must load before '088_ConflictPatch_20260211_140205_stabilized'.
+- dependency_load_order [088_ConflictPatch_20260211_140205_stabilized] (ModInfo.xml): Dependency loads after dependent: 'HorrorNights-8798-1-1-4-1767425569' must load before '088_ConflictPatch_20260211_140205_stabilized'.
+- dependency_load_order [088_ConflictPatch_20260211_140205_stabilized] (ModInfo.xml): Dependency loads after dependent: '7D1.0_Izayo_Visible_Mods_mod' must load before '088_ConflictPatch_20260211_140205_stabilized'.
+- dependency_load_order [088_ConflictPatch_20260211_140205_stabilized] (ModInfo.xml): Dependency loads after dependent: 'EfficientBaseRepair-release-0e88d545-4861-2-1-2-1768393694' must load before '088_ConflictPatch_20260211_140205_stabilized'.
+- dependency_load_order [088_ConflictPatch_20260211_140205_stabilized] (ModInfo.xml): Dependency loads after dependent: 'Upgradeable Armor Weapons and Tools 2_0_1-7044-2-0-1-1752621850' must load before '088_ConflictPatch_20260211_140205_stabilized'.
+- dependency_load_order [088_ConflictPatch_20260211_140205_stabilized] (ModInfo.xml): Dependency loads after dependent: '7D1.0_Izayo_WeaponpackSpecial_Melee' must load before '088_ConflictPatch_20260211_140205_stabilized'.
+- dependency_load_order [088_ConflictPatch_20260211_140205_stabilized] (ModInfo.xml): Dependency loads after dependent: 'LittleRedSonja Big Bad Bat (ADD-ON)-5370-1-0-1-1727745354' must load before '088_ConflictPatch_20260211_140205_stabilized'.
+- dependency_load_order [088_ConflictPatch_20260211_140205_stabilized] (ModInfo.xml): Dependency loads after dependent: '7D1.0_Izayo_WeaponpackMisc_pack' must load before '088_ConflictPatch_20260211_140205_stabilized'.
+- dependency_load_order [088_ConflictPatch_20260211_140205_stabilized] (ModInfo.xml): Dependency loads after dependent: '7D1.0_Izayo_WeaponpackRemastered_9mmVAL' must load before '088_ConflictPatch_20260211_140205_stabilized'.
+- dependency_load_order [088_ConflictPatch_20260211_140205_stabilized] (ModInfo.xml): Dependency loads after dependent: '7D1.0_Izayo_WeaponpackRemastered_SHOTGUNpackVAL' must load before '088_ConflictPatch_20260211_140205_stabilized'.
+- dependency_load_order [088_ConflictPatch_20260211_140205_stabilized] (ModInfo.xml): Dependency loads after dependent: '7D1.0_Izayo_WeaponpackRemastered_762pack' must load before '088_ConflictPatch_20260211_140205_stabilized'.
+- dependency_load_order [088_ConflictPatch_20260211_140205_stabilized] (ModInfo.xml): Dependency loads after dependent: '7D1.0_Izayo_WeaponpackRemastered_DemolitionPack' must load before '088_ConflictPatch_20260211_140205_stabilized'.
+- dependency_load_order [088_ConflictPatch_20260211_140205_stabilized] (ModInfo.xml): Dependency loads after dependent: '7D1.0_Izayo_WeaponpackRemastered_Technicalpack' must load before '088_ConflictPatch_20260211_140205_stabilized'.
+
+Warnings (74):
+- appdata_cached_state (C:\Users\gingt\AppData\Roaming\7DaysToDie): Cached state exists under %AppData%\7DaysToDie (possible stale UI/XML cache). If you see persistent UI null refs, consider verifying game files and clearing this folder (after backing up saves).
+- save_safety [000_0_UIFramework_Fast Travel Plus-6540-2-5-0-1767531197] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [003_0_UIFramework_SphereII.Mods-master] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [011_1_HUD_gupFireMod.zip-4776-2-0-1715549427] (entitygroups.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [013_1_HUD_AGF - HUDPlus-870-5-3-0-1767573176] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [034_OcbDensityHoe-0.6.0-V2.0.zip-2806-0-6-0-1752113412] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [062_Fusion thermal vision mod-9330-0-0-2-1767575598] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [064_VoidGags-v2.6.zip-2747-2-6-1766275353] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [066_(2.5) - N.V.A weapons expansion (Server side)-7014-2-5-1-1767669807] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [067_Bigger Backpack Larger Storage and QoL Improvement-7741-1-6-1766190046] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [068_Drone Weapons-4360-1-3-3-1757457489] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [069_Halicopter-1.11-8220-1-11-1769181609] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [073_Support Weapons-8958-v0-3-1768154909] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [074_V2-OakravenMonoBikes-5341-2-5-0-0-1766339145] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [075_V2-OakravenWarPig-5517-2-5-0-0-1766339010] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [076_ZZZZZ_BloodMoonLootbags] (entitygroups.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [077_Armor Rebalance 2.5-8615-v1-2-1766508272] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [079_gupSelfConsumer.zip-4891-1-0-1718375196] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [080_Not Enough Attachments-8996-v0-21-1768221276] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [081_Rolling Thunder-8481-v0-31-1767708633] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [085_XFX-8362-1-1-2-0-1766884353] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [086_Medical conditions-7322-1-3-0-1766605962] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [087_Better_Biomes_v2_0_1-5366-2-0-1-1751658087] (entitygroups.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [089_POI Scourge-9329-1-2-1768017500] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [090_Custom Blocks Pack V2-6481-2-5-51-3-1769036744] (entitygroups.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [092_(TMO) Super Vanilla Forge v2.1-6157-2-1-1750564704] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [093_AMG5TAG-QualityEqualsMods-6419-2-3-1767666155] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [100_KHV1 Zombie Reach Adjustment-5109-2-5-1-1-1766618766] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [105_SaviorUltimateSweetSentinelInfiniteShooting-8032-1-1752565840] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [106_TechFreqsFasterReloadingV1.0(V2.4)-9051-1-0-1763798404] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [107_TechFreqsFasterSmeltingV1.0(V2.4)-9093-1-0-1764274872] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [108_TokimekisuMod_Stacknumber.zip-1623-1-0-1766244066] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [109_WMMIncreaseAmmoStackSize-4175-2-5-23-1-1766427785] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [110_zzz_Ammo_Press_Add-On_Compatibility_Patch-6993-2-5-1768216172] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [111_zzzzzzzzzzzz Stallionsdens Stack Size Increaser-5976-2-4-2-1-1760828358] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [112_7D1.0_Izayo_Visible_FPV_Gloves_mod] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [113_B- LOTF's Better Bullet Range Vanilla - Izy's V2.0-7416-2-2-1750548354] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [114_IZY_Bleed_Patch-8450-2-2-4-1756039934] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [115_Z-IZYAmmoStackSize-8511-2-2-1-1756558975] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [116_7D1.0_Izayo_WeaponpackMisc_pack] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [117_7D1.0_Izayo_WeaponpackRemastered_44mag] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [118_7D1.0_Izayo_WeaponpackRemastered_45ACP] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [119_7D1.0_Izayo_WeaponpackRemastered_556pack] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [120_7D1.0_Izayo_WeaponpackRemastered_762pack] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [121_7D1.0_Izayo_WeaponpackRemastered_9mmVAL] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [122_7D1.0_Izayo_WeaponpackRemastered_DemolitionPack] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [123_7D1.0_Izayo_WeaponpackRemastered_SHOTGUNpackVAL] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [124_7D1.0_Izayo_WeaponpackRemastered_Technicalpack] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [125_7D1.0_Izayo_WeaponpackSpecial_Melee] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [126_CLSWeaponBoneCrusher (v2.0 - v2.5)-8880-1-0-6-1769077501] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [127_CLSWeaponPackEXP (v2.0 - v2.5)-5798-1-8-11-1769077489] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [128_gupA21-Zombies-4412-2-4-1763816613] (entitygroups.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [129_LittleRedSonja Big Bad Bat (ADD-ON)-5370-1-0-1-1727745354] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [130_LittleRedSonja T2 into T3 weapons-5370-2-1-0-1766484641] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [131_LittleRedSonja ZombiePack-7573-2-2-3-1768330200] (entitygroups.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [132_LittleRedSonja_Mumpfy_ArmorPack07_TWD-8662-1-1-1-1768986282] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [133_Medic Perk (v2.0 - v2.5)-4325-1-4-9-1768831471] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [134_Script's Melee Arsenal - Scrap Tools and Weapons-5516-1-3-1725417614] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [135_V2-OakravenRockDrill-5053-2-5-0-0-1766340702] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [138_7D1.0_Izayo_WeaponpackRemastered_Heavy_WeaponPack] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [139_7D1.0_Izayo_WeaponpackVanillaReplacer] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [141_Cre_More Mods-9373-1-0-1768029559] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [142_Evolved Gun and Turret Mods-6195-1-1726808659] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [143_Fnz Super Guns Extend Pack-8693-1-00-1758416674] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [145_Funukemaguro's Foods And Crops Icon Replacer-8163-1-1-1756551064] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [150_Funukemaguro's Vanilla Guns Detail Up-8934-2-4-1767598874] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [154_Script's Melee Arsenal - Legendary Tools-5495-1-5-4-1726285642] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [155_Script's Melee Arsenal - Miscellaneous Weapons-5480-1-0-1-1724322435] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [156_Weapon Active Skill Mods-8247-1-3-1759223613] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [170_Zeebark POI Pack.-6577-V2-5-2-1768305515] (entitygroups.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [171_V2-OakravenAmmoPress (2.5.0.0)-5105-2-5-0-0-1766327049] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [174_FNS_Make_Quest_Rewards_Great_Again.zip-6779-1-03-1740185371] (quests.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [200_7D1.0_Izayo_Visible_Mods_mod] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
+- save_safety [206_Better Perk Progression - Main Version-8977-v1-4-1-1768746017] (items.xml): This update may corrupt existing saves. Starting a new world is strongly recommended.
