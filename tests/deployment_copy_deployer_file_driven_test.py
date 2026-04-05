@@ -18,8 +18,8 @@ from pathlib import Path
 # Ensure project root is on sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from deployment.copy_deployer import CopyDeployer
-from deployment.errors import DeploymentError
+from src.deployment.copy_deployer import CopyDeployer
+from src.deployment.errors import DeploymentError
 from tests._test_tmp import temp_dir
 
 

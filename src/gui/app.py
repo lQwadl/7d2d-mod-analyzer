@@ -22,10 +22,10 @@ try:
 except Exception:
     pass
 
-from gui import heatmap as _heatmap
-from gui.legend import build_visual_legend as _build_visual_legend
-from gui.tooltips import HighRiskTooltip
-from scanner.modinfo_parser import parse_modinfo_name_version
+from . import heatmap as _heatmap
+from .legend import build_visual_legend as _build_visual_legend
+from .tooltips import HighRiskTooltip
+from ..scanner.modinfo_parser import parse_modinfo_name_version
 
 # Import version and metadata info
 try:
@@ -36,26 +36,26 @@ except ImportError:
 
 # Persistent per-mod enabled state (authoritative)
 try:
-    from logic.mod_state_store import ModStateStore
+    from ..logic.mod_state_store import ModStateStore
 except Exception:
     ModStateStore = None
 
 MODS_STATE_FILE = "mods_state.json"
 # Ensure project root is on sys.path when running this file directly
 try:
-    from gui.theme import BORDER_NORMAL
-    from logic.mod_integrity import hash_mod_folder
-    from mock_deploy.engine import simulate_deployment
-    from logic.rename_sanitizer import sanitize_name as _sanitize_folder_base
+    from .theme import BORDER_NORMAL
+    from ..logic.mod_integrity import hash_mod_folder
+    from ..mock_deploy.engine import simulate_deployment
+    from ..logic.rename_sanitizer import sanitize_name as _sanitize_folder_base
 except ModuleNotFoundError:
     import sys as _sys
     import os as _os
 
     _sys.path.insert(0, _os.path.abspath(_os.path.join(_os.path.dirname(__file__), "..")))
-    from mock_deploy.engine import simulate_deployment
-    from gui.theme import BORDER_NORMAL
-    from logic.mod_integrity import hash_mod_folder
-    from logic.rename_sanitizer import sanitize_name as _sanitize_folder_base
+    from ..mock_deploy.engine import simulate_deployment
+    from .theme import BORDER_NORMAL
+    from ..logic.mod_integrity import hash_mod_folder
+    from ..logic.rename_sanitizer import sanitize_name as _sanitize_folder_base
 
 
 def _sanitize_user_folder_name(name: str) -> str:
@@ -191,7 +191,7 @@ def _safe_show_error(title: str, msg: str):
 
 # Authoritative category policy (shared across UI + logic)
 try:
-    from logic.category_policy import (
+    from ..logic.category_policy import (
         CATEGORY_ORDER as CATEGORY_ORDER,
         CATEGORY_IMPACT_WEIGHT as CATEGORY_IMPACT_WEIGHT,
         category_index as category_index,
@@ -210,7 +210,7 @@ except Exception:
 
 # Rule-based load order engine (constraint-based, no numeric scoring)
 try:
-    from logic.load_order_engine import (
+    from ..logic.load_order_engine import (
         TIER_ORDER as LOAD_TIER_ORDER,
         compute_load_order as compute_load_order,
         infer_semantic_impact as infer_semantic_impact,
@@ -239,8 +239,8 @@ except Exception:
 
 
 try:
-    from logic.mod_metadata_store import ModMetadataStore
-    from logic.xml_category_classifier import detect_categories_for_mod
+    from ..logic.mod_metadata_store import ModMetadataStore
+    from ..logic.xml_category_classifier import detect_categories_for_mod
 except Exception:
     ModMetadataStore = None
     detect_categories_for_mod = None
@@ -656,7 +656,7 @@ def determine_row_tag(mod):
         if not is_effectively_enabled(mod):
             return "disabled"
         if not getattr(mod, "has_modinfo", True) and not getattr(mod, "is_poi", False):
-            return "error"
+            return "conflict_low"
         if str(getattr(mod, "integrity", "") or "").lower() == "invalid":
             return "error"
         if getattr(mod, "redundant", False):
@@ -850,6 +850,8 @@ def conflict_severity_level(mod):
             return "Error"
         if status == "Redundant":
             return "Redundant"
+        if status == "Warning":
+            return "Low"
         return "Low"
     except Exception:
         return "Low"
@@ -914,7 +916,7 @@ def suggested_action(mod):
     # Decision table mapping
     table = {
         "missing_invalid": "Fix or remove mod — cannot be loaded",
-        "no_modinfo": "Fix or remove mod — cannot be loaded",
+        "no_modinfo": "Optional: ModInfo.xml missing (mod still loads)",
         "invalid_xml": "Fix or remove mod — cannot be loaded",
         "wrong_depth": "Fix or remove mod — cannot be loaded",
         "case_mismatch": "Fix or remove mod — cannot be loaded",
@@ -1242,37 +1244,21 @@ class ModAnalyzerApp:
         btn_scan.pack(side="left", padx=5)
         btn_generate = ttk.Button(btns, text="Generate + Apply Load Order", command=self.generate_and_apply)
         btn_generate.pack(side="left", padx=5)
-        btn_validate = ttk.Button(btns, text="Validate (Dry Run)", command=self.validate_preflight)
-        btn_validate.pack(side="left", padx=5)
         btn_export = ttk.Button(btns, text="Export Load Order", command=self.export_load_order)
         btn_export.pack(side="left", padx=5)
         btn_export_vortex = ttk.Button(btns, text="Export Vortex", command=self.export_vortex)
         btn_export_vortex.pack(side="left", padx=5)
         btn_rename = ttk.Button(btns, text="Rename Folder…", command=self.rename_selected_mod_folder)
         btn_rename.pack(side="left", padx=5)
-        btn_explain = ttk.Button(btns, text="Explain Issues (Plain English)", command=self.explain_conflicts)
-        btn_explain.pack(side="left", padx=5)
-
-        btn_updates = ttk.Button(btns, text="Find Duplicates (Updates)", command=self.check_updates)
-        btn_updates.pack(side="left", padx=5)
-
-        btn_llm = ttk.Button(btns, text="Explain Selected (Plain English)", command=self.llm_explain)
-        btn_llm.pack(side="left", padx=5)
-        # Diagnose visibility differences between scanned mods and displayed rows
-        btn_diag = ttk.Button(btns, text="Diagnose Visibility", command=self.diagnose_visibility)
-        btn_diag.pack(side="left", padx=5)
 
         try:
             enable_button_hover(btn_scan)
             enable_button_hover(btn_generate)
-            enable_button_hover(btn_validate)
             enable_button_hover(btn_export)
             enable_button_hover(btn_export_vortex)
             enable_button_hover(btn_rename)
-            enable_button_hover(btn_explain)
-            enable_button_hover(btn_llm)
             try:
-                enable_button_hover(btn_updates)
+                pass
             except Exception:
                 pass
         except Exception:
@@ -1328,7 +1314,7 @@ class ModAnalyzerApp:
 
         # Persistent conflict memory (CKB)
         try:
-            from logic.conflict_memory import ConflictMemory
+            from ..logic.conflict_memory import ConflictMemory
 
             self.conflict_memory = ConflictMemory(CONFLICT_MEMORY_FILE)
         except Exception:
@@ -1336,7 +1322,7 @@ class ModAnalyzerApp:
 
         # Resolution knowledge base (RKB)
         try:
-            from logic.resolution_knowledge import ResolutionKnowledgeBase
+            from ..logic.resolution_knowledge import ResolutionKnowledgeBase
 
             self.resolution_kb = ResolutionKnowledgeBase(RESOLUTION_KB_FILE)
         except Exception:
@@ -1692,7 +1678,7 @@ class ModAnalyzerApp:
             self.status_text.configure(state="disabled")
 
             # ===== Initialize transparency logger with GUI callback =====
-            from gui.transparency_logger import OperationLogger
+            from .transparency_logger import OperationLogger
 
             def log_to_gui(message: str):
                 """Callback to update status text from logger."""
@@ -1707,12 +1693,16 @@ class ModAnalyzerApp:
 
             self.operation_logger = OperationLogger(print_callback=log_to_gui)
 
-            # Log startup
+            # Log startup with detailed info
             import os
             from pathlib import Path
 
-            logger_msg = f"✓ Application started"
+            logger_msg = f"🚀 [SYSTEM] Application launched (v{__version__})"
             self.operation_logger.log(logger_msg)
+            try:
+                self.operation_logger.log(f"📂 [SYSTEM] App root: {APP_ROOT_DIR}")
+            except Exception:
+                pass
 
         except Exception as e:
             # If status panel creation fails, continue without it
@@ -2047,34 +2037,40 @@ class ModAnalyzerApp:
             pass
 
     def change_path(self):
-        path = filedialog.askdirectory()
-        if path:
-            self.mods_path.set(path)
+        try:
+            path = filedialog.askdirectory()
+            if path:
+                self.mods_path.set(path)
 
-            # Log folder selection with transparency logger
-            try:
-                if self.operation_logger:
-                    # Count mod folders in the selected path
-                    import os
+                self.operation_logger.log(f"[ACTION] 📁 Changed mods folder: {path}")
 
-                    try:
-                        items = os.listdir(path)
-                        mod_count = len([item for item in items if os.path.isdir(os.path.join(path, item))])
-                        self.operation_logger.log_folder_selected(path, mod_count)
-                    except Exception:
-                        self.operation_logger.log_folder_selected(path, 0)
-            except Exception:
-                pass
+                # Log folder selection with transparency logger
+                try:
+                    if self.operation_logger:
+                        # Count mod folders in the selected path
+                        import os
 
-            try:
-                self.save_config()
-            except Exception:
-                pass
-            try:
-                self.save_settings()
-            except Exception:
-                pass
+                        try:
+                            items = os.listdir(path)
+                            mod_count = len([item for item in items if os.path.isdir(os.path.join(path, item))])
+                            self.operation_logger.log_folder_selected(path, mod_count)
+                        except Exception:
+                            self.operation_logger.log_folder_selected(path, 0)
+                except Exception:
+                    pass
 
+                try:
+                    self.save_config()
+                except Exception:
+                    pass
+                try:
+                    self.save_settings()
+                except Exception:
+                    pass
+        except Exception as e:
+            if self.operation_logger:
+                self.operation_logger.log(f"[ERROR] X Folder change failed: {str(e)[:100]}")
+            messagebox.showerror("Error", f"Failed to change mods folder: {e}")
     def _normalize_install_id(self, folder_name: str) -> str:
         """Stable per-install identifier derived from folder name.
 
@@ -2106,6 +2102,8 @@ class ModAnalyzerApp:
 
     def scan(self):
         try:
+            if self.operation_logger:
+                self.operation_logger.log("[SYSTEM] 🔍 Scanning mods folder...")
             if getattr(self, "debug_scanner", False):
                 print(">>> SCAN STARTED")
             mods_dir = self.mods_path.get()
@@ -2301,6 +2299,11 @@ class ModAnalyzerApp:
                 tb = tb.rstrip() + f"\n\nLog written to: {log_path}\n"
             try:
                 print(tb)
+            except Exception:
+                pass
+            try:
+                if self.operation_logger:
+                    self.operation_logger.log("[ERROR] Scan failed: unexpected error occurred")
             except Exception:
                 pass
             try:
@@ -2582,7 +2585,11 @@ class ModAnalyzerApp:
         # Log scan completion
         try:
             if self.operation_logger:
-                self.operation_logger.log_scan_complete(len(self.mods))
+                self.operation_logger.log(f"[SYSTEM] ✅ Scan complete: Found {len(self.mods)} mods")
+                # Count total conflicts
+                total_conflicts = sum(len(getattr(m, 'conflicts', [])) for m in self.mods)
+                if total_conflicts > 0:
+                    self.operation_logger.log(f"[SYSTEM] ⚠️ Conflicts detected: {total_conflicts} total conflicts across {sum(1 for m in self.mods if getattr(m, 'conflict', False))} mods")
         except Exception:
             pass
 
@@ -3004,45 +3011,6 @@ class ModAnalyzerApp:
         total_swaps = sum(1 for c in candidates if getattr(c, "to_enable", None))
         total_disables = sum(len(getattr(c, "to_disable", []) or []) for c in candidates)
 
-        lines: List[str] = []
-        lines.append("PLAIN ENGLISH UPDATE SUMMARY")
-        lines.append("")
-        lines.append(f"Duplicates detected: {len(candidates)} mod(s)")
-        lines.append(f"Suggested disables (older enabled installs): {total_disables}")
-        lines.append(f"Suggested swaps (newest is disabled): {total_swaps}")
-        lines.append("")
-        lines.append("WHAT THIS MEANS")
-        lines.append("- You have multiple copies of the same mod installed.")
-        lines.append("- Keeping more than one enabled often causes conflicts or duplicate IDs.")
-        lines.append("")
-        lines.append("SUGGESTED ACTION")
-        lines.append("- Disable older duplicates so only one copy is enabled.")
-        lines.append("- If the newest copy is disabled, enable it and disable the older one.")
-        lines.append("")
-        lines.append("DETAILS")
-
-        for c in candidates:
-            keep = getattr(c, "keep", None)
-            keep_name = getattr(keep, "folder_name", "") if keep else ""
-            keep_ver = getattr(keep, "modinfo_version", "") if keep else ""
-
-            lines.append(f"\n- {getattr(c, 'base_id', '') or '(unknown)'}")
-            lines.append(f"  Keep: {keep_name} (version={keep_ver or 'unknown'})")
-
-            for ins in getattr(c, "installs", []) or []:
-                v = getattr(ins, "modinfo_version", "") or "unknown"
-                flag = (
-                    "KEEP"
-                    if (keep and getattr(ins, "path", None) == getattr(keep, "path", None))
-                    else ("DISABLE" if getattr(ins, "enabled", False) else "already disabled")
-                )
-                lines.append(f"    - {flag}: {getattr(ins, 'folder_name', '')} (version={v})")
-
-            if getattr(c, "to_enable", None):
-                lines.append("  Note: newest copy is disabled; enable it and disable the older version.")
-
-        self.show_scrollable_popup("\n".join(lines).strip(), title="Duplicates / Updates (Plain English)")
-
     def apply_updates(self):
         """Apply local update actions by disabling older installs (and swapping when newest is disabled)."""
         try:
@@ -3214,145 +3182,67 @@ class ModAnalyzerApp:
                 _safe_show_error("Generate Load Order crashed", tb)
 
     def export(self):
-        # Build recommended list if not present: sort by priority then folder name
-        if not self.mods:
-            messagebox.showwarning("No data", "Scan mods first.")
-            return
-
-        # Rule-based ordering (constraint-based, deterministic)
-        rules = []
         try:
-            from logic.rule_store import RuleStore
-
-            store = RuleStore(str(DATA_DIR / "rules.json"))
-            rules = (store.list_user_rules() or []) + (store.list_profile_rules() or [])
-        except Exception:
-            rules = []
-
-        # Disabled mods should not participate in load order outputs.
-        enabled = [m for m in (self.mods or []) if is_effectively_enabled(m) and is_deployable_mod(m)]
-        try:
-            self.recommended, _report = compute_load_order(enabled, user_rules=rules, include_disabled=False)
-        except Exception:
-            self.recommended = list(enabled)
-
-        path = filedialog.asksaveasfilename(defaultextension=".txt", filetypes=[("Text", "*.txt"), ("JSON", "*.json")])
-
-        if not path:
-            return
-
-        # Always write both JSON and a readable TXT beside the chosen path
-        base, ext = os.path.splitext(path)
-        json_path = base + ".json"
-        txt_path = base + ".txt"
-
-        try:
-            self.export_json(self.recommended, json_path)
-            # Also write readable load-order TXT grouped by category/priority
-            self.export_loadorder_txt(txt_path, self.recommended)
-        except Exception as ex:
-            messagebox.showerror("Export Error", f"Failed to export: {ex}")
-            return
-
-        messagebox.showinfo("Exported", f"Saved to:\n{json_path}\n{txt_path}")
-
-    def validate_preflight(self):
-        """Run deployment/launch guardrails without copying files (dry-run).
-
-        Produces a human-readable report and logs it; errors are treated as blockers.
-        """
-        try:
-            # Ensure we have a scan to know which mods are enabled.
-            try:
-                if not getattr(self, "mods", None):
-                    self.scan()
-            except Exception:
-                pass
-
-            mods_dir = self.mods_path.get()
-            if not os.path.isdir(mods_dir):
-                messagebox.showerror("Validate", "Mods path does not exist")
+            # Build recommended list if not present: sort by priority then folder name
+            if not self.mods:
+                messagebox.showwarning("No data", "Scan mods first.")
                 return
 
+            # Rule-based ordering (constraint-based, deterministic)
+            rules = []
+            try:
+                from logic.rule_store import RuleStore
+
+                store = RuleStore(str(DATA_DIR / "rules.json"))
+                rules = (store.list_user_rules() or []) + (store.list_profile_rules() or [])
+            except Exception:
+                rules = []
+
+            # Disabled mods should not participate in load order outputs.
             enabled = [m for m in (self.mods or []) if is_effectively_enabled(m) and is_deployable_mod(m)]
             try:
-                enabled.sort(
-                    key=lambda mm: (
-                        int(getattr(mm, "load_order", 0) or 0),
-                        str(getattr(mm, "name", "") or "").lower(),
-                    )
-                )
+                self.recommended, _report = compute_load_order(enabled, user_rules=rules, include_disabled=False)
+            except Exception:
+                self.recommended = list(enabled)
+
+            path = filedialog.asksaveasfilename(defaultextension=".txt", filetypes=[("Text", "*.txt"), ("JSON", "*.json")])
+
+            if not path:
+                return
+
+            # Always write both JSON and a readable TXT beside the chosen path
+            base, ext = os.path.splitext(path)
+            json_path = base + ".json"
+            txt_path = base + ".txt"
+
+            # Log export
+            try:
+                if self.operation_logger:
+                    self.operation_logger.log("[ACTION] 📤 Exporting load order...")
             except Exception:
                 pass
-            enabled_pairs = []
-            for m in enabled:
-                try:
-                    enabled_pairs.append((str(getattr(m, "name", "") or ""), str(getattr(m, "path", "") or "")))
-                except Exception:
-                    continue
 
-            from logic.deployment_guardrails import format_report_text, preflight_check
-
-            report = preflight_check(
-                mods_root=str(mods_dir),
-                enabled_mods=enabled_pairs,
-                block_multiple_mods_dirs=bool(getattr(self, "block_multiple_mods_dirs", True)),
-                block_invalid_xml=bool(getattr(self, "block_invalid_xml", True)),
-                block_full_file_replacements=bool(getattr(self, "block_full_file_replacements", True)),
-                enforce_single_ui_framework=bool(getattr(self, "enforce_single_ui_framework", True)),
-            )
-            text = format_report_text(report)
-
-            # Persist report (txt + jsonl) with timestamps.
-            log_dir = _get_log_dir()
-            report_path = None
-            jsonl_path = None
             try:
-                if log_dir:
-                    ts = time.strftime("%Y%m%d_%H%M%S", time.localtime())
-                    report_path = pathlib.Path(log_dir) / f"preflight_{ts}.txt"
-                    report_path.write_text(text, encoding="utf-8", errors="replace")
+                self.export_json(self.recommended, json_path)
+                # Also write readable load-order TXT grouped by category/priority
+                self.export_loadorder_txt(txt_path, self.recommended)
+            except Exception as ex:
+                messagebox.showerror("Export Error", f"Failed to export: {ex}")
+                return
 
-                    # jsonl for machine parsing / audit
-                    jsonl_path = pathlib.Path(log_dir) / f"preflight_{ts}.jsonl"
-                    lines = []
-                    for it in getattr(report, "issues", []) or []:
-                        try:
-                            lines.append(
-                                json.dumps(
-                                    {
-                                        "ts": time.time(),
-                                        "level": str(getattr(it, "level", "")),
-                                        "reason": str(getattr(it, "reason", "")),
-                                        "mod": str(getattr(it, "mod", "")),
-                                        "file": str(getattr(it, "file", "")),
-                                        "details": str(getattr(it, "details", "")),
-                                    },
-                                    ensure_ascii=False,
-                                )
-                            )
-                        except Exception:
-                            continue
-                    jsonl_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8", errors="replace")
-            except Exception:
-                report_path = None
-                jsonl_path = None
+            messagebox.showinfo("Exported", f"Saved to:\n{json_path}\n{txt_path}")
 
-            if report_path:
-                text = text.rstrip() + f"\n\nReport saved to: {report_path}\n"
-            if jsonl_path:
-                text = text.rstrip() + f"JSONL saved to: {jsonl_path}\n"
-
-            self.show_scrollable_popup(text, title="Preflight Validation (Dry Run)")
-        except Exception:
-            tb = traceback.format_exc()
-            log_path = _append_crash_log("validate_preflight()", tb)
-            if log_path:
-                tb = tb.rstrip() + f"\n\nLog written to: {log_path}\n"
+            # Log export
             try:
-                self.show_scrollable_popup(tb, title="Validate crashed")
+                if self.operation_logger:
+                    self.operation_logger.log("[ACTION] ✅ Load order exported")
             except Exception:
-                _safe_show_error("Validate crashed", tb)
+                pass
+        except Exception as e:
+            if self.operation_logger:
+                self.operation_logger.log(f"[ERROR] X Export failed: {str(e)[:100]}")
+            messagebox.showerror("Export Error", f"Unexpected error during export: {e}")
+
 
     def apply_load_order(self):
         """Apply load order to the Mods Library by renaming folders."""
@@ -3395,6 +3285,9 @@ class ModAnalyzerApp:
             if not os.path.isdir(mods_dir):
                 messagebox.showerror("Apply Load Order", "Mods Library path does not exist")
                 return
+
+            if self.operation_logger:
+                self.operation_logger.log("[SYSTEM] ⚙️ Generating load order...")
 
             enabled = [m for m in (self.mods or []) if is_effectively_enabled(m) and is_deployable_mod(m)]
             if not enabled:
@@ -4126,6 +4019,14 @@ class ModAnalyzerApp:
             except Exception:
                 pass
 
+            # Log success
+            try:
+                if self.operation_logger:
+                    self.operation_logger.log(f"[SYSTEM] 📊 Load order applied: {len(self.mods)} mods processed")
+                    self.operation_logger.log("[SYSTEM] ✅ Load order generated and applied")
+            except Exception:
+                pass
+
             # Report stability / confidence
             try:
                 if report is not None:
@@ -4152,6 +4053,11 @@ class ModAnalyzerApp:
             log_path = _append_crash_log("apply_load_order_rename()", tb)
             if log_path:
                 tb = tb.rstrip() + f"\n\nLog written to: {log_path}\n"
+            try:
+                if self.operation_logger:
+                    self.operation_logger.log("[ERROR] X Load order apply failed: unexpected error occurred")
+            except Exception:
+                pass
             try:
                 self.show_scrollable_popup(tb, title="Apply Load Order crashed")
             except Exception:
@@ -4420,76 +4326,151 @@ class ModAnalyzerApp:
         self.export()
 
     def export_vortex(self):
-        """Export enabled mods in load-order as a Vortex-friendly JSON list.
+        try:
+            """Export enabled mods in load-order as a Vortex-friendly JSON list.
 
-        Output schema:
-        [ { "id": "FolderName", "enabled": true }, ... ]
-        """
-        if not getattr(self, "mods", None):
+            Output schema:
+            [ { "id": "FolderName", "enabled": true }, ... ]
+            """
+            if not getattr(self, "mods", None):
+                try:
+                    self.scan()
+                except Exception:
+                    pass
+
+            if not getattr(self, "mods", None):
+                messagebox.showwarning("No data", "Scan mods first.")
+                return
+
+            self.operation_logger.log("[ACTION] 📤 Exporting to Vortex format...")
+
+            # Reuse the same deterministic rule-based ordering used by normal export.
+            rules = []
             try:
-                self.scan()
+                from logic.rule_store import RuleStore
+
+                store = RuleStore(str(DATA_DIR / "rules.json"))
+                rules = (store.list_user_rules() or []) + (store.list_profile_rules() or [])
+            except Exception:
+                rules = []
+
+            try:
+                ordered, _report = compute_load_order(self.mods, user_rules=rules, include_disabled=True)
+            except Exception:
+                ordered = list(self.mods)
+
+            # Vortex list should include enabled, deployable mods only.
+            enabled = [m for m in (ordered or []) if is_effectively_enabled(m) and is_deployable_mod(m)]
+            try:
+                enabled.sort(
+                    key=lambda mm: (
+                        int(getattr(mm, "load_order", 0) or 0),
+                        str(getattr(mm, "name", "") or "").lower(),
+                    )
+                )
             except Exception:
                 pass
 
-        if not getattr(self, "mods", None):
-            messagebox.showwarning("No data", "Scan mods first.")
-            return
+            def _vortex_id(m):
+                try:
+                    # Prefer the physical folder name (strip legacy prefixes like __DISABLED__ / 000_).
+                    return str(self._clean_folder_name_for_order(getattr(m, "name", "") or "")).strip()
+                except Exception:
+                    return str(getattr(m, "name", "") or "").strip()
 
-        # Reuse the same deterministic rule-based ordering used by normal export.
-        rules = []
-        try:
-            from logic.rule_store import RuleStore
+            payload = [{"id": _vortex_id(m), "enabled": True} for m in enabled if _vortex_id(m)]
 
-            store = RuleStore(str(DATA_DIR / "rules.json"))
-            rules = (store.list_user_rules() or []) + (store.list_profile_rules() or [])
-        except Exception:
-            rules = []
-
-        try:
-            ordered, _report = compute_load_order(self.mods, user_rules=rules, include_disabled=True)
-        except Exception:
-            ordered = list(self.mods)
-
-        # Vortex list should include enabled, deployable mods only.
-        enabled = [m for m in (ordered or []) if is_effectively_enabled(m) and is_deployable_mod(m)]
-        try:
-            enabled.sort(
-                key=lambda mm: (
-                    int(getattr(mm, "load_order", 0) or 0),
-                    str(getattr(mm, "name", "") or "").lower(),
-                )
+            path = filedialog.asksaveasfilename(
+                defaultextension=".json",
+                filetypes=[("JSON", "*.json")],
+                initialfile="Vortex_LoadOrder.json",
             )
-        except Exception:
-            pass
+            if not path:
+                return
 
-        def _vortex_id(m):
             try:
-                # Prefer the physical folder name (strip legacy prefixes like __DISABLED__ / 000_).
-                return str(self._clean_folder_name_for_order(getattr(m, "name", "") or "")).strip()
-            except Exception:
-                return str(getattr(m, "name", "") or "").strip()
+                with open(path, "w", encoding="utf-8") as f:
+                    json.dump(payload, f, indent=2)
+            except Exception as ex:
+                messagebox.showerror("Export Vortex", f"Failed to export Vortex JSON: {ex}")
+                return
 
-        payload = [{"id": _vortex_id(m), "enabled": True} for m in enabled if _vortex_id(m)]
+            messagebox.showinfo("Exported", f"Saved to:\n{path}")
 
-        path = filedialog.asksaveasfilename(
-            defaultextension=".json",
-            filetypes=[("JSON", "*.json")],
-            initialfile="Vortex_LoadOrder.json",
-        )
-        if not path:
-            return
+            self.operation_logger.log("[ACTION] ✅ Exported to Vortex format")
+        except Exception as e:
+            if self.operation_logger:
+                self.operation_logger.log(f"[ERROR] X Vortex export failed: {str(e)[:100]}")
+            messagebox.showerror("Export Error", f"Unexpected error during Vortex export: {e}")
 
+    def rename_selected_mod_folder(self):
+        """Rename the selected mod's folder name."""
         try:
-            with open(path, "w", encoding="utf-8") as f:
-                json.dump(payload, f, indent=2)
-        except Exception as ex:
-            messagebox.showerror("Export Vortex", f"Failed to export Vortex JSON: {ex}")
-            return
+            # Get selected item
+            selected = self.table.selection()
+            if not selected:
+                messagebox.showwarning("No Selection", "Please select a mod to rename.")
+                return
 
-        messagebox.showinfo("Exported", f"Saved to:\n{path}")
+            row = selected[0]
+            mod = getattr(self, "mod_lookup", {}).get(row)
+            if not mod:
+                messagebox.showerror("Error", "Could not find mod data for selection.")
+                return
 
-    def llm_explain(self):
-        self.llm_explain_selected()
+            # Get current folder name
+            current_path = getattr(mod, "path", "")
+            if not current_path or not os.path.isdir(current_path):
+                messagebox.showerror("Error", "Mod folder does not exist.")
+                return
+
+            current_name = os.path.basename(current_path)
+
+            # Prompt for new name
+            from tkinter import simpledialog
+            new_name = simpledialog.askstring("Rename Mod Folder", f"Current name: {current_name}\n\nEnter new folder name:", initialvalue=current_name)
+            if not new_name or new_name.strip() == current_name:
+                return
+
+            new_name = new_name.strip()
+            if not new_name:
+                return
+
+            # Sanitize the new name
+            sanitized_name = self._sanitize_user_folder_name(new_name)
+            if not sanitized_name:
+                messagebox.showerror("Error", "Invalid folder name after sanitization.")
+                return
+
+            # Check if target already exists
+            parent_dir = os.path.dirname(current_path)
+            new_path = os.path.join(parent_dir, sanitized_name)
+            if os.path.exists(new_path):
+                messagebox.showerror("Error", f"Folder '{sanitized_name}' already exists.")
+                return
+
+            # Rename the folder
+            try:
+                os.rename(current_path, new_path)
+                # Update mod path
+                mod.path = new_path
+                mod.name = sanitized_name
+                # Log success
+                if self.operation_logger:
+                    self.operation_logger.log(f"[ACTION] 🔄 Renamed '{current_name}' to '{sanitized_name}'")
+                # Refresh table
+                self.refresh_table()
+            except Exception as e:
+                error_msg = f"Failed to rename folder: {e}"
+                messagebox.showerror("Rename Error", error_msg)
+                if self.operation_logger:
+                    self.operation_logger.log(f"[ERROR] X Rename failed: {error_msg}")
+
+        except Exception as e:
+            error_msg = f"Unexpected error during rename: {e}"
+            messagebox.showerror("Error", error_msg)
+            if self.operation_logger:
+                self.operation_logger.log(f"[ERROR] X Rename error: {error_msg}")
 
     # --------------------------------------------------
     # Export mods as JSON with diagnostics fields
@@ -4675,7 +4656,7 @@ class ModAnalyzerApp:
                     except Exception:
                         pass
                 elif not mod_has_modinfo and not mod_is_poi:
-                    status = "Error"
+                    status = "Warning"
                     try:
                         mod.conflict_type = "no_modinfo"
                     except Exception:
@@ -4709,6 +4690,9 @@ class ModAnalyzerApp:
                     pass
 
                 action_text = suggested_action(mod)
+                # Debug: log status for mods without ModInfo.xml
+                if not getattr(mod, "has_modinfo", True):
+                    print(f"DEBUG: {mod.name} status={status} conflict_type={getattr(mod, 'conflict_type', 'none')}")
                 status_display = status
                 try:
                     if isinstance(getattr(mod, "status", None), str) and getattr(mod, "status").startswith("Conflict"):
@@ -4863,346 +4847,26 @@ class ModAnalyzerApp:
     # Toggle enabled/disabled when user clicks the Enabled column
     # --------------------------------------------------
     def on_tree_click(self, event):
-        # Identify the row and column clicked
-        region = self.table.identify_region(event.x, event.y)
-        if region != "cell":
-            return
-
-        col = self.table.identify_column(event.x)
-        row = self.table.identify_row(event.y)
-        # enabled column is the first column in the current columns tuple
-        if col != "#1" or not row:
-            return
-
-        # Toggle enabled/user_disabled for the corresponding mod (authoritative + persisted)
-        renamed = False
         try:
-            mod = None
-            try:
-                mod = (getattr(self, "mod_lookup", {}) or {}).get(row)
-            except Exception:
-                mod = None
+            item_id = self.table.identify_row(event.y)
+            if not item_id:
+                return
+
+            mod = self.mod_lookup.get(item_id)
             if not mod:
                 return
 
-            # Locked disables (e.g., duplicate older version / rule-disabled)
-            locked = (not bool(getattr(mod, "enabled", True))) and (not bool(getattr(mod, "user_disabled", False)))
-            locked = locked or (
-                bool(getattr(mod, "disabled", False)) and not bool(getattr(mod, "user_disabled", False))
-            )
-            if locked:
-                try:
-                    messagebox.showinfo(
-                        "Enabled",
-                        "This mod is disabled by the system/rules and cannot be enabled here.",
-                    )
-                except Exception:
-                    pass
-                return
+            mod.enabled = not mod.enabled
 
-            currently_enabled = is_effectively_enabled(mod)
-            new_enabled = not currently_enabled
+            state = "ENABLED" if mod.enabled else "DISABLED"
+            if self.operation_logger:
+                self.operation_logger.log(f"[ACTION] 🔧 {state}: {mod.name}")
 
-            # If enabling, enforce required dependencies (and basic UI framework uniqueness)
-            if new_enabled and bool(getattr(self, "harden_deployment", False)):
-
-                def _norm_folder_id(name: str) -> str:
-                    try:
-                        n = (name or "").strip()
-                        if n.startswith("__DISABLED__"):
-                            n = n[len("__DISABLED__") :]
-                        if len(n) >= 4 and n[:3].isdigit() and n[3] == "_":
-                            n = n[4:]
-                        return n.strip().lower()
-                    except Exception:
-                        return (name or "").strip().lower()
-
-                def _extract_required_mods_quick(modinfo_path: str) -> List[str]:
-                    try:
-                        tree = ET.parse(str(modinfo_path))
-                        root = tree.getroot()
-                        req: List[str] = []
-                        for e in root.iter():
-                            tag = (e.tag or "").lower()
-                            if tag not in {"requiredmod", "dependencymod", "dependencymods", "dependency", "depend"}:
-                                continue
-                            v = e.attrib.get("value") or e.attrib.get("name") or e.attrib.get("mod")
-                            if v:
-                                req.append(str(v).strip())
-                        return [r for r in req if r]
-                    except Exception:
-                        return []
-
-                def _best_effort_order_value(m: Any) -> Optional[int]:
-                    try:
-                        iid = getattr(m, "install_id", None)
-                        if iid and iid in (getattr(self, "order_overrides", {}) or {}):
-                            v = (getattr(self, "order_overrides", {}) or {}).get(iid)
-                            if isinstance(v, int):
-                                return int(v)
-                        folder = ""
-                        try:
-                            folder = pathlib.Path(str(getattr(m, "path", "") or "")).name
-                        except Exception:
-                            folder = ""
-                        p = _parse_order_prefix(folder)
-                        if isinstance(p, int):
-                            return int(p)
-                        return None
-                    except Exception:
-                        return None
-
-                # Build lookup for dependency resolution
-                try:
-                    id_to_mod = {_norm_folder_id(pathlib.Path(m.path).name): m for m in (self.mods or [])}
-                except Exception:
-                    id_to_mod = {}
-
-                # ModInfo dependency validation
-                try:
-                    modinfo_path = os.path.join(str(getattr(mod, "path", "") or ""), "ModInfo.xml")
-                    required = _extract_required_mods_quick(modinfo_path) if os.path.isfile(modinfo_path) else []
-                except Exception:
-                    required = []
-
-                if required:
-                    missing: List[str] = []
-                    disabled: List[str] = []
-                    order_violations: List[str] = []
-                    this_order = _best_effort_order_value(mod)
-                    for r in required:
-                        rid = _norm_folder_id(r)
-                        dep = id_to_mod.get(rid)
-                        if not dep:
-                            missing.append(r)
-                            continue
-                        if not is_effectively_enabled(dep):
-                            disabled.append(str(getattr(dep, "name", "") or pathlib.Path(dep.path).name))
-                            continue
-                        dep_order = _best_effort_order_value(dep)
-                        if (this_order is not None) and (dep_order is not None) and (dep_order > this_order):
-                            order_violations.append(
-                                f"{pathlib.Path(dep.path).name} ({dep_order}) loads after {pathlib.Path(mod.path).name} ({this_order})"
-                            )
-
-                    if missing:
-                        messagebox.showerror(
-                            "Cannot Enable Mod",
-                            "Missing required dependency mod(s):\n" + "\n".join(f"- {m}" for m in missing),
-                        )
-                        return
-                    if disabled:
-                        messagebox.showerror(
-                            "Cannot Enable Mod",
-                            "Required dependency mod(s) are present but disabled:\n"
-                            + "\n".join(f"- {d}" for d in disabled)
-                            + "\n\nEnable dependencies first, then enable this mod.",
-                        )
-                        return
-                    if order_violations:
-                        messagebox.showerror(
-                            "Cannot Enable Mod",
-                            "Dependency load order violation (dependency must load earlier):\n"
-                            + "\n".join(f"- {v}" for v in order_violations[:5])
-                            + "\n\nFix by clicking 'Generate + Apply Load Order' (or adjust order overrides/prefixes).",
-                        )
-                        return
-
-                # UI: enforce at most one UI framework enabled (best-effort)
-                if bool(getattr(self, "enforce_single_ui_framework", False)):
-                    try:
-                        from logic.deployment_guardrails import categorize_ui_mod, mod_touches_xui
-
-                        mod_path_str = str(getattr(mod, "path", "") or "")
-                        if mod_path_str and mod_touches_xui(mod_path_str):
-                            if (
-                                categorize_ui_mod(mod_name=str(getattr(mod, "name", "") or ""), mod_path=mod_path_str)
-                                == "framework"
-                            ):
-                                other_frameworks = []
-                                for m in self.mods or []:
-                                    try:
-                                        if m is mod:
-                                            continue
-                                        if not is_effectively_enabled(m):
-                                            continue
-                                        p = str(getattr(m, "path", "") or "")
-                                        if not p or not mod_touches_xui(p):
-                                            continue
-                                        if (
-                                            categorize_ui_mod(mod_name=str(getattr(m, "name", "") or ""), mod_path=p)
-                                            != "framework"
-                                        ):
-                                            continue
-                                        other_frameworks.append(str(getattr(m, "name", "") or pathlib.Path(p).name))
-                                    except Exception:
-                                        continue
-                                if other_frameworks:
-                                    messagebox.showerror(
-                                        "Cannot Enable Mod",
-                                        "Multiple UI frameworks detected. Only one UI core/framework should be enabled.\n\n"
-                                        + "Already enabled:\n"
-                                        + "\n".join(f"- {n}" for n in other_frameworks[:5]),
-                                    )
-                                    return
-                    except Exception:
-                        pass
-
-            # If disabling a Core/Framework mod, check dependents first
-            if (not new_enabled) and normalize_category(getattr(mod, "category", "")) in (
-                "Core / Framework",
-                "Core/Framework",
-            ):
-                dependents = self.find_dependents(mod)
-                if dependents:
-                    text = "The following mods depend on this Core mod:\n" + "\n".join(f"- {d}" for d in dependents)
-                    text += "\n\nDisabling it may break your game. Continue?"
-                    if not messagebox.askyesno("Confirm Disable", text):
-                        return
-
-            if new_enabled:
-                mod.enabled = True
-                mod.user_disabled = False
-            else:
-                mod.enabled = False
-                mod.user_disabled = True
-
-            # Persist to mods_state.json
-            try:
-                iid = getattr(mod, "install_id", None)
-                if self.mod_state_store and iid:
-                    self.mod_state_store.set(
-                        str(iid),
-                        enabled=bool(mod.enabled),
-                        user_disabled=bool(mod.user_disabled),
-                    )
-                    self.mod_state_store.save()
-            except Exception:
-                pass
-
-            # Back-compat: keep legacy settings set in sync (until fully removed)
-            try:
-                iid = getattr(mod, "install_id", None)
-                if iid:
-                    if bool(getattr(mod, "user_disabled", False)):
-                        self.user_disabled_ids.add(str(iid))
-                    else:
-                        self.user_disabled_ids.discard(str(iid))
-            except Exception:
-                pass
-
-            # Best-effort: rename the physical folder so disabled mods are clearly marked
-            # and are physically placed under Mods/Disabled.
-            try:
-                mods_dir = self.mods_path.get()
-                old_path = str(getattr(mod, "path", "") or "")
-                if old_path and os.path.isdir(old_path) and os.path.isdir(mods_dir):
-                    mods_root = pathlib.Path(str(mods_dir))
-                    disabled_root = mods_root / "Disabled"
-                    old_p = pathlib.Path(str(old_path))
-                    old_parent = old_p.parent
-                    old_name = old_p.name
-
-                    # Only touch direct children of Mods root or Mods/Disabled (avoid nested layouts).
-                    is_root_child = os.path.abspath(str(old_parent)) == os.path.abspath(str(mods_root))
-                    is_disabled_child = os.path.abspath(str(old_parent)) == os.path.abspath(str(disabled_root))
-                    if is_root_child or is_disabled_child:
-                        base = self._clean_folder_name_for_order(old_name)
-                        base_name = str(base).strip() or "Mod"
-
-                        if new_enabled:
-                            # Enabling: move out of Disabled and strip the disabled marker.
-                            if is_disabled_child or old_name.startswith("__DISABLED__"):
-                                new_path = str(mods_root / base_name)
-                                if os.path.abspath(str(old_p)) != os.path.abspath(new_path) and not os.path.exists(
-                                    new_path
-                                ):
-                                    os.rename(str(old_p), new_path)
-                                    renamed = True
-                        else:
-                            # Disabling: move into Disabled and add the disabled marker.
-                            try:
-                                os.makedirs(str(disabled_root), exist_ok=True)
-                            except Exception:
-                                pass
-
-                            new_name = f"__DISABLED__{base_name}"
-                            new_path = str(disabled_root / new_name)
-                            if os.path.abspath(str(old_p)) != os.path.abspath(new_path) and not os.path.exists(
-                                new_path
-                            ):
-                                os.rename(str(old_p), new_path)
-                                renamed = True
-            except Exception:
-                pass
-        except Exception:
-            return
-
-        # If we physically renamed a folder, rescan to refresh paths/names.
-        if renamed:
-            try:
-                self.scan()
-            except Exception:
-                pass
-            return
-
-        # Re-evaluate conflicts and refresh the table so Status/Conflict/Action remain consistent
-        # with the underlying data and any active filters.
-        try:
-            self.detect_conflicts()
-        except Exception:
-            pass
-        try:
             self.refresh_table()
-        except Exception:
-            pass
-        try:
-            self.refresh_heatmap()
-        except Exception:
-            pass
 
-    # --------------------------------------------------
-    # Diagnose visibility: show mods hidden by current filters
-    # --------------------------------------------------
-    def diagnose_visibility(self):
-        try:
-            displayed_ids = set(self.table.get_children())
-            displayed_mods = set()
-            for iid in displayed_ids:
-                m = self.mod_lookup.get(iid)
-                if m:
-                    displayed_mods.add(m.name)
-            scanned_mods = set(m.name for m in self.mods)
-            hidden = sorted(list(scanned_mods - displayed_mods), key=str.lower)
-            shown = sorted(list(displayed_mods), key=str.lower)
-            total = len(scanned_mods)
-            msg_lines = [
-                f"Showing {len(displayed_mods)} of {total}",
-                "",
-                "Hidden mods:",
-            ]
-            if hidden:
-                msg_lines.extend(hidden[:200])  # cap list for readability
-                if len(hidden) > 200:
-                    msg_lines.append(f"... and {len(hidden) - 200} more")
-            else:
-                msg_lines.append("(none)")
-            msg_lines.extend(
-                [
-                    "",
-                    "Shown mods:",
-                ]
-            )
-            msg_lines.extend(shown[:100])
-            if len(shown) > 100:
-                msg_lines.append(f"... and {len(shown) - 100} more")
-            self.show_scrollable_popup("\n".join(msg_lines), title="Visibility Diagnosis")
         except Exception as e:
-            try:
-                messagebox.showinfo("Diagnose", f"Failed to diagnose: {e}")
-            except Exception:
-                pass
-
+            if self.operation_logger:
+                self.operation_logger.log(f"[ERROR] ❌ Toggle failed: {str(e)}")
     # --------------------------------------------------
     # Reset filters to defaults and refresh
     # --------------------------------------------------
@@ -6415,138 +6079,6 @@ class ModAnalyzerApp:
     # --------------------------------------------------
     # Explain conflicts: grouped by system with root-cause + suggestions
     # --------------------------------------------------
-    def explain_conflicts(self):
-        FILE_TO_SYSTEM = {
-            "progression.xml": "Progression",
-            "loot.xml": "Loot",
-            "blocks.xml": "Blocks",
-            "entityclasses.xml": "Entities",
-            "items.xml": "Items",
-            "ui.xml": "UI",
-            "windows.xml": "UI",
-        }
-
-        if not self.mods:
-            messagebox.showinfo("Explain Issues", "Scan mods first.")
-            return
-
-        def _english_summary(entry: dict) -> str:
-            ctype = str(entry.get("conflict_type") or entry.get("type") or "").strip().lower()
-            lvl = str(entry.get("level") or "warn").strip().lower()
-            mod_a = str(entry.get("mod") or "")
-            mod_b = str(entry.get("with") or entry.get("mod_b") or "")
-            tgt = str(entry.get("target") or entry.get("file") or "")
-
-            file_key = str(entry.get("file") or "").replace("\\", "/").strip().lower()
-            is_ui_xml = (
-                file_key in {"ui.xml", "windows.xml"}
-                or file_key.startswith("xui/")
-                or file_key.startswith("xui_")
-                or "/xui/" in file_key
-                or "/xui_" in file_key
-            )
-
-            if ctype in {"no_modinfo"}:
-                return f"{mod_a}: missing ModInfo.xml (game may not load it)."
-            if ctype in {"duplicate_id"}:
-                return f"Duplicate ID between {mod_a} and {mod_b}. This is not safe to auto-fix; pick a winner."
-            if ctype in {"xml_override", "override"}:
-                return f"{mod_a} and {mod_b} both change the same XML node ({tgt}). Last loaded wins."
-            if ctype in {"load_order_priority"} and is_ui_xml:
-                return (
-                    f"UI XML overlap between {mod_a} and {mod_b} ({file_key or tgt}). "
-                    "This is order-sensitive and can trigger ERR XML loader patch failures / NullReference. "
-                    "First try swapping their order; keep the intended UI winner later (last loaded wins)."
-                )
-            if ctype in {"poi_conflict", "prefab_conflict", "worldgen"}:
-                return f"World/POI overlap between {mod_a} and {mod_b} ({tgt}). Likely needs a new world."
-            if lvl == "error":
-                return f"Hard conflict between {mod_a} and {mod_b} ({tgt})."
-            return f"Possible conflict between {mod_a} and {mod_b} ({tgt})."
-
-        # Collect issues from per-mod conflict lists
-        groups: Dict[str, List[dict]] = {}
-        counts_by_type: Dict[str, int] = {}
-        any_error = False
-        involved_mods = set()
-
-        for m in self.mods:
-            for c in getattr(m, "conflicts", []) or []:
-                entry = dict(c or {})
-                entry["mod"] = getattr(m, "name", "")
-                system = entry.get("system") or FILE_TO_SYSTEM.get((entry.get("file") or "").lower()) or "Unknown"
-                groups.setdefault(system, []).append(entry)
-                ct = str(entry.get("conflict_type") or entry.get("type") or "unknown").strip() or "unknown"
-                counts_by_type[ct] = counts_by_type.get(ct, 0) + 1
-                if str(entry.get("level") or "").lower() == "error":
-                    any_error = True
-                involved_mods.add(str(entry.get("mod") or ""))
-                if entry.get("with"):
-                    involved_mods.add(str(entry.get("with") or ""))
-
-        if not groups:
-            messagebox.showinfo("Explain Issues", "No conflicts detected.")
-            return
-
-        enabled_mods = [m for m in (self.mods or []) if is_effectively_enabled(m)]
-
-        lines: List[str] = []
-        lines.append("PLAIN ENGLISH SUMMARY")
-        lines.append("")
-        lines.append(f"Enabled mods scanned: {len(enabled_mods)}")
-        lines.append(f"Mods involved in issues: {len([m for m in involved_mods if m])}")
-        lines.append(f"Total issue entries: {sum(counts_by_type.values())}")
-        lines.append(f"Severity: {'CRITICAL' if any_error else 'Warnings'}")
-        lines.append("")
-
-        lines.append("ISSUE TYPES")
-        for ct, n in sorted(counts_by_type.items(), key=lambda kv: (-kv[1], str(kv[0]).lower())):
-            lines.append(f"- {ct}: {n}")
-        lines.append("")
-
-        lines.append("WHAT TO DO (SAFE DEFAULTS)")
-        lines.append("- If you see 'duplicate_id': disable one mod (do not auto-resolve).")
-        lines.append("- If you see 'xml_override': decide which should win; use a patch mod or a rule.")
-        lines.append("- If you see UI 'load_order_priority' (XUI/XUi): swap mod order first; last loaded wins.")
-        lines.append(
-            "- If you see 'scope_overlap': usually safe to ignore unless evidence shows the same file/target is affected."
-        )
-        lines.append("- If you see world/POI warnings: expect a new world may be required.")
-        lines.append("")
-
-        lines.append("DETAILS BY SYSTEM")
-        for system, entries in sorted(groups.items(), key=lambda kv: str(kv[0]).lower()):
-            # Deduplicate identical entries for readability
-            seen = set()
-            uniq = []
-            for e in entries:
-                k = (
-                    str(e.get("conflict_type") or e.get("type") or ""),
-                    str(e.get("mod") or ""),
-                    str(e.get("with") or ""),
-                    str(e.get("file") or ""),
-                    str(e.get("target") or ""),
-                    str(e.get("level") or ""),
-                )
-                if k in seen:
-                    continue
-                seen.add(k)
-                uniq.append(e)
-
-            lines.append(f"\n{system} ({len(uniq)} entries)")
-            for e in uniq[:12]:
-                lines.append(f"- {_english_summary(e)}")
-                reason = str(e.get("reason") or "").strip()
-                suggestion = str(e.get("suggestion") or "").strip()
-                if reason:
-                    lines.append(f"    Why: {reason}")
-                if suggestion:
-                    lines.append(f"    Fix: {suggestion}")
-            if len(uniq) > 12:
-                lines.append(f"  ... and {len(uniq) - 12} more")
-
-        self.show_scrollable_popup("\n".join(lines).strip(), title="Issues (Plain English)")
-
     # --------------------------------------------------
     # Optional LLM-assisted explanation (read-only)
     # --------------------------------------------------

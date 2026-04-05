@@ -33,6 +33,9 @@ Repository = "https://github.com/yourusername/7d2d-mod-analyzer"
 Issues = "https://github.com/yourusername/7d2d-mod-analyzer/issues"
 Documentation = "https://github.com/yourusername/7d2d-mod-analyzer/blob/main/README.md"
 
+[tool.setuptools.packages.find]
+where = ["src"]
+
 [tool.black]
 line-length = 120
 # Keep formatting focused on core project code.

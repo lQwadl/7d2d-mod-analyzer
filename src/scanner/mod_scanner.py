@@ -1,7 +1,7 @@
 from pathlib import Path
-from models.mod import Mod
+from ..models.mod import Mod
 
-from path_safety import is_appdata_path
+from ..path_safety import is_appdata_path
 
 
 def scan_mods(mods_path: str):
@@ -28,8 +28,6 @@ def scan_mods(mods_path: str):
             continue
 
         modinfo = mod_folder / "ModInfo.xml"
-        if not modinfo.exists():
-            continue
 
         mod_obj = Mod(mod_folder.name, real_path)
 

@@ -160,3 +160,17 @@ Traceback (most recent call last):
   File "c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer\logic\mod_metadata_store.py", line 55, in xml_signature
     nm.endswith(".xml")
 KeyboardInterrupt
+
+================================================================================
+2026-04-01 15:05:36  Tk callback
+Traceback (most recent call last):
+  File "C:\Users\gingt\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\gingt\Desktop\Work\7d2d Mod Analyzer v1.1 (standalone)\gui\app.py", line 1270, in <lambda>
+    self.search_entry.bind("<KeyRelease>", lambda e: self.refresh_table())
+                                                     ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gingt\Desktop\Work\7d2d Mod Analyzer v1.1 (standalone)\gui\app.py", line 4386, in refresh_table
+    for idx, mod in enumerate(self.mods):
+                              ^^^^^^^^^
+AttributeError: 'ModAnalyzerApp' object has no attribute 'mods'

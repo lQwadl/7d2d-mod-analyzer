@@ -9,10 +9,10 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Tuple
 
-from deployment.errors import DeploymentError
-from deployment.file_copy import Logger, copy_tree_file_driven, delete_extra_files
-from logic.deployment_guardrails import validate_mod_xml_safety
-from path_safety import assert_not_appdata
+from .errors import DeploymentError
+from .file_copy import Logger, copy_tree_file_driven, delete_extra_files
+from ..logic.deployment_guardrails import validate_mod_xml_safety
+from ..path_safety import assert_not_appdata
 
 
 @dataclass(frozen=True)

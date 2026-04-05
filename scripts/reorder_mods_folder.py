@@ -27,8 +27,8 @@ _REPO_ROOT = Path(__file__).resolve().parents[1]
 if str(_REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(_REPO_ROOT))
 
-from logic.load_order_engine import compute_load_order
-from logic.load_order import apply_load_order_to_mod_folders
+from src.logic.load_order_engine import compute_load_order
+from src.logic.load_order import apply_load_order_to_mod_folders
 
 
 @dataclass

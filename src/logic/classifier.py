@@ -1,8 +1,8 @@
 from pathlib import Path
 
-from logic.category_policy import normalize_category
-from logic.load_order_engine import infer_semantic_impact, infer_tier
-from logic.xml_category_classifier import detect_categories_for_mod
+from .category_policy import normalize_category
+from .load_order_engine import infer_semantic_impact, infer_tier
+from .xml_category_classifier import detect_categories_for_mod
 
 
 def classify_mod(mod):

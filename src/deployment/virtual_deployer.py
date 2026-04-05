@@ -7,9 +7,9 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Tuple
 
-from deployment.copy_deployer import CopyDeployer
-from deployment.errors import DeploymentError
-from deployment.file_copy import Logger
+from .copy_deployer import CopyDeployer
+from .errors import DeploymentError
+from .file_copy import Logger
 
 
 @dataclass(frozen=True)

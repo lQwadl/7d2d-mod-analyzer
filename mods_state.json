@@ -335,6 +335,10 @@
     "enabled": true,
     "user_disabled": false
   },
+  "v 2.5-rev33": {
+    "enabled": true,
+    "user_disabled": false
+  },
   "v25-test-dont-download-620927-1-1769111143": {
     "enabled": true,
     "user_disabled": false

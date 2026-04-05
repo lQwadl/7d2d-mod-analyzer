@@ -4,11 +4,11 @@ import sys
 import json
 from pathlib import Path
 
-from scanner.mod_scanner import scan_mods
-from scanner.xml_analyzer import analyze_xml
-from logic.classifier import classify_mod
-from logic.conflict_detector import detect_conflicts
-from logic.redundancy_detector import detect_redundancy
+from src.scanner.mod_scanner import scan_mods
+from src.scanner.xml_analyzer import analyze_xml
+from src.logic.classifier import classify_mod
+from src.logic.conflict_detector import detect_conflicts
+from src.logic.redundancy_detector import detect_redundancy
 
 # Import version info for logging and metadata
 try:
@@ -135,6 +135,9 @@ def main(argv=None) -> int:
     if "--cli" in argv:
         argv = [a for a in argv if a != "--cli"]
         mods_path = argv[0] if argv else None
+        return cli_main(mods_path)
+    else:
+        return gui_main()
 
 
 if __name__ == "__main__":

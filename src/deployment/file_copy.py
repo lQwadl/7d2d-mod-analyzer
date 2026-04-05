@@ -5,8 +5,8 @@ import shutil
 from pathlib import Path
 from typing import Callable, Iterable, Iterator, Set, Tuple
 
-from deployment.errors import DeploymentError
-from path_safety import assert_not_appdata
+from .errors import DeploymentError
+from ..path_safety import assert_not_appdata
 
 
 Logger = Callable[[str], None]
