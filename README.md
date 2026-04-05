@@ -7,7 +7,7 @@ A comprehensive Python tool for analyzing, conflict detection, and load-order op
 ## 📋 Quick Review Guide
 
 **For Security & Whitelist Reviewers:**
-- **Start here:** [main.py](main.py) (root entry point → imports from `/src`)
+- **Start here:** [main.py](main.py) (root entry point that loads all core logic from /src)
 - **Core logic:** [`/src`](src/) contains ALL 99 .py + 30 .cs source files
 - **GUI entry:** [`src/gui/app.py`](src/gui/app.py) (Tkinter-based interface)
 - **Tests:** [`/tests`](tests/) contains 35 full test suite files
