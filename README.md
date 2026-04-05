@@ -1,23 +1,27 @@
-﻿# 7d2d Mod Analyzer
+# 7d2d Mod Analyzer
 
 A comprehensive Python tool for analyzing, conflict detection, and load-order optimization for **7 Days to Die** mods.
 
 ---
 
-## 🔍 Source Code Location
+## 📋 Quick Review Guide
 
-**ALL source code is located in the `/src` folder.** This repository contains:
-- ✅ Complete, un-obfuscated Python source code (99 .py files)
-- ✅ Complete C# WinForms sources (30 .cs files)  
-- ✅ Full implementation with NO external dependencies beyond standard library
-- ✅ Build artifacts in `/build` folder (NOT source code)
-- ✅ Tests in `/tests` folder (fully traceable)
+**For Security & Whitelist Reviewers:**
+- **Start here:** [main.py](main.py) (root entry point → imports from `/src`)
+- **Core logic:** [`/src`](src/) contains ALL 99 .py + 30 .cs source files
+- **GUI entry:** [`src/gui/app.py`](src/gui/app.py) (Tkinter-based interface)
+- **Tests:** [`/tests`](tests/) contains 35 full test suite files
+- **Build:** [`app.spec`](app.spec) (PyInstaller specification - no obfuscation)
 
-**The code is transparent and available for full security review.**
+**Key facts for approval:**
+- ✅ **NO external dependencies** — Standard library only
+- ✅ **NO obfuscation** — All code is plain, readable Python/C#
+- ✅ **NO network access** — Fully offline operation
+- ✅ **Fully traceable** — Every operation visible in logs
 
 ---
 
-## Overview
+## Description
 
 This tool helps modpack creators and players manage large mod collections by:
 - **Scanning** mod metadata and detecting conflicts
@@ -30,76 +34,148 @@ Safe for antivirus scanning. Opens only the mod folder you select—no internet 
 
 ---
 
+## 🔍 Source Code Location
+
+**ALL source code is located in the `/src` folder:**
+- ✅ Complete, un-obfuscated Python source code (99 .py files)
+- ✅ Complete C# WinForms sources (30 .cs files)  
+- ✅ **ZERO external runtime dependencies** (standard library only)
+- ✅ Build artifacts in `/build` folder (NOT source code)
+- ✅ Tests in `/tests` folder (fully traceable)
+
+**The code is transparent and available for full security review.**
+
+---
+
 ## 📁 Project Structure
 
 ```
-├── main.py                          # Root entry point (imports from /src)
-├── src/                             # ⭐ ALL SOURCE CODE HERE
-│   ├── gui/                         # GUI application (Tkinter)
-│   │   └── app.py                   # Main GUI window entry point
+7d2d-mod-analyzer/
+│
+├── main.py                          # ⭐ PRIMARY ENTRY POINT
+├── __version__.py                   # Version metadata (imported by all modules)
+├── app.spec                         # PyInstaller build specification
+├── pyproject.toml                   # Python package metadata
+│
+├── src/                             # 🔴 ALL SOURCE CODE (99 .py + 30 .cs files)
+│   ├── gui/
+│   │   └── app.py                   # GUI entry point (Tkinter UI)
 │   ├── logic/                       # Business logic (22 modules)
-│   │   ├── conflict_detector.py
-│   │   ├── load_order_engine.py
-│   │   ├── classifier.py
-│   │   └── ... (19 more modules)
 │   ├── engines/                     # Analysis engines (10 modules)
-│   │   ├── conflict_engine.py
-│   │   ├── classification_engine.py
-│   │   └── ... (8 more modules)
 │   ├── deployment/                  # Deployment operations (6 modules)
 │   ├── scanner/                     # Mod scanning (5 modules)
 │   ├── models/                      # Data models (3 modules)
 │   ├── mock_deploy/                 # Simulation/testing (4 modules)
 │   ├── exporter/                    # Export functionality (2 modules)
-│   ├── xml_analyzer/                # XML parsing utilities
-│   └── path_safety.py               # Path safety utilities
-├── src/winforms/                    # C# WinForms project (alternative UI)
-│   └── 7dtd-mod-loadorder-manager/  # Full .NET source (30 .cs files)
+│   ├── xml_analyzer/                # XML utilities
+│   ├── path_safety.py               # Security utilities
+│   └── winforms/                    # C# WinForms project (30 .cs files)
+│
 ├── tests/                           # Test suite (35 test files)
-├── scripts/                         # Utility scripts
+├── scripts/                         # Utility scripts (PowerShell, Python)
 ├── data/                            # Configuration & rules
 │   ├── rules.json                   # Conflict resolution rules
 │   └── mod_metadata.json            # Detected mod metadata
-├── build/                           # Build artifacts (compiled output)
-├── pyproject.toml                   # Python project configuration
-├── app.spec                         # PyInstaller build specification
+│
+├── build/                           # Build artifacts (compiled output - NOT source)
 ├── LICENSE                          # MIT License
-└── README.md                         # This file
+├── SECURITY.md                      # Security & privacy information
+├── README.md                         # This file
+└── [config files]                   # config.json, settings.json, etc.
 ```
+
+---
+
+## Dependencies
+
+- **Python runtime:** Python 3.10+ only
+- **External packages:** **NONE** — Uses only standard library
+- **Build tool:** PyInstaller (for `.exe` compilation; not required for source execution)
 
 ---
 
 ## ⚡ Entry Points
 
-| Entry Point | Purpose | Language |
-|---|---|---|
-| **main.py** | Primary entry point (command-line or programmatic) | Python |
-| **src/gui/app.py** | GUI application (Tkinter) | Python |
-| **src/winforms/.../Program.cs** | Alternative WinForms GUI (requires .NET 7) | C# |
+| Entry Point | Purpose | Language | Required? |
+|---|---|---|---|
+| **main.py** | Primary application entry | Python | ✅ Yes |
+| **src/gui/app.py** | GUI interface (Tkinter) | Python | ✅ Default |
+| **src/winforms/Program.cs** | Alternative .NET UI | C# | ⚠️ Optional (.NET 7+) |
 
-Run the GUI:
+### Running the Application
+
 ```bash
+# Start the GUI (primary entry)
 python main.py
-```
 
-Or directly:
-```bash
+# Or run GUI directly
 python src/gui/app.py
+
+# For WinForms UI (.NET 7 required)
+cd src/winforms/7dtd-mod-loadorder-manager && dotnet run
 ```
 
 ---
 
 ## Requirements
 
-### For Running Pre-Built Executable
-- **Windows 10/11** (64-bit)
-- No Python installation required
+### For Running From Source
+- **Python 3.10, 3.11, or 3.12** (tested on all three versions)
+- **No external packages required** — Standard library only
+- **Tkinter** (bundled with Python)
+
+### For Building Standalone Executable
+- Everything above, plus:
+- **PyInstaller** (install only when building: `pip install pyinstaller`)
+
+### For Windows Pre-Built Executable (dist/7d2d-mod-analyzer.exe)
+- **Windows 10 or 11** (64-bit)
+- Python **NOT** required
 - No dependencies to install
 
-### For Building from Source or Development
-- **Python 3.10 or higher** (3.10, 3.11, 3.12 tested)
-- **pip** (included with Python)
-- **PyInstaller** (for building standalone `.exe`)
+---
+
+## ✨ Features
+
+- **Conflict Detection**: Identifies and categorizes mod conflicts
+- **Load Order Optimization**: Reorders mods for compatibility
+- **Transparent Logging**: All operations logged in the GUI for verification
+- **Standalone Executable**: Pre-built `.exe` available (or build from source)
+- **Safe Operation**: Read-only by default; write operations only after user confirmation
+- **Windows Optimized**: Built for Windows 10/11
+
+---
+
+## 🔐 Security & Transparency
+
+### No External Dependencies
+- ✅ **ZERO external packages** — Uses only Python standard library
+- ✅ **Fully self-contained** — All code is included in the repository
+- ✅ **Verifiable build** — PyInstaller spec provided for transparent executable building
+
+### No Network Activity
+- ✅ **Offline operation** — No internet access required
+- ✅ **No telemetry** — No user data collected
+- ✅ **No external runtime code** — Everything happens locally
+
+### No Obfuscation or Hiding
+- ✅ **Plain source code** — All Python and C# is human-readable
+- ✅ **No encryption** — No obfuscated binaries or hidden code
+- ✅ **Full transparency** — All operations visible in built executable
+
+### Safety Guarantees
+- ✅ **Read-only by default** — Application only analyzes, no destructive changes
+- ✅ **User-confirmed writes** — File modifications only happen after explicit user action
+- ✅ **No system access** — Limited to mod folder only; no Registry or system files touched
+- ✅ **No process execution** — Doesn't run external programs or scripts
+
+### Audit & Verification
+- ✅ **Complete logging** — All operations logged to console and GUI
+- ✅ **Open source (MIT)** — Full source available for review at any time
+- ✅ **Reproducible builds** — Same PyInstaller spec produces identical outputs
+- ✅ **Antivirus safe** — No suspicious patterns, can be scanned independently
+
+For more details, see [SECURITY.md](SECURITY.md).
 
 ---
 
@@ -162,17 +238,6 @@ dotnet run
 
 ---
 
-## ✨ Features
-
-- **Conflict Detection**: Identifies and categorizes mod conflicts
-- **Load Order Optimization**: Reorders mods for compatibility
-- **Transparent Logging**: All operations logged in the GUI for verification
-- **Standalone Executable**: Pre-built `.exe` available (or build from source)
-- **Safe Operation**: Read-only by default; write operations only after user confirmation
-- **Windows Optimized**: Built for Windows 10/11
-
----
-
 ## Development
 
 ### Running Tests
@@ -201,54 +266,13 @@ black .
 ruff check .
 ```
 
-### Project Configuration
-
-The project uses:
-- **pyproject.toml**: Python project metadata and tool configuration
-- **app.spec**: PyInstaller spec for building standalone executables
-- **config.json**: Application runtime configuration
-- **data/rules.json**: Conflict detection and resolution rules
-
----
-
-## Security & Transparency
-
-This project prioritizes **security** and **transparency**:
-
-### 🔍 What This Tool Does
-- Reads mod folder structure and metadata files
-- Analyzes XML and JSON configuration files
-- Detects conflicts based on configurable rules
-- Optionally renames mod folders (write operation)
-
-### ❌ What This Tool Does NOT Do
-- Access the internet or make network calls
-- Modify system registry or files outside the selected mod folder
-- Run executable files or scripts
-- Encrypt or obfuscate any data
-- Collect telemetry or user information
-
-### 📋 Transparency Features
-- **Complete logging**: All operations logged in the GUI
-- **No hidden operations**: All file I/O is visible
-- **Open source**: Code available for security review
-- **Antivirus safe**: No packing, encryption, or obfuscation
-
-### 🔐 Trust & Verification
-- Built with standard Python libraries
-- PyInstaller spec provided for rebuilding
-- Suitable for antivirus scanning and security audits
-- No unsigned or suspicious operations
-
-For detailed security information, see [SECURITY.md](SECURITY.md).
-
 ---
 
 ## Configuration
 
 ### app.spec
 Controls how the standalone executable is built:
-- Entry point: `gui/app.py`
+- Entry point: `src/gui/app.py`
 - Data files to include: `data/` directory
 - Excluded modules: test dependencies, dev tools
 

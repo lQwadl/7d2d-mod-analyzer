@@ -28,10 +28,10 @@ dependencies = []  # Uses only standard library
 dev = ["black", "ruff", "pytest"]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/7d2d-mod-analyzer"
-Repository = "https://github.com/yourusername/7d2d-mod-analyzer"
-Issues = "https://github.com/yourusername/7d2d-mod-analyzer/issues"
-Documentation = "https://github.com/yourusername/7d2d-mod-analyzer/blob/main/README.md"
+Homepage = "https://github.com/lQwadl/7d2d-mod-analyzer"
+Repository = "https://github.com/lQwadl/7d2d-mod-analyzer"
+Issues = "https://github.com/lQwadl/7d2d-mod-analyzer/issues"
+Documentation = "https://github.com/lQwadl/7d2d-mod-analyzer/blob/main/README.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]
