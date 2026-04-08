@@ -367,6 +367,21 @@ This project is licensed under the **MIT License**. See [LICENSE](LICENSE) file 
 
 ## Changelog
 
+### v1.2.0
+**Changes**
+- Rebranded project from "Mod Analyzer" to "Mod Manager"
+- Updated application name across UI and executable
+- Renamed output executable to "7d2d-mod-manager.exe"
+
+**Improvements**
+- Improved repository structure and consistency
+- Standardized naming across project files and build outputs
+- Updated PyInstaller spec and build configuration
+
+**Documentation**
+- Updated README to reflect new project name
+- Improved clarity for usage and setup instructions
+
 ### v1.1
 - Improved conflict detection algorithms
 - Enhanced logging and transparency
