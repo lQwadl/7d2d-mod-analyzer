@@ -75,9 +75,9 @@ __copyright__ = "Copyright (c) 2024 7d2d-mod-tools..."
 **Added Section:**
 ```toml
 [project]
-name = "7d2d-mod-analyzer"
+name = "7d2d-mod-manager"
 version = "1.0.0"
-description = "Mod analyzer and load-order optimizer for 7 Days to Die"
+description = "Mod manager and load-order optimizer for 7 Days to Die"
 license = { text = "MIT" }
 authors = [{ name = "Anonymous", email = "contact@example.com" }]
 classifiers = [
@@ -120,7 +120,7 @@ logger.debug(f"{__title__} v{__version__} by {__company__}")
 
 Before: `"7DTD Mod Load Order Manager"`
 
-After: `"7d2d-mod-analyzer v1.0.0 - 7DTD Mod Load Order Manager"`
+After: `"7d2d-mod-manager v1.0.0 - 7DTD Mod Load Order Manager"`
 
 **User Sees:**
 - Professional version number in title bar
@@ -198,7 +198,7 @@ print(f"Running {__title__} v{__version__}")
 4. See: Company name, file description, version, etc.
 
 **See in Window:**
-- Title bar shows: `7d2d-mod-analyzer v1.0.0 - 7DTD Mod Load Order Manager`
+After: `"7d2d-mod-manager v1.0.0 - 7DTD Mod Load Order Manager"`
 
 **See in Antivirus:**
 - More information available to security scanners
@@ -271,7 +271,7 @@ dist/app.exe
 |--------|--------|-------|
 | Version visible | Hidden | In title bar + Properties |
 | Company name | Missing | "7d2d-mod-tools" |
-| File description | "PyInstaller Application" | "7 Days to Die Mod Analyzer..." |
+| File description | "PyInstaller Application" | "7 Days to Die Mod Manager..." |
 | Antivirus trust | ~10-20% confidence | ~80-90% confidence |
 | Professional appearance | Basic | Professional |
 | False positive rate | High | Low |
@@ -312,7 +312,7 @@ Right-click dist/app.exe → Properties → Details
 
 # Verify window title
 dist/app.exe
-# Title shows: "7d2d-mod-analyzer v1.0.0 - 7DTD Mod Load Order Manager"
+# Title shows: "7d2d-mod-manager v1.0.0 - 7DTD Mod Load Order Manager"
 ```
 
 ### 3. Test Functionality

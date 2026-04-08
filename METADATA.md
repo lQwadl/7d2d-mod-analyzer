@@ -317,7 +317,7 @@ Python's `pyproject.toml` now advertises:
 
 ```toml
 [project]
-name = "7d2d-mod-analyzer"           # Unique identifier
+name = "7d2d-mod-manager"           # Unique identifier
 version = "1.0.0"                    # Semantic versioning
 description = "..."                  # Short description
 license = { text = "MIT" }          # License type (OSI-approved)

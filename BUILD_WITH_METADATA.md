@@ -11,7 +11,7 @@ __version__ = "1.0.1"  # Increment this
 ```
 
 The version automatically propagates to:
-- Window title: `7d2d-mod-analyzer v1.0.1 - ...`
+- Window title: `7d2d-mod-manager v1.0.1 - ...`
 - Windows file properties: Details tab
 - Log output: Startup messages
 
@@ -61,13 +61,13 @@ Get-Item dist/app.exe | select-object VersionInfo
 Expected output shows version as 1.0.0:
 ```
 VersionInfo      : File:             C:\...\dist\app.exe
-                   InternalName:     7d2d-mod-analyzer
+                   InternalName:     7d2d-mod-manager
                    OriginalFilename: app.exe
                    FileVersion:      1.0.0.0
-                   FileDescription:  7 Days to Die Mod Analyzer...
+                   FileDescription:  7 Days to Die Mod Manager...
                    CompanyName:      7d2d-mod-tools
                    ProductVersion:   1.0.0.0
-                   ProductName:      7d2d-mod-analyzer
+                   ProductName:      7d2d-mod-manager
                    ...
 ```
 
@@ -107,7 +107,7 @@ Right-click dist/app.exe
 dist/app.exe
 
 # Check window title shows:
-# "7d2d-mod-analyzer v1.0.0 - 7DTD Mod Load Order Manager"
+# "7d2d-mod-manager v1.0.0 - 7DTD Mod Load Order Manager"
 ```
 
 ### Test 3: Startup Log

@@ -1,4 +1,4 @@
-# Release Build Guide for 7d2d-mod-analyzer
+# Release Build Guide for 7d2d-mod-manager
 
 This guide walks you through building a clean, Release-mode executable without any packaging, compression, or obfuscation.
 
@@ -37,7 +37,7 @@ A virtual environment isolates your build dependencies from system Python.
 
 ```bash
 # Navigate to project root
-cd c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer
+cd c:\Users\gingt\Desktop\Work\7d2d-mod-manager
 
 # Create virtual environment
 python -m venv venv
@@ -249,11 +249,11 @@ Copy-Item ..\README.md . -ErrorAction SilentlyContinue
 Create file `setup.bat`:
 ```batch
 @echo off
-REM First-time setup for 7d2d-mod-analyzer
+REM First-time setup for 7d2d-mod-manager
 
 echo.
 echo ========================================
-echo 7d2d-mod-analyzer - Initial Setup
+echo 7d2d-mod-manager - Initial Setup
 echo ========================================
 echo.
 
@@ -382,7 +382,7 @@ pyinstaller app.spec --analyze
 ## File Structure After Build
 
 ```
-7d2d-mod-analyzer/
+7d2d-mod-manager/
 ├── app.spec                 # Build configuration
 ├── dist/
 │   ├── app.exe             # ✅ Your Release executable

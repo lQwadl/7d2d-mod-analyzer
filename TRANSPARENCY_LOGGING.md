@@ -2,7 +2,7 @@
 
 ## Overview
 
-The 7d2d-mod-analyzer application now provides **transparent, user-visible feedback** for all operations. Users can see exactly what the application is doing at every step, with clear timestamped messages in the GUI's Operation Log panel.
+The 7d2d-mod-manager application now provides **transparent, user-visible feedback** for all operations. Users can see exactly what the application is doing at every step, with clear timestamped messages in the GUI's Operation Log panel.
 
 ## Key Features
 

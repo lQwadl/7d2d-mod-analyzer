@@ -14,7 +14,7 @@
 
 ```powershell
 # 1. Navigate to project root
-cd c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer
+cd c:\Users\gingt\Desktop\Work\7d2d-mod-manager
 
 # 2. Create virtual environment (one-time only)
 python -m venv venv
@@ -37,7 +37,7 @@ pyinstaller --version
 
 ```powershell
 # 1. Activate virtual environment
-cd c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer
+cd c:\Users\gingt\Desktop\Work\7d2d-mod-manager
 .\venv\Scripts\Activate.ps1
 
 # 2. Clean previous builds
@@ -85,7 +85,7 @@ dist/app.exe
   - Verify: `python --version`
 - [ ] pip available
   - Verify: `pip --version`
-- [ ] Project folder exists: `c:\Users\gingt\Desktop\Work\7d2d-mod-analyzer`
+- [ ] Project folder exists: `c:\Users\gingt\Desktop\Work\7d2d-mod-manager`
 - [ ] Files present:
   - [ ] `app.spec` (PyInstaller config)
   - [ ] `gui/app.py` (GUI entry point)
@@ -107,7 +107,7 @@ dist/app.exe
 After successful build, you'll have:
 
 ```
-7d2d-mod-analyzer/
+7d2d-mod-manager/
 ├── dist/
 │   ├── app.exe                    ← YOUR RELEASE EXECUTABLE
 │   ├── _internal/                 ← Python runtime & libraries
@@ -169,7 +169,7 @@ Copy-Item ../BUILD.md .
 # 3. Create simple setup.bat for users
 @"
 @echo off
-echo 7d2d-mod-analyzer - Setup Complete
+echo 7d2d-mod-manager - Setup Complete
 echo.
 echo Step 1: Open config.json in notepad
 echo Step 2: Set mods_path to your 7 Days to Die Mods directory

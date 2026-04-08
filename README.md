@@ -187,8 +187,8 @@ For more details, see [SECURITY.md](SECURITY.md).
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/lQwadl/7d2d-mod-analyzer.git
-cd 7d2d-mod-analyzer
+git clone https://github.com/lQwadl/7d2d-mod-manager.git
+cd 7d2d-mod-manager
 
 # 2. Create virtual environment
 python -m venv .venv

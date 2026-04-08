@@ -25,17 +25,17 @@ Attributes: □ Read-only  □ Hidden
 ╠═════════════════════════════════════════════════════════╣
 ║                                                         ║
 ║ File Description:                                       ║
-║ 7 Days to Die Mod Analyzer and Load-Order Optimizer    ║
+║ 7 Days to Die Mod Manager and Load-Order Optimizer    ║
 ║                                                         ║
 ║ File Version:                         1.0.0             ║
 ║                                                         ║
 ║ Company Name:                 7d2d-mod-tools           ║
 ║                                                         ║
-║ Product Name:                 7d2d-mod-analyzer        ║
+║ Product Name:                 7d2d-mod-manager        ║
 ║                                                         ║
 ║ Product Version:                      1.0.0             ║
 ║                                                         ║
-║ Internal Name:                7d2d-mod-analyzer        ║
+║ Internal Name:                7d2d-mod-manager        ║
 ║                                                         ║
 ║ Original Filename:                    app.exe           ║
 ║                                                         ║
@@ -72,7 +72,7 @@ Attributes: □ Read-only  □ Hidden
 
 **After Metadata:**
 ```
-┌─ 7d2d-mod-analyzer v1.0.0 - 7DTD Mod Load Order Manager ─┐
+┌─ 7d2d-mod-manager v1.0.0 - 7DTD Mod Load Order Manager ─┐
 │ □  _  ⚲  X                                              │
 └──────────────────────────────────────────────────────────────┘
 ```
@@ -94,7 +94,7 @@ app.exe                1234   Running   TargetUser        0.5%   125 MB
 ```
 
 When user hovers over or views details:
-- **Description:** 7 Days to Die Mod Analyzer...
+- **Description:** 7 Days to Die Mod Manager...
 - **Version:** 1.0.0
 - **Company:** 7d2d-mod-tools
 
@@ -134,7 +134,7 @@ If antivirus briefly quarantines (before whitelisting):
 ║ Type: Windows Application (PE Executable)                 ║
 ║ Size: 98.5 MB                                             ║
 ║ Company: 7d2d-mod-tools                          [Trust+] ║
-║ Product: 7d2d-mod-analyzer v1.0.0                [Trust+] ║
+║ Product: 7d2d-mod-manager v1.0.0                [Trust+] ║
 ║ Version: Consistent across all properties         [Trust+] ║
 ║ Description: Professional, detailed               [Trust+] ║
 ║ Behavior: Read-only file access, no network      [Safe+]  ║
@@ -172,7 +172,7 @@ File Details:
 │
 ├─ DEVELOPER INFO:
 │  ├─ Company: 7d2d-mod-tools        ← From metadata
-│  ├─ Product: 7d2d-mod-analyzer     ← From metadata
+│  ├─ Product: 7d2d-mod-manager     ← From metadata
 │  ├─ Version: 1.0.0 (consistent)    ← From metadata
 │  ├─ Description: Detailed & clear  ← From metadata
 │  └─ Copyright: 2024 ...            ← From metadata
@@ -197,7 +197,7 @@ File Details:
 When user pins to taskbar or creates shortcut:
 
 ```
-7d2d-mod-analyzer v1.0.0
+7d2d-mod-manager v1.0.0
 ──────────────────────────────
 Publisher: 7d2d-mod-tools
 
@@ -215,7 +215,7 @@ Run: Normal window
 Comment: 
 
 Version tab shows:
-File Description: 7 Days to Die Mod Analyzer...
+File Description: 7 Days to Die Mod Manager...
 Version: 1.0.0
 Company: 7d2d-mod-tools
 ```
@@ -238,7 +238,7 @@ If Windows SmartScreen appears on first run (increasingly rare with metadata):
 ║ metadata that appears legitimate but hasn't      ║
 ║ been widely distributed yet.                     ║
 ║                                                    ║
-║ App Name: 7d2d-mod-analyzer v1.0.0               ║
+║ App Name: 7d2d-mod-manager v1.0.0               ║
 ║ Publisher: 7d2d-mod-tools                        ║
 ║ File: app.exe                                    ║
 ║                                                    ║
@@ -258,8 +258,8 @@ After clicking "Run anyway" once, app is added to whitelist.
 When app starts (if verbose logging enabled):
 
 ```
-2024-03-29 14:35:23 DEBUG: 7d2d-mod-analyzer v1.0.0 by 7d2d-mod-tools
-2024-03-29 14:35:23 DEBUG: Description: Mod analyzer and load-order...
+2024-03-29 14:35:23 DEBUG: 7d2d-mod-manager v1.0.0 by 7d2d-mod-tools
+2024-03-29 14:35:23 DEBUG: Description: Mod manager and load-order...
 2024-03-29 14:35:23 DEBUG: Copyright: (c) 2024 7d2d-mod-tools
 2024-03-29 14:35:23 DEBUG: License: MIT
 2024-03-29 14:35:24 INFO: No mods_path specified...
@@ -318,10 +318,10 @@ Trust Level: 🟢🟢🟢🟢⚪ (80%)
 
 | Location | Before | After |
 |----------|--------|-------|
-| File Properties | Generic "PyInstaller" | "7d2d-mod-analyzer v1.0.0" |
+| File Properties | Generic "PyInstaller" | "7d2d-mod-manager v1.0.0" |
 | Company Name | Missing | "7d2d-mod-tools" |
-| Description | Generic | "7 Days to Die Mod Analyzer..." |
-| Window Title | "PyInstaller Application" | "7d2d-mod-analyzer v1.0.0 - ..." |
+| Description | Generic | "7 Days to Die Mod Manager..." |
+| Window Title | "PyInstaller Application" | "7d2d-mod-manager v1.0.0 - ..." |
 | Task Manager | No metadata | Name + Version + Company |
 | Antivirus View | "Unknown software" | "Professional software" |
 | VirusTotal | Suspicious | Clean/Trusted |
